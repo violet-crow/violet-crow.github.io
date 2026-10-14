@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta
+    name="description"
+    content="Honors Thesis by Violet Crow — The Impact of Spatiality and Modality on Group Communications in Extended Reality Teleconferencing."
+  />
+  <title>Honors Thesis | Violet Crow</title>
+
+  <!-- Font: Fraunces for headlines, Manrope for body text. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Manrope:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="../../styles.css" />
+</head>
+
+<body>
+  <div class="site-shell">
+    <aside class="sidebar" id="sidebar" aria-label="Site navigation">
+      <div class="sidebar-top">
+        <a class="brand" href="../../">Violet Crow</a>
+        <img
+          class="profile-photo"
+          src="../../assets/images/profile.png"
+          alt="Portrait of Violet Crow"
+          width="132"
+          height="132"
+        />
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="sidebar-menu"
+          onclick="const sb = document.getElementById('sidebar'); const open = sb.classList.toggle('is-open'); this.setAttribute('aria-expanded', open); this.textContent = open ? 'Close' : 'Menu';"
+        >
+          Menu
+        </button>
+      </div>
+
+      <div class="sidebar-menu" id="sidebar-menu">
+        <nav class="sidebar-nav" aria-label="Primary">
+          <a href="../../">Home</a>
+          <a href="../../#work">Work</a>
+          <a href="../../about/">About Me</a>
+          <a href="../../contact/">Contact</a>
+        </nav>
+
+        <section class="recent-projects" aria-labelledby="recent-projects-heading">
+          <h2 id="recent-projects-heading">Recent Projects</h2>
+          <ul>
+            <li><a href="./" aria-current="page">Thesis</a></li>
+            <li><a href="../volunteerverse/">VolunteerVerse</a></li>
+            <li><a href="../tai/">T.AI</a></li>
+            <li><a href="../harmonics/">Harmonics</a></li>
+            <li><a href="../myodyssey/">Myodyssey</a></li>
+          </ul>
+        </section>
+
+        <div class="sidebar-actions">
+          <a
+            class="social-button"
+            href="https://www.linkedin.com/in/violet-crow/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn"
+            title="LinkedIn"
+          >
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M6.94 8.5H3.4V20h3.54V8.5ZM5.17 3A2.06 2.06 0 1 0 5.17 7.12 2.06 2.06 0 0 0 5.17 3ZM20.6 13.41c0-3.46-1.85-5.07-4.32-5.07-1.99 0-2.88 1.1-3.38 1.87V8.5H9.36V20h3.54v-5.69c0-1.5.28-2.95 2.14-2.95 1.84 0 1.87 1.71 1.87 3.04V20h3.55v-6.59Z" />
+            </svg>
+          </a>
+          <a
+            class="resume-button"
+            href="https://drive.google.com/file/d/1CRdNv4XvAG9eACOFeULSWvpSveHo9fFu/view?usp=sharing"
+            title="Resume"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Resume
+          </a>
+        </div>
+      </div>
+    </aside>
+
+    <main class="main">
+      <div class="container">
+        <!-- Header & Summary -->
+        <section class="case-hero">
+          <a class="back-link" href="../../#work">← Back to Work</a>
+          <div class="eyebrow">Stanford Virtual Human Interaction Lab (VHIL) · Honors Research</div>
+          <h1>Honors Thesis</h1>
+          <div class="case-subtitle">
+            The Impact of Spatiality and Modality on Group Communications in Extended Reality Teleconferencing
+          </div>
+
+          <div class="hero-actions">
+            <a
+              class="pill-button"
+              href="../../assets/docs/thesis-paper.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Read Full Paper (PDF) ↗
+            </a>
+            <a
+              class="pill-button secondary"
+              href="https://doi.org/10.25740/my027tc4249"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Stanford Repository (DOI) ↗
+            </a>
+            <a class="pill-button secondary" href="#deliverables">
+              View Presentation & Slides
+            </a>
+          </div>
+
+          <div class="case-meta-grid">
+            <div class="meta-item">
+              <span class="meta-label">Role</span>
+              <span class="meta-value">Lead Researcher (End-to-End Ownership)</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Timeline</span>
+              <span class="meta-value">12 Months (2025–2026)</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Scale & Leadership</span>
+              <span class="meta-value">150 Participants · Trained 5 Research Assistants</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Stack & Methods</span>
+              <span class="meta-value">Apple Vision Pro, Python, Multi-Modal Telemetry</span>
+            </div>
+          </div>
+
+          <figure class="case-banner">
+            <img
+              src="../../assets/images/thesis.jpg"
+              alt="Extended Reality teleconferencing study using Apple Vision Pro Personas"
+            />
+            <figcaption class="photo-caption">
+              Investigating how spatial arrangements and environmental immersion shape group dynamics in Apple Vision Pro FaceTime calls.
+            </figcaption>
+          </figure>
+        </section>
+
+        <!-- 1. Context & Problem -->
+        <section class="section" aria-labelledby="context-heading">
+          <div class="case-grid">
+            <div>
+              <div class="section-kicker">01 · Context</div>
+              <h2 id="context-heading">The Question</h2>
+            </div>
+            <div class="case-body">
+              <p>
+                As enterprise and consumer hardware leaders invest heavily in Extended Reality (XR) teleconferencing, product teams have largely operated under a core assumption: that maximizing spatial realism and environmental immersion automatically yields superior remote collaboration.
+              </p>
+              <p>
+                Conducted at the <strong>Stanford Virtual Human Interaction Lab (VHIL)</strong>, this study empirically tested how photorealistic avatars (<strong>Apple Vision Pro Personas</strong>), spatial vs. non-spatial (grid) layouts, and passthrough vs. fully virtual environments impact group communication across groups of 2, 3, and 4 participants.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- 2. Role & Execution -->
+        <section class="section" aria-labelledby="execution-heading">
+          <div class="case-grid">
+            <div>
+              <div class="section-kicker">02 · Execution</div>
+              <h2 id="execution-heading">My Role & Process</h2>
+            </div>
+            <div class="case-body">
+              <p>
+                I drove this 12-month research initiative from initial ideation to completion, managing both the operational complexity of hardware-based human-subjects testing and the technical engineering required to process the data:
+              </p>
+              <p>
+                <strong>Study & Operations Management:</strong> Authored the experimental protocols, developed quantitative and qualitative measures, recruited <strong>150 participants</strong>, and trained a team of <strong>5 research assistants</strong> to assist with hardware calibration and recording workflows. I personally facilitated every participant session—guiding cohorts through Apple Vision Pro Persona capture before placing them into controlled Spatial or Non-Spatial FaceTime calls across Passthrough or Virtual Environments.
+              </p>
+              <p>
+                <strong>Multi-Modal Data Engineering:</strong> Built custom data extraction and analysis utilities in <strong>Python</strong> to synthesize a complex, multi-modal dataset comprising validated multiple-choice and free-response questionnaires, transcribed participant speech, external room recordings, and first-person headset POV video. The completed thesis earned Departmental Honors and serves as the foundation for an upcoming lab publication.
+              </p>
+            </div>
+          </div>
+
+          <div class="case-gallery">
+            <figure class="photo-card">
+              <img
+                src="../../assets/images/thesis-conditions.jpg"
+                alt="Comparison of spatial versus grid Persona layouts in passthrough and virtual environments"
+                loading="lazy"
+              />
+              <figcaption class="photo-caption">
+                Participant POV across Spatial vs. Non-Spatial Grid layouts and Passthrough vs. Virtual environments.
+              </figcaption>
+            </figure>
+
+            <figure class="photo-card">
+              <img
+                src="../../assets/images/thesis-setup.jpg"
+                alt="VHIL experiment room and Apple Vision Pro hardware setup"
+                loading="lazy"
+              />
+              <figcaption class="photo-caption">
+                Experimental room setup and multi-headset testing pipeline at Stanford VHIL.
+              </figcaption>
+            </figure>
+          </div>
+        </section>
+
+        <!-- 3. Product Takeaways -->
+        <section class="section" aria-labelledby="takeaways-heading">
+          <div class="case-grid">
+            <div>
+              <div class="section-kicker">03 · Impact</div>
+              <h2 id="takeaways-heading">Product & UX Takeaways</h2>
+            </div>
+            <div class="case-body">
+              <div class="callout-box">
+                <div class="callout-kicker">Key Finding for XR Product Teams</div>
+                <p>
+                  “For developers and enterprise adopters of XR teleconferencing, these findings necessitate a critical re-evaluation of design priorities. The current industry trajectory assumes that maximizing spatial realism and environmental immersion results in better collaborative experiences. However, the data reveal that spatial configurations do not automatically mitigate the cognitive or physical toll of remote interactions. In practice, forcing users into three-dimensional spatial arrangements may actually increase social friction compared to standard grid layouts. Teleconferencing platforms should reconsider the push to deprecate traditional two-dimensional grid views, as these structures provide a safe, established social boundary that users may prefer when navigating the complexities of multi-person interactions in less familiar modalities like VR.”
+                </p>
+              </div>
+              <p>
+                Rather than treating 2D grid layouts as legacy compromises to be phased out, XR product designers should preserve familiar interaction boundaries as user-selectable defaults—allowing teams to opt into spatial arrangements only when the collaborative task specifically benefits from 3D positioning.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- 4. Embedded Deliverables -->
+        <section class="section" id="deliverables" aria-labelledby="deliverables-heading">
+          <div class="section-heading">
+            <div class="section-kicker">04 · Artifacts</div>
+            <h2 id="deliverables-heading">Presentation & Deliverables</h2>
+          </div>
+
+          <div class="embed-grid">
+            <!-- Senior Honors Forum Presentation Video -->
+            <div class="embed-card">
+              <div class="embed-header">
+                <span class="embed-title">Senior Honors Forum Presentation</span>
+                <a href="../../assets/video/thesis-presentation.mp4" target="_blank" rel="noopener noreferrer">Open Video ↗</a>
+              </div>
+              <video class="embed-frame" controls preload="metadata">
+                <source src="../../assets/video/thesis-presentation.mp4" type="video/mp4" />
+                Your browser does not support embedded video.
+              </video>
+            </div>
+
+            <!-- Senior Honors Forum Slide Deck -->
+            <div class="embed-card">
+              <div class="embed-header">
+                <span class="embed-title">Honors Forum Slide Deck</span>
+                <a href="../../assets/docs/thesis-slides.pdf" target="_blank" rel="noopener noreferrer">Open PDF ↗</a>
+              </div>
+              <iframe
+                class="embed-frame"
+                src="../../assets/docs/thesis-slides.pdf"
+                title="Honors Thesis Presentation Slides"
+              ></iframe>
+            </div>
+          </div>
+        </section>
+
+        <!-- Next Project Nav -->
+        <nav class="project-nav-footer" aria-label="Project pagination">
+          <a class="back-link" style="margin-bottom: 0;" href="../../#work">← All Projects</a>
+          <a class="project-nav-link" href="../volunteerverse/" style="text-align: right;">
+            <span class="project-nav-label">Next Project</span>
+            <span class="project-nav-title">VolunteerVerse →</span>
+          </a>
+        </nav>
+
+        <footer>
+          © 2026 Violet Crow
+        </footer>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
