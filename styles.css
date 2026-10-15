@@ -377,14 +377,17 @@ p {
 .project-image-wrap {
   overflow: hidden;
   border-radius: var(--radius);
-  background: #e7e4e9;
-  aspect-ratio: 4 / 3;
+  background: #171619;
+  aspect-ratio: 16 / 9; /* Updated from 4/3 to match 1280x720 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .project-image {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain; /* Prevents 16:9 images from getting cropped */
   transition: transform 360ms ease;
 }
 
@@ -471,14 +474,14 @@ p {
   margin: 0;
   overflow: hidden;
   border-radius: var(--radius);
-  background: #e7e4e9;
+  background: #171619;
   border: 1px solid var(--line);
 }
 
 .photo-card img {
   width: 100%;
-  aspect-ratio: 4 / 3;
-  object-fit: cover;
+  aspect-ratio: 16 / 9; /* Matches your 1280x720 assets */
+  object-fit: contain; /* Ensures the full 1280x720 image is visible inside the card */
 }
 
 .photo-strip {
@@ -988,13 +991,13 @@ footer {
   overflow: hidden;
   border-radius: var(--radius);
   border: 1px solid var(--line);
-  background: var(--surface);
+  background: #171619;
 }
 
 .case-banner img {
   width: 100%;
   aspect-ratio: 16 / 9;
-  object-fit: cover;
+  object-fit: contain; /* Ensures 1280x720 banners fit without edge cropping */
 }
 
 .case-grid {
