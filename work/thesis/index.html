@@ -9,7 +9,6 @@
   />
   <title>Honors Thesis | Violet Crow</title>
 
-  <!-- Font: Fraunces for headlines, Manrope for body text. -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
@@ -33,10 +32,10 @@
         />
         <button
           class="menu-toggle"
+          id="menu-toggle"
           type="button"
           aria-expanded="false"
           aria-controls="sidebar-menu"
-          onclick="const sb = document.getElementById('sidebar'); const open = sb.classList.toggle('is-open'); this.setAttribute('aria-expanded', open); this.textContent = open ? 'Close' : 'Menu';"
         >
           Menu
         </button>
@@ -92,11 +91,11 @@
         <!-- Header & Summary -->
         <section class="case-hero">
           <a class="back-link" href="../../#work">← Back to Work</a>
-          <div class="eyebrow">Stanford Virtual Human Interaction Lab (VHIL) · Honors Research</div>
+          <p class="eyebrow">Stanford Virtual Human Interaction Lab (VHIL) · Honors Research</p>
           <h1>Honors Thesis</h1>
-          <div class="case-subtitle">
+          <p class="case-subtitle">
             The Impact of Spatiality and Modality on Group Communications in Extended Reality Teleconferencing
-          </div>
+          </p>
 
           <div class="hero-actions">
             <a
@@ -116,26 +115,26 @@
               Stanford Repository (DOI) ↗
             </a>
             <a class="pill-button secondary" href="#deliverables">
-              View Presentation & Slides
+              Presentation & Slides
             </a>
           </div>
 
           <div class="case-meta-grid">
             <div class="meta-item">
-              <span class="meta-label">Role</span>
-              <span class="meta-value">Lead Researcher (End-to-End Ownership)</span>
+              <span class="meta-label">My Role</span>
+              <span class="meta-value">Lead Researcher</span>
             </div>
             <div class="meta-item">
               <span class="meta-label">Timeline</span>
               <span class="meta-value">12 Months (2025–2026)</span>
             </div>
             <div class="meta-item">
-              <span class="meta-label">Scale & Leadership</span>
-              <span class="meta-value">150 Participants · Trained 5 Research Assistants</span>
+              <span class="meta-label">Scale</span>
+              <span class="meta-value">150 Participants · 5 Research Assistants</span>
             </div>
             <div class="meta-item">
-              <span class="meta-label">Stack & Methods</span>
-              <span class="meta-value">Apple Vision Pro, Python, Multi-Modal Telemetry</span>
+              <span class="meta-label">Tools</span>
+              <span class="meta-value">Apple Vision Pro, Python</span>
             </div>
           </div>
 
@@ -145,7 +144,7 @@
               alt="Extended Reality teleconferencing study using Apple Vision Pro Personas"
             />
             <figcaption class="photo-caption">
-              Investigating how spatial arrangements and environmental immersion shape group dynamics in Apple Vision Pro FaceTime calls.
+              Testing how 3D spatial layouts and virtual environments affect group conversations in Apple Vision Pro FaceTime calls.
             </figcaption>
           </figure>
         </section>
@@ -154,15 +153,15 @@
         <section class="section" aria-labelledby="context-heading">
           <div class="case-grid">
             <div>
-              <div class="section-kicker">01 · Context</div>
-              <h2 id="context-heading">The Question</h2>
+              <p class="section-kicker">01 · The Question</p>
+              <h2 id="context-heading">What We Wanted to Know</h2>
             </div>
             <div class="case-body">
               <p>
-                As enterprise and consumer hardware leaders invest heavily in Extended Reality (XR) teleconferencing, product teams have largely operated under a core assumption: that maximizing spatial realism and environmental immersion automatically yields superior remote collaboration.
+                Companies building VR and AR headsets often assume that making video calls feel more like sharing a physical 3D room automatically makes remote conversations better.
               </p>
               <p>
-                Conducted at the <strong>Stanford Virtual Human Interaction Lab (VHIL)</strong>, this study empirically tested how photorealistic avatars (<strong>Apple Vision Pro Personas</strong>), spatial vs. non-spatial (grid) layouts, and passthrough vs. fully virtual environments impact group communication across groups of 2, 3, and 4 participants.
+                At the <strong>Stanford Virtual Human Interaction Lab (VHIL)</strong>, we set out to test whether that assumption actually holds up. Using photorealistic avatars (<strong>Apple Vision Pro Personas</strong>), we brought groups of 2, 3, and 4 people into FaceTime calls to see how two major design choices affect group communication: arranging people in 3D space versus a traditional 2D grid, and meeting in mixed-reality passthrough versus a fully virtual environment.
               </p>
             </div>
           </div>
@@ -172,18 +171,18 @@
         <section class="section" aria-labelledby="execution-heading">
           <div class="case-grid">
             <div>
-              <div class="section-kicker">02 · Execution</div>
-              <h2 id="execution-heading">My Role</h2>
+              <p class="section-kicker">02 · My Contribution</p>
+              <h2 id="execution-heading">Running the Study</h2>
             </div>
             <div class="case-body">
               <p>
-                I drove this 12-month research initiative from initial ideation to completion, managing both the operational complexity of hardware-based human-subjects testing and the technical engineering required to process the data:
+                In my senior year at Stanford, I led this project from initial idea to finished paper. Taking nearly 12 months, it was easily the most challenging thing I did during my time at Stanford—and also the most rewarding.
               </p>
               <p>
-                <strong>Study & Operations Management:</strong> Authored the experimental protocols, developed quantitative and qualitative measures, recruited <strong>150 participants</strong>, and trained a team of <strong>5 research assistants</strong> to assist with hardware calibration and recording workflows. I personally facilitated every participant session—guiding cohorts through Apple Vision Pro Persona capture before placing them into controlled Spatial or Non-Spatial FaceTime calls across Passthrough or Virtual Environments.
+                <strong>Running 150 Participant Sessions:</strong> I wrote the session protocols, designed our survey measures, recruited 150 participants, and trained five research assistants to help calibrate headsets and start recordings. I ran every participant session myself—guiding groups through creating their Apple Vision Pro Personas before placing them into their assigned FaceTime conditions.
               </p>
               <p>
-                <strong>Multi-Modal Data Engineering:</strong> Built custom data extraction and analysis utilities in <strong>Python</strong> to synthesize a complex, multi-modal dataset comprising validated multiple-choice and free-response questionnaires, transcribed participant speech, external room recordings, and first-person headset POV video. The completed thesis earned Departmental Honors and serves as the foundation for an upcoming lab publication.
+                <strong>Building the Data Pipeline:</strong> Because each session captured several types of data—questionnaires, audio transcripts of participant conversations, room video, and first-person video from inside the headsets—I wrote custom scripts in <strong>Python</strong> to extract, clean, and analyze everything. The finished thesis earned Departmental Honors and is the foundation for an upcoming publication from the lab.
               </p>
             </div>
           </div>
@@ -217,19 +216,22 @@
         <section class="section" aria-labelledby="takeaways-heading">
           <div class="case-grid">
             <div>
-              <div class="section-kicker">03 · Impact</div>
-              <h2 id="takeaways-heading">Product & UX Takeaways</h2>
+              <p class="section-kicker">03 · Findings</p>
+              <h2 id="takeaways-heading">Why It Matters for Product Design</h2>
             </div>
             <div class="case-body">
-              <div class="callout-box">
-                <div class="callout-kicker">Key Finding for XR Product Teams</div>
-                <p>
-                  “For developers and enterprise adopters of XR teleconferencing, these findings necessitate a critical re-evaluation of design priorities. The current industry trajectory assumes that maximizing spatial realism and environmental immersion results in better collaborative experiences. However, the data reveal that spatial configurations do not automatically mitigate the cognitive or physical toll of remote interactions. In practice, forcing users into three-dimensional spatial arrangements may actually increase social friction compared to standard grid layouts. Teleconferencing platforms should reconsider the push to deprecate traditional two-dimensional grid views, as these structures provide a safe, established social boundary that users may prefer when navigating the complexities of multi-person interactions in less familiar modalities like VR.”
-                </p>
-              </div>
               <p>
-                Rather than treating 2D grid layouts as legacy compromises to be phased out, XR product designers should preserve familiar interaction boundaries as user-selectable defaults—allowing teams to opt into spatial arrangements only when the collaborative task specifically benefits from 3D positioning.
+                Our findings challenged the idea that more immersion is always better. When people are already navigating an unfamiliar medium like VR, forcing them into a 3D spatial arrangement can actually make conversations feel more awkward than a simple, familiar 2D grid.
               </p>
+
+              <div class="callout-box">
+                <p class="callout-kicker">From the Paper</p>
+                <blockquote>
+                  <p>
+                    “For developers and enterprise adopters of XR teleconferencing, these findings necessitate a critical re-evaluation of design priorities. The current industry trajectory assumes that maximizing spatial realism and environmental immersion results in better collaborative experiences. However, the data reveal that spatial configurations do not automatically mitigate the cognitive or physical toll of remote interactions. In practice, forcing users into three-dimensional spatial arrangements may actually increase social friction compared to standard grid layouts. Teleconferencing platforms should reconsider the push to deprecate traditional two-dimensional grid views, as these structures provide a safe, established social boundary that users may prefer when navigating the complexities of multi-person interactions in less familiar modalities like VR.”
+                  </p>
+                </blockquote>
+              </div>
             </div>
           </div>
         </section>
@@ -237,15 +239,14 @@
         <!-- 4. Embedded Deliverables -->
         <section class="section" id="deliverables" aria-labelledby="deliverables-heading">
           <div class="section-heading">
-            <div class="section-kicker">04 · Artifacts</div>
+            <p class="section-kicker">04 · Deliverables</p>
             <h2 id="deliverables-heading">Presentation & Slides</h2>
           </div>
 
           <div class="embed-grid">
-            <!-- Senior Honors Forum Presentation Video -->
             <div class="embed-card">
               <div class="embed-header">
-                <span class="embed-title">Senior Honors Forum Presentation</span>
+                <span class="embed-title">SymSys Honors Forum Presentation</span>
                 <a href="../../assets/video/thesis-presentation.mp4" target="_blank" rel="noopener noreferrer">Open Video ↗</a>
               </div>
               <video class="embed-frame" controls preload="metadata">
@@ -254,7 +255,6 @@
               </video>
             </div>
 
-            <!-- Senior Honors Forum Slide Deck -->
             <div class="embed-card">
               <div class="embed-header">
                 <span class="embed-title">Honors Forum Slide Deck</span>
@@ -264,6 +264,7 @@
                 class="embed-frame"
                 src="../../assets/docs/thesis-slides.pdf"
                 title="Honors Thesis Presentation Slides"
+                loading="lazy"
               ></iframe>
             </div>
           </div>
@@ -271,8 +272,8 @@
 
         <!-- Next Project Nav -->
         <nav class="project-nav-footer" aria-label="Project pagination">
-          <a class="back-link" style="margin-bottom: 0;" href="../../#work">← All Projects</a>
-          <a class="project-nav-link" href="../volunteerverse/" style="text-align: right;">
+          <a class="back-link" href="../../#work">← All Projects</a>
+          <a class="project-nav-link next" href="../volunteerverse/">
             <span class="project-nav-label">Next Project</span>
             <span class="project-nav-title">VolunteerVerse →</span>
           </a>
@@ -284,5 +285,16 @@
       </div>
     </main>
   </div>
+
+  <script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const sidebar = document.getElementById('sidebar');
+
+    menuToggle.addEventListener('click', () => {
+      const isOpen = sidebar.classList.toggle('is-open');
+      menuToggle.setAttribute('aria-expanded', isOpen);
+      menuToggle.textContent = isOpen ? 'Close' : 'Menu';
+    });
+  </script>
 </body>
 </html>

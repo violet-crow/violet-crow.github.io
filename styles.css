@@ -474,7 +474,7 @@ p {
   margin: 0;
   overflow: hidden;
   border-radius: var(--radius);
-  background: #171619;
+  background: #000000;
   border: 1px solid var(--line);
 }
 
@@ -1061,6 +1061,20 @@ footer {
   aspect-ratio: 16 / 10;
 }
 
+.case-gallery.single {
+  grid-template-columns: 1fr;
+}
+
+.case-gallery.three-col {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+@media (max-width: 1000px) {
+  .case-gallery.three-col {
+    grid-template-columns: 1fr;
+  }
+}
+
 .embed-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1163,6 +1177,19 @@ footer {
   .case-gallery {
     grid-template-columns: 1fr;
   }
+}
+
+.callout-box blockquote {
+  margin: 0;
+}
+
+.project-nav-footer .back-link {
+  margin-bottom: 0;
+}
+
+.project-nav-link.next {
+  text-align: right;
+  margin-left: auto;
 }
 
 /* ---------------- Audio Track Selector ---------------- */
