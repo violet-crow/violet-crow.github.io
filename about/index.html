@@ -5,11 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta
     name="description"
-    content="About Violet Crow — Stanford Symbolic Systems (HCI) Honors graduate bridging product strategy, engineering, design, and operations."
+    content="About Violet Crow — Stanford Symbolic Systems (HCI) graduate working across product, research, design, and engineering."
   />
   <title>About Me | Violet Crow</title>
 
-  <!-- Font: Fraunces for headlines, Manrope for body text. -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
@@ -33,10 +32,10 @@
         />
         <button
           class="menu-toggle"
+          id="menu-toggle"
           type="button"
           aria-expanded="false"
           aria-controls="sidebar-menu"
-          onclick="const sb = document.getElementById('sidebar'); const open = sb.classList.toggle('is-open'); this.setAttribute('aria-expanded', open); this.textContent = open ? 'Close' : 'Menu';"
         >
           Menu
         </button>
@@ -89,21 +88,21 @@
 
     <main class="main">
       <div class="container">
-        <!-- 1. Hero & Product Philosophy -->
+        <!-- 1. Intro -->
         <section class="page-hero">
           <div class="about-intro-grid">
             <div>
-              <div class="eyebrow">About Me · Symbolic Systems (HCI)</div>
-              <h1>Designing tools that feel effortless.</h1>
+              <p class="eyebrow">About Me</p>
+              <h1>Hi, I’m Violet.</h1>
               <div class="prose">
                 <p>
-                  I’m Violet Crow, a recent graduate from <strong>Stanford University</strong> with a B.S. in <strong>Symbolic Systems</strong> (concentrating in Human-Computer Interaction) and Departmental Honors.
+                  I recently graduated from <strong>Stanford University</strong> with a B.S. in <strong>Symbolic Systems</strong>, concentrating in Human-Computer Interaction, with Departmental Honors.
                 </p>
                 <p>
-                  My path into product started with a background in graphic design and a fascination with branding, technology, and human behavior. At Stanford, I gravitated toward Symbolic Systems because it sits directly at the crossroads of cognitive psychology, computer science, and design—answering not just <em>how</em> to build complex systems, but <em>why</em> people choose the tools they do and how they actually use them.
+                  I got my start in graphic design and have always been interested in branding, technology, and how people interact with both. Symbolic Systems was a natural fit for me at Stanford because it combines psychology, computer science, and design—focusing not just on how to build software, but on why people choose certain tools and how they actually use them.
                 </p>
                 <p>
-                  I thrive as a connective tissue across disciplines. Whether I’m writing Python pipelines to analyze multi-modal XR telemetry, building React Native and Supabase features alongside engineers, or managing budgets, vendors, and operations for large-scale campus organizations, I love translating ambiguous user needs into functional, elegant products.
+                  Across my classes, research, and campus groups, I’ve usually ended up in roles that connect different parts of a project together. Depending on the day, that has meant running 150 participants through an Apple Vision Pro study and writing Python scripts to make sense of the data, building React Native apps with small teams, or managing budgets, schedules, and recording sessions for my a cappella group.
                 </p>
               </div>
 
@@ -114,7 +113,7 @@
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  View Resume
+                  View Resume ↗
                 </a>
                 <a class="pill-button secondary" href="../contact/">Get in Touch</a>
               </div>
@@ -139,7 +138,7 @@
                 loading="lazy"
               />
               <figcaption class="photo-caption">
-                Presenting HCI product design & research at Stanford
+                Presenting T.AI at the CS 147 project fair
               </figcaption>
             </figure>
 
@@ -150,7 +149,7 @@
                 loading="lazy"
               />
               <figcaption class="photo-caption">
-                Performing & producing with the Stanford Harmonics
+                Performing with the Stanford Harmonics
               </figcaption>
             </figure>
           </div>
@@ -159,192 +158,177 @@
         <!-- 2. Experience & Leadership -->
         <section class="section" aria-labelledby="experience-heading">
           <div class="section-heading">
-            <div class="section-kicker">Track Record</div>
-            <h2 id="experience-heading">Leadership & Operations</h2>
+            <p class="section-kicker">Experience</p>
+            <h2 id="experience-heading">Roles & Leadership</h2>
           </div>
 
           <div class="experience-list">
             <!-- VHIL -->
-            <div class="experience-item">
+            <article class="experience-item">
               <div>
                 <h3 class="experience-org">Stanford Virtual Human Interaction Lab (VHIL)</h3>
-                <div class="experience-period">Senior Honors Research Lead</div>
+                <p class="experience-period">Honors Research Lead</p>
               </div>
               <div>
-                <div class="experience-role">End-to-End Study Design, Team Training & Data Engineering</div>
+                <h4 class="experience-role">Study Design, Operations & Data Analysis</h4>
                 <p class="experience-desc">
-                  Designed and led a 12-month empirical study investigating photorealistic Apple Vision Pro Personas and spatial communication across 150 participants. Authored experimental protocols, trained and managed a team of 5 research assistants on hardware operations and session execution, ran every experimental session, and engineered Python utilities to extract and analyze multi-modal survey, audio transcription, and POV video datasets.
+                  Designed and led a year-long study testing how 3D spatial layouts and virtual environments affect group FaceTime calls on Apple Vision Pro. Wrote the experimental protocols, trained five research assistants, ran all 150 participants through the study, and wrote Python scripts to process and analyze survey, audio, and headset video data.
                 </p>
               </div>
-            </div>
+            </article>
 
             <!-- Stanford Harmonics -->
-            <div class="experience-item">
+            <article class="experience-item">
               <div>
                 <h3 class="experience-org">The Stanford Harmonics</h3>
-                <div class="experience-period">4 Years of Executive Leadership</div>
+                <p class="experience-period">Four Years of Leadership</p>
               </div>
               <div class="sub-roles">
                 <div>
-                  <div class="experience-role">Business Manager / President (Sophomore Year)</div>
+                  <h4 class="experience-role">Business Manager / President (Sophomore Year)</h4>
                   <p class="experience-desc">
-                    Owned all organizational operations, financial strategy, equipment procurement, event logistics, internal knowledge management, and cross-campus communications.
+                    Managed the group's day-to-day operations, budgets, equipment purchases, performance logistics, internal documentation, and university communications.
                   </p>
                 </div>
                 <div>
-                  <div class="experience-role">Album Manager & Lead Recording Engineer (Senior Year)</div>
+                  <h4 class="experience-role">Album Manager & Lead Recording Engineer (Senior Year)</h4>
                   <p class="experience-desc">
-                    Directed end-to-end production timelines, scheduling, and vendor management (editing, mixing, mastering, licensing, artwork, and streaming distribution) while serving as lead recording engineer for the group's upcoming album, <em>Ashes to Ashes</em>.
+                    Led production for the group's upcoming studio album, <em>Ashes to Ashes</em>. Served as lead recording engineer, managed the recording schedule, and coordinated outside vendors across vocal editing, mixing, mastering, licensing, cover art, and streaming distribution.
                   </p>
                 </div>
                 <div>
-                  <div class="experience-role">Publicity Director (All 4 Years)</div>
+                  <h4 class="experience-role">Publicity Director (All 4 Years)</h4>
                   <p class="experience-desc">
-                    Spearheaded brand strategy, audition recruitment campaigns, show posters, and a ground-up website redesign that increased average monthly traffic by 75% and doubled peak audition-season traffic (+100%).
+                    Designed 6 concert posters and programs, 3 fall audition campaigns, 4 years of member merch, and a full website redesign that increased average monthly traffic by 75% and doubled September audition traffic.
                   </p>
                 </div>
               </div>
-            </div>
+            </article>
 
             <!-- Stanford R&DE -->
-            <div class="experience-item">
+            <article class="experience-item">
               <div>
                 <h3 class="experience-org">Stanford R&DE Summer Conferences</h3>
-                <div class="experience-period">Service Center Lead</div>
+                <p class="experience-period">Service Center Lead</p>
               </div>
               <div>
-                <div class="experience-role">Large-Scale Housing & Guest Operations</div>
+                <h4 class="experience-role">Housing & Guest Operations</h4>
                 <p class="experience-desc">
-                  Managed client-facing conference housing operations and high-stakes seasonal turnovers across 18 undergraduate residential buildings (1,600 beds)—coordinating move-out, maintenance, preparation, and move-in logistics under tight timelines.
+                  Helped run summer conference housing and turn over 18 undergraduate dorms (1,600 beds) between academic terms—coordinating move-outs, maintenance, room prep, and guest check-ins on tight deadlines.
                 </p>
               </div>
-            </div>
+            </article>
 
             <!-- Frosh 101 -->
-            <div class="experience-item">
+            <article class="experience-item">
               <div>
                 <h3 class="experience-org">Stanford Frosh 101</h3>
-                <div class="experience-period">Lead Trainer TA & Section Lead</div>
+                <p class="experience-period">Lead Trainer TA & Section Lead</p>
               </div>
               <div>
-                <div class="experience-role">Curriculum Development & Facilitator Training</div>
+                <h4 class="experience-role">Curriculum & Facilitator Training</h4>
                 <p class="experience-desc">
-                  Mentored a cohort of 9 first-year students as a sophomore Section Lead before advancing to Lead Trainer (Course TA) in sophomore spring and junior fall—co-developing program curriculum and training incoming student leaders in group facilitation.
+                  Co-led a weekly discussion section for 9 first-year students as a sophomore, then returned as a Course TA for two quarters to help develop the curriculum and train incoming student leaders in group facilitation.
                 </p>
               </div>
-            </div>
+            </article>
 
             <!-- Stanford ResEd -->
-            <div class="experience-item">
+            <article class="experience-item">
               <div>
                 <h3 class="experience-org">Stanford Residential Education</h3>
-                <div class="experience-period">Neighborhood Communications Intern</div>
+                <p class="experience-period">Neighborhood Communications Intern</p>
               </div>
               <div>
-                <div class="experience-role">Brand Strategy & Visual Communications</div>
+                <h4 class="experience-role">Graphic Design & Communications</h4>
                 <p class="experience-desc">
-                  Led graphic design, visual identity, and communications strategy across two academic years for a multi-house division of Stanford's residential life system.
+                  Handled graphic design, event posters, and student communications across two academic years for a multi-house neighborhood in Stanford's dorm system.
                 </p>
               </div>
-            </div>
+            </article>
           </div>
         </section>
 
-        <!-- 3. Skills & Toolkit -->
+        <!-- 3. Skills & Tools -->
         <section class="section" aria-labelledby="skills-heading">
           <div class="section-heading">
-            <div class="section-kicker">Capabilities</div>
-            <h2 id="skills-heading">Skills & Toolkit</h2>
+            <p class="section-kicker">Toolkit</p>
+            <h2 id="skills-heading">Skills & Tools</h2>
           </div>
 
           <div class="card-grid-3">
             <div class="info-card">
               <h3>Product & Research</h3>
-              <p>
-                Uncovering user friction, scoping 0-to-1 MVPs, and validating product direction with qualitative and quantitative evidence.
-              </p>
-              <ul class="tag-list">
-                <li>Product Strategy</li>
+              <ul class="skill-list">
+                <li>Needfinding & User Interviews</li>
                 <li>Feature Scoping</li>
-                <li>Needfinding Interviews</li>
-                <li>Usability Testing</li>
-                <li>Experimental Design</li>
-                <li>Information Architecture</li>
-                <li>Cross-Functional Leadership</li>
-                <li>Vendor & Timeline Management</li>
+                <li>Usability & Playtesting</li>
+                <li>Experimental Study Design</li>
+                <li>Survey & Quantitative Analysis</li>
+                <li>Project & Vendor Coordination</li>
               </ul>
             </div>
 
             <div class="info-card">
-              <h3>Engineering & XR</h3>
-              <p>
-                Prototyping, building full-stack mobile and web applications, and analyzing complex multi-modal datasets.
-              </p>
-              <ul class="tag-list">
-                <li>Python (Data Pipelines)</li>
-                <li>React Native & Expo</li>
-                <li>JavaScript / HTML / CSS</li>
+              <h3>Engineering & Technical</h3>
+              <ul class="skill-list">
+                <li>Python (Data Cleaning & Analysis)</li>
+                <li>React Native & Expo Go</li>
+                <li>JavaScript, HTML & CSS</li>
                 <li>Supabase</li>
-                <li>Unity</li>
-                <li>VR / AR / XR Development</li>
-                <li>Apple VisionOS / Personas</li>
+                <li>Unity & XR Development</li>
                 <li>Git & GitHub</li>
               </ul>
             </div>
 
             <div class="info-card">
-              <h3>Design & Operations</h3>
-              <p>
-                Crafting intuitive interfaces, cohesive brand systems, and scalable operational workflows.
-              </p>
-              <ul class="tag-list">
-                <li>Figma (Interactive Prototyping)</li>
-                <li>UI / UX Design</li>
-                <li>Design Systems</li>
-                <li>Graphic Design & Branding</li>
-                <li>Growth & Event Marketing</li>
-                <li>Audio Engineering & Mixing</li>
-                <li>Program Operations</li>
+              <h3>Design & Media</h3>
+              <ul class="skill-list">
+                <li>Figma (Wireframing & Prototyping)</li>
+                <li>UI / UX & Web Design</li>
+                <li>Print & Campaign Design</li>
+                <li>Audio Recording & Mixing</li>
+                <li>Musical Arrangement & Composition</li>
               </ul>
             </div>
           </div>
         </section>
 
-        <!-- 4. Beyond the Screen -->
+        <!-- 4. Outside of Work -->
         <section class="section" aria-labelledby="beyond-heading">
           <div class="section-heading">
-            <div class="section-kicker">Personal</div>
-            <h2 id="beyond-heading">Beyond the Screen</h2>
+            <p class="section-kicker">Outside of Work</p>
+            <h2 id="beyond-heading">Music & Interests</h2>
           </div>
 
           <div class="beyond-grid">
             <div class="prose">
               <p>
-                When I’m not scoping features or digging through research data, you can usually find me working with music. Beyond managing operations and engineering recordings for the <strong>Stanford Harmonics</strong>, I love arranging vocal music and composing original game soundtracks—including an arrangement of Toby Fox’s <em>“BIG SHOT”</em> featured on the Harmonics' upcoming album, <strong><em>Ashes to Ashes</em></strong> (releasing later in 2026).
+                Outside of class and research, most of my time at Stanford revolved around music. Alongside singing with and helping run the <strong>Stanford Harmonics</strong>, I love arranging vocal music and writing game soundtracks—including my arrangement of Toby Fox’s <em>“BIG SHOT,”</em> which will be featured on the Harmonics' upcoming album, <strong><em>Ashes to Ashes</em></strong>, later in 2026.
               </p>
               <p>
-                Outside of music production, I spend my free time reading classical poetry, listening to jazz piano, and watching films that explore complex human ambition and technical craft.
+                When I’m not recording or mixing audio, I usually have jazz piano playing in the background and enjoy reading classical poetry and watching movies.
               </p>
             </div>
 
-            <div class="favorites-box" aria-label="Quick favorites">
+            <dl class="favorites-box" aria-label="Quick favorites">
               <div class="favorite-row">
-                <span class="favorite-label">Favorite Film</span>
-                <span class="favorite-value">Oppenheimer (dir. Christopher Nolan)</span>
+                <dt class="favorite-label">Favorite Film</dt>
+                <dd class="favorite-value">Oppenheimer</dd>
               </div>
               <div class="favorite-row">
-                <span class="favorite-label">Favorite Jazz Artist</span>
-                <span class="favorite-value">Bill Evans</span>
+                <dt class="favorite-label">Favorite Musician</dt>
+                <dd class="favorite-value">Bill Evans</dd>
               </div>
               <div class="favorite-row">
-                <span class="favorite-label">Favorite Poet</span>
-                <span class="favorite-value">Virgil</span>
+                <dt class="favorite-label">Favorite Poet</dt>
+                <dd class="favorite-value">Virgil</dd>
               </div>
               <div class="favorite-row">
-                <span class="favorite-label">Upcoming Release</span>
-                <span class="favorite-value">“BIG SHOT” arrangement on <em>Ashes to Ashes</em> ('26)</span>
+                <dt class="favorite-label">On Repeat</dt>
+                <dd class="favorite-value">Mixing <em>Ashes to Ashes</em> ('26)</dd>
               </div>
-            </div>
+            </dl>
           </div>
         </section>
 
@@ -354,5 +338,16 @@
       </div>
     </main>
   </div>
+
+  <script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const sidebar = document.getElementById('sidebar');
+
+    menuToggle.addEventListener('click', () => {
+      const isOpen = sidebar.classList.toggle('is-open');
+      menuToggle.setAttribute('aria-expanded', isOpen);
+      menuToggle.textContent = isOpen ? 'Close' : 'Menu';
+    });
+  </script>
 </body>
 </html>
