@@ -5,11 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta
     name="description"
-    content="Violet Crow — Stanford Symbolic Systems graduate ('26) building human-centered products across AI, XR, and mobile."
+    content="Violet Crow — Stanford Symbolic Systems graduate ('26) working across product, design, research, and engineering."
   />
-  <title>Violet Crow | Product Management & HCI</title>
+  <title>Violet Crow | Product & HCI</title>
 
-  <!-- Font: Fraunces for headlines, Manrope for body text. -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
@@ -33,10 +32,10 @@
         />
         <button
           class="menu-toggle"
+          id="menu-toggle"
           type="button"
           aria-expanded="false"
           aria-controls="sidebar-menu"
-          onclick="const sb = document.getElementById('sidebar'); const open = sb.classList.toggle('is-open'); this.setAttribute('aria-expanded', open); this.textContent = open ? 'Close' : 'Menu';"
         >
           Menu
         </button>
@@ -44,7 +43,7 @@
 
       <div class="sidebar-menu" id="sidebar-menu">
         <nav class="sidebar-nav" aria-label="Primary">
-          <a href="./">Home</a>
+          <a href="./" aria-current="page">Home</a>
           <a href="#work">Work</a>
           <a href="about/">About Me</a>
           <a href="contact/">Contact</a>
@@ -92,10 +91,10 @@
         <section class="hero">
           <div class="hero-grid">
             <div class="hero-copy">
-              <div class="eyebrow">Product Management · HCI · Technical Execution</div>
+              <p class="eyebrow">Product · Human-Computer Interaction · Design & Engineering</p>
               <h1>Hello! I'm Violet.</h1>
               <p class="hero-note">
-                I’m a Stanford Symbolic Systems Honors graduate ('26) building 0-to-1 products at the intersection of human behavior, design, and engineering. From leading a 150-person Apple Vision Pro research study to shipping full-stack mobile apps, I turn complex user insights into intuitive products.
+                I’m a recent Stanford Symbolic Systems Honors graduate ('26) with a concentration in Human-Computer Interaction. I love figuring out what people actually need and working across research, design, and code to build products that make sense—whether that means running a 150-person study on Apple Vision Pro or building mobile apps and games with small teams.
               </p>
 
               <div class="hero-actions">
@@ -108,7 +107,7 @@
               <img
                 class="hero-collage media-placeholder"
                 src="assets/images/hero-collage.png"
-                alt="Violet Crow project collage"
+                alt="Collage of Violet Crow's research, design, and engineering projects"
               />
             </div>
           </div>
@@ -137,17 +136,17 @@
                 </h3>
 
                 <div class="project-meta">
-                  <span>Research Lead · XR & HCI · Python Data Pipelines</span>
+                  <span>XR Research · Study Operations · Python Data Analysis</span>
                   <span class="dot">/</span>
                   <a href="work/thesis/">Read More</a>
                   <span class="dot">/</span>
                   <a href="https://drive.google.com/file/d/1Oj8j2IARL1U8kgBCTF-fQbviSqR82ccb/view?usp=sharing" target="_blank" rel="noopener noreferrer" aria-label="Read thesis paper">Paper</a>
                   <span class="dot">/</span>
-                  <a href="https://doi.org/10.25740/my027tc4249" target="_blank" rel="noopener noreferrer" aria-label="DOI">DOI</a>
+                  <a href="https://doi.org/10.25740/my027tc4249" target="_blank" rel="noopener noreferrer" aria-label="Stanford repository DOI">DOI</a>
                 </div>
 
                 <p class="project-description">
-                  Owned a 12-month XR teleconferencing study from ideation to completion using Apple Vision Pro Personas. Recruited and ran 150 participants across spatial and virtual conditions, designed experimental protocols, and built Python pipelines to analyze multi-modal survey, audio, and POV video data. Framework for an upcoming lab publication.
+                  Led a 12-month study at the Stanford Virtual Human Interaction Lab testing how 3D spatial layouts vs. 2D grids and virtual vs. passthrough environments affect group FaceTime calls on Apple Vision Pro. Recruited and ran 150 participants, trained 5 research assistants, and wrote Python scripts to process survey, audio, and headset video data—finding that familiar 2D grids often create less social friction than 3D spatial setups.
                 </p>
               </div>
             </article>
@@ -158,7 +157,7 @@
                 <img
                   class="project-image"
                   src="assets/images/volunteerverse.jpg"
-                  alt="VolunteerVerse preview"
+                  alt="VolunteerVerse mobile app preview"
                   loading="lazy"
                 />
               </a>
@@ -169,7 +168,7 @@
                 </h3>
 
                 <div class="project-meta">
-                  <span>Product & Feature Scoping · UX · React Native & Supabase</span>
+                  <span>Feature Scoping · UX Design · React Native & Supabase</span>
                   <span class="dot">/</span>
                   <a href="work/volunteerverse/">Read More</a>
                   <span class="dot">/</span>
@@ -177,7 +176,7 @@
                 </div>
 
                 <p class="project-description">
-                  Led initial feature scoping, UX design, and full-stack implementation for a cross-platform mobile marketplace connecting local volunteers with community organizations. Built the core React Native frontend and Supabase backend integrations to ship a functional MVP on Expo Go.
+                  Designed and built a mobile app that brings scattered local volunteering opportunities into one place. Working on a 3-person team, I scoped our core features, designed the initial UX, and built the React Native frontend and Supabase backend for account onboarding, real-time event posting, and shift signups on Expo Go.
                 </p>
               </div>
             </article>
@@ -188,7 +187,7 @@
                 <img
                   class="project-image"
                   src="assets/images/tai.jpg"
-                  alt="T.AI preview"
+                  alt="T.AI mobile app preview"
                   loading="lazy"
                 />
               </a>
@@ -199,7 +198,7 @@
                 </h3>
 
                 <div class="project-meta">
-                  <span>0-to-1 Product · User Research · AI EdTech</span>
+                  <span>Needfinding · Product Concept · Figma Prototyping</span>
                   <span class="dot">/</span>
                   <a href="work/tai/">Read More</a>
                   <span class="dot">/</span>
@@ -211,7 +210,7 @@
                 </div>
 
                 <p class="project-description">
-                  Conceived and designed an AI-assisted grading and feedback mobile app informed by needfinding interviews with teachers and students. Owned the product concept, low- and medium-fidelity interactive Figma prototypes, and final product documentation.
+                  After interviewing teachers and students about how AI is used in classrooms, I conceived and designed a mobile assistant that helps busy teachers grade assignments against custom rubrics, draft personalized feedback from photos of student work, and track student progress over time.
                 </p>
               </div>
             </article>
@@ -233,7 +232,7 @@
                 </h3>
 
                 <div class="project-meta">
-                  <span>Information Architecture · UX Redesign · Growth</span>
+                  <span>Web Redesign · Visual Design · Operations & Production</span>
                   <span class="dot">/</span>
                   <a href="work/harmonics/">Read More</a>
                   <span class="dot">/</span>
@@ -241,7 +240,7 @@
                 </div>
 
                 <p class="project-description">
-                  Solo-led the end-to-end web overhaul and brand system for The Harmonics, restructuring site navigation and information hierarchy to improve discoverability—driving a 75% increase in average monthly traffic and doubling peak September audition traffic (+100%).
+                  Redesigned our a cappella group’s outdated 2014 website to consolidate scattered pages into streamlined Music and Shows hubs—growing monthly traffic by 75% and doubling September audition traffic. Across four years, I also served as Publicity Director, sophomore-year President, and Album Manager and Lead Recording Engineer for our upcoming studio album, <em>Ashes to Ashes</em>.
                 </p>
               </div>
             </article>
@@ -252,7 +251,7 @@
                 <img
                   class="project-image"
                   src="assets/images/myodyssey.jpg"
-                  alt="Myodyssey preview"
+                  alt="Myodyssey game preview"
                   loading="lazy"
                 />
               </a>
@@ -263,15 +262,17 @@
                 </h3>
 
                 <div class="project-meta">
-                  <span>Team Lead · Game Design · Frontend Integration</span>
+                  <span>Game Design · Frontend Integration · Original Soundtrack</span>
                   <span class="dot">/</span>
                   <a href="work/myodyssey/">Read More</a>
                   <span class="dot">/</span>
                   <a href="https://venef.itch.io/myodyssey" target="_blank" rel="noopener noreferrer">Play</a>
+                  <span class="dot">/</span>
+                  <a href="https://github.com/F10naH/Myopus_game" target="_blank" rel="noopener noreferrer">GitHub</a>
                 </div>
 
                 <p class="project-description">
-                  Defined core point-and-click mechanics and coordinated role delegation across a 5-person team building an educational browser game on deforestation. Engineered the opening stage, unified UI styling, composed original audio, and integrated all stages into a cohesive release.
+                  Co-designed a browser-based point-and-click adventure game about a wood lemming navigating habitat loss. On a 5-person team, I created the core interactive-text mechanics, coded the opening chapter, integrated everyone’s levels into one unified storybook UI across 9 playtests, and composed the five-track soundtrack.
                 </p>
               </div>
             </article>
@@ -284,5 +285,16 @@
       </div>
     </main>
   </div>
+
+  <script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const sidebar = document.getElementById('sidebar');
+
+    menuToggle.addEventListener('click', () => {
+      const isOpen = sidebar.classList.toggle('is-open');
+      menuToggle.setAttribute('aria-expanded', isOpen);
+      menuToggle.textContent = isOpen ? 'Close' : 'Menu';
+    });
+  </script>
 </body>
 </html>
