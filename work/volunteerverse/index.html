@@ -33,10 +33,10 @@
         />
         <button
           class="menu-toggle"
+          id="menu-toggle"
           type="button"
           aria-expanded="false"
           aria-controls="sidebar-menu"
-          onclick="const sb = document.getElementById('sidebar'); const open = sb.classList.toggle('is-open'); this.setAttribute('aria-expanded', open); this.textContent = open ? 'Close' : 'Menu';"
         >
           Menu
         </button>
@@ -172,10 +172,10 @@
                 Working on a three-person team for CS 147L, I wore a lot of hats across design and engineering. I started by scoping out our core features and designing the initial app screens, then spent most of the project building the React Native frontend and hooking it up to our Supabase database.
               </p>
               <p>
-                <strong>Accounts & Onboarding:</strong> I built the login, authentication, and onboarding flows so both individual volunteers and local organizations could set up and manage their profiles.
+                I built the login, authentication, and onboarding flows so individual volunteers and local organizations could set up and manage their profiles.
               </p>
               <p>
-                <strong>Live Events & Signups:</strong> I built the real-time event creation and registration system. When an organization posts a new volunteer opportunity, it immediately appears in the app for volunteers to browse. Volunteers can sign up with a tap and view all of their upcoming shifts in one place.
+                I built the real-time event creation and registration system. When an organization posts a new volunteer opportunity, it immediately appears in the app for volunteers to view. Volunteers can sign up with a tap and view all of their upcoming shifts in one place.
               </p>
             </div>
           </div>
@@ -216,13 +216,9 @@
               <p>
                 With a small team and a single academic quarter to build, our biggest challenge was deciding where to spend our time.
               </p>
-              <div class="callout-box">
-                <div class="callout-kicker">Key Tradeoff · Real Functionality Over Hardcoded Features</div>
                 <p>
                   Early on, it was suggested that we add a map view so volunteers could browse opportunities by location. While a map would have looked nice in a demo, building it properly alongside everything else would have stretched us thin. Rather than faking extra features with hardcoded placeholder data, we chose to narrow our scope and make the core app genuinely work—delivering a real, database-backed experience on Expo Go where accounts, event creation, and shift signups worked end to end.
                 </p>
-              </div>
-            </div>
           </div>
         </section>
 
@@ -233,7 +229,7 @@
             <h2 id="demo-heading">App Demo</h2>
           </div>
 
-          <div class="embed-grid" style="grid-template-columns: minmax(0, 820px);">
+          <div class="embed-grid">
             <div class="embed-card">
               <div class="embed-header">
                 <span class="embed-title">VolunteerVerse on Expo Go — Walkthrough</span>
@@ -253,7 +249,7 @@
             <span class="project-nav-label">Previous Project</span>
             <span class="project-nav-title">← Honors Thesis</span>
           </a>
-          <a class="project-nav-link" href="../tai/" style="text-align: right;">
+          <a class="project-nav-link next" href="../tai/">
             <span class="project-nav-label">Next Project</span>
             <span class="project-nav-title">T.AI →</span>
           </a>
@@ -265,5 +261,15 @@
       </div>
     </main>
   </div>
+  <script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const sidebar = document.getElementById('sidebar');
+
+    menuToggle.addEventListener('click', () => {
+      const isOpen = sidebar.classList.toggle('is-open');
+      menuToggle.setAttribute('aria-expanded', isOpen);
+      menuToggle.textContent = isOpen ? 'Close' : 'Menu';
+    });
+  </script>
 </body>
 </html>

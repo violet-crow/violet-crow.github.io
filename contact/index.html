@@ -9,7 +9,6 @@
   />
   <title>Contact | Violet Crow</title>
 
-  <!-- Font: Fraunces for headlines, Manrope for body text. -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
@@ -33,10 +32,10 @@
         />
         <button
           class="menu-toggle"
+          id="menu-toggle"
           type="button"
           aria-expanded="false"
           aria-controls="sidebar-menu"
-          onclick="const sb = document.getElementById('sidebar'); const open = sb.classList.toggle('is-open'); this.setAttribute('aria-expanded', open); this.textContent = open ? 'Close' : 'Menu';"
         >
           Menu
         </button>
@@ -89,34 +88,28 @@
 
     <main class="main">
       <div class="container">
-        <section class="contact-section">
-          <div class="eyebrow">Get in Touch</div>
-          <h1>Let’s build something together.</h1>
+        <section class="contact-section" aria-labelledby="contact-heading">
+          <h1 id="contact-heading">Get in Touch</h1>
           <div class="prose">
             <p>
-              I am actively seeking full-time <strong>Associate Product Manager (APM)</strong> and entry-level product roles. Whether you’re hiring for a product team, want to chat about HCI and XR research, or just want to say hello, I’d love to connect.
+              I’m currently looking for full-time <strong>Associate Product Manager (APM)</strong> and entry-level product roles, and I’m open to relocating anywhere in the U.S. (with a preference for the Bay Area, Los Angeles, or Pittsburgh). Feel free to reach out by email or on LinkedIn.
             </p>
-          </div>
-
-          <div class="status-banner">
-            <span class="status-dot" aria-hidden="true"></span>
-            <span>Open to relocation across the US (Bay Area, Los Angeles, or Pittsburgh preferred)</span>
           </div>
 
           <div class="contact-grid">
             <!-- Email -->
             <div class="contact-card">
               <div>
-                <div class="contact-label">Email</div>
-                <div class="contact-value">
+                <h2 class="contact-label">Email</h2>
+                <p class="contact-value">
                   <a href="mailto:crow@alumni.stanford.edu">crow@alumni.stanford.edu</a>
-                </div>
+                </p>
               </div>
               <div class="contact-actions">
                 <button
                   type="button"
+                  id="copy-email-btn"
                   class="pill-button secondary small"
-                  onclick="navigator.clipboard.writeText('crow@alumni.stanford.edu'); this.textContent = 'Copied!'; setTimeout(() => this.textContent = 'Copy Email', 2000);"
                 >
                   Copy Email
                 </button>
@@ -127,12 +120,12 @@
             <!-- LinkedIn -->
             <div class="contact-card">
               <div>
-                <div class="contact-label">LinkedIn</div>
-                <div class="contact-value">
+                <h2 class="contact-label">LinkedIn</h2>
+                <p class="contact-value">
                   <a href="https://www.linkedin.com/in/violet-crow/" target="_blank" rel="noopener noreferrer">
                     linkedin.com/in/violet-crow
                   </a>
-                </div>
+                </p>
               </div>
               <div class="contact-actions">
                 <a
@@ -149,8 +142,8 @@
             <!-- Resume -->
             <div class="contact-card">
               <div>
-                <div class="contact-label">Resume</div>
-                <div class="contact-value">
+                <h2 class="contact-label">Resume</h2>
+                <p class="contact-value">
                   <a
                     href="https://drive.google.com/file/d/1CRdNv4XvAG9eACOFeULSWvpSveHo9fFu/view?usp=sharing"
                     target="_blank"
@@ -158,7 +151,7 @@
                   >
                     Violet Crow — Resume (PDF)
                   </a>
-                </div>
+                </p>
               </div>
               <div class="contact-actions">
                 <a
@@ -180,5 +173,25 @@
       </div>
     </main>
   </div>
+
+  <script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const sidebar = document.getElementById('sidebar');
+
+    menuToggle.addEventListener('click', () => {
+      const isOpen = sidebar.classList.toggle('is-open');
+      menuToggle.setAttribute('aria-expanded', isOpen);
+      menuToggle.textContent = isOpen ? 'Close' : 'Menu';
+    });
+
+    const copyBtn = document.getElementById('copy-email-btn');
+    copyBtn.addEventListener('click', () => {
+      navigator.clipboard.writeText('crow@alumni.stanford.edu');
+      copyBtn.textContent = 'Copied!';
+      setTimeout(() => {
+        copyBtn.textContent = 'Copy Email';
+      }, 2000);
+    });
+  </script>
 </body>
 </html>
