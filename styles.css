@@ -168,6 +168,11 @@ p {
   color: #d6d1c9;
 }
 
+li::marker {
+  content: "★ ";
+  color: silver;
+}
+
 .recent-projects li {
   padding-left: 2px;
 }
