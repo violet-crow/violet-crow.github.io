@@ -186,9 +186,13 @@
     });
 
     const copyBtn = document.getElementById('copy-email-btn');
-    copyBtn.addEventListener('click', () => {
-      navigator.clipboard.writeText('crow@alumni.stanford.edu');
-      copyBtn.textContent = 'Copied!';
+    copyBtn.addEventListener('click', async () => {
+      try {
+        await navigator.clipboard.writeText('crow@alumni.stanford.edu');
+        copyBtn.textContent = 'Copied!';
+      } catch {
+        copyBtn.textContent = 'Select the email address to copy';
+      }
       setTimeout(() => {
         copyBtn.textContent = 'Copy Email';
       }, 2000);

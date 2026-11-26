@@ -1132,3 +1132,56 @@ footer {
     padding: 20px 22px;
   }
 }
+
+@media screen and (max-width: 760px) {
+  [id] { scroll-margin-top: 5rem; }
+  .sidebar.is-open { max-height: 100dvh; overflow-y: auto; }
+}
+
+@page { size: letter; margin: .55in .65in; }
+
+@media print {
+  .project-page { background: var(--bg); print-color-adjust: exact; -webkit-print-color-adjust: exact; }
+  .project-page .site-shell, .project-page .main { min-height: 0; }
+  .project-page .main { margin: 0; }
+  .project-page .container { width: 100%; }
+  .project-page .sidebar { position: static; display: block; width: auto; padding: 9pt 15pt; }
+  .project-page .sidebar-top { display: block; }
+  .project-page .brand { color: white; font-size: 17pt; margin: 0; }
+  .project-page :is(.profile-photo,.sidebar-menu,.menu-toggle,.hero-actions,.back-link,.project-nav-footer,footer,iframe,video,audio,.embed-header a) { display: none; }
+  .project-page .case-hero { padding: 12pt 0 8pt; }
+  .project-page .case-hero h1 { font-size: 29pt; }
+  .project-page .case-subtitle { font-size: 12pt; margin-top: 6pt; }
+  .project-page .case-meta-grid { grid-template-columns: repeat(2, 1fr); gap: 5pt 14pt; margin-top: 8pt; padding: 7pt 0; }
+  .project-page .meta-item { padding: 0; }
+  .project-page .meta-label { font-size: 8pt; }
+  .project-page .meta-value { font-size: 10pt; }
+  .project-page .section { padding: 10pt 0; }
+  .project-page .case-grid, .project-page .case-body { display: block; }
+  .project-page :is(h2,.section-heading) { font-size: 18pt; line-height: 1.15; margin: 0 0 6pt; break-after: avoid; }
+  .project-page .case-body { max-width: none; }
+  .project-page :is(.case-body p,.case-body li,.callout-box p) { font-size: 10.5pt; line-height: 1.46; }
+  .project-page .case-body p+p { margin-top: 5pt; }
+  .project-page figure { break-inside: avoid; }
+  .project-page .case-banner { margin: 8pt 0 0; }
+  .project-page .case-banner img { height: 1.95in; }
+  .project-page .case-gallery { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 8pt; margin: 8pt 0 0; break-inside: avoid; }
+  .project-page .case-gallery.single { grid-template-columns: 1fr; }
+  .project-page .case-gallery.three-col { grid-template-columns: repeat(3,minmax(0,1fr)); }
+  .project-page .photo-card img { height: 1.9in; }
+  .project-page .case-gallery.single img { height: 2.4in; }
+  .project-page .photo-caption { font-size: 9pt; padding: 4pt 6pt; line-height: 1.35; }
+  .project-page .section:has(> .case-grid #execution-heading), .project-page .section:has(#web-heading), .project-page #brand-gallery { break-before: page; }
+  .project-page .audio-card, .project-page .embed-card { padding: 4pt 7pt; }
+  .project-page .embed-header { padding: 2pt; }
+  .project-page .track-btn { color: var(--ink); background: transparent; padding: 2pt; border: 0; }
+  .project-page .embed-grid { display: block; }
+}
+@media print {
+  .project-page .section { padding: 7pt 0; }
+  .project-page #deliverables .embed-grid { display: flex; flex-wrap: wrap; gap: 3pt 8pt; }
+  .project-page #deliverables .embed-header { min-height: 0; }
+  .project-page #deliverables .embed-title { font-size: 9pt; }
+  .project-page:has(#sequence) .case-meta-grid { display: flex; align-items: start; gap: 18pt; }
+  .project-page:has(#soundtrack) .section[aria-labelledby="takeaways-heading"] { break-before: page; }
+}
