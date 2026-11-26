@@ -50,16 +50,17 @@
           <a href="../../contact/">Contact</a>
         </nav>
 
-        <section class="recent-projects" aria-labelledby="recent-projects-heading">
-          <h2 id="recent-projects-heading">Recent Projects</h2>
+        <details class="recent-projects project-index" open>
+          <summary>Projects</summary>
           <ul>
-            <li><a href="../thesis/">Thesis</a></li>
-            <li><a href="../volunteerverse/">VolunteerVerse</a></li>
-            <li><a href="../tai/">T.AI</a></li>
-            <li><a href="../harmonics/">Harmonics</a></li>
-            <li><a href="./" aria-current="page">Myodyssey</a></li>
+            <li><a href="../../work/thesis/">Honors Thesis</a></li>
+            <li><a href="../../work/the-party/">The Party</a></li>
+            <li><a href="../../work/myodyssey/" aria-current="page">Myodyssey</a></li>
+            <li><a href="../../work/tai/">T.AI</a></li>
+            <li><a href="../../work/volunteerverse/">VolunteerVerse</a></li>
+            <li><a href="../../work/harmonics/">Stanford Harmonics</a></li>
           </ul>
-        </section>
+        </details>
 
         <div class="sidebar-actions">
           <a
@@ -118,7 +119,7 @@
             <a class="pill-button secondary" href="#soundtrack">
               Soundtrack
             </a>
-            <a class="pill-button secondary" href="#playtest-videos">
+            <a class="pill-button secondary" href="#playtest-video">
               Playtest Video
             </a>
           </div>
@@ -249,7 +250,8 @@
         </section>
 
         <!-- 4. Playtest Videos -->
-        <section class="section" id="playtest-videos" aria-labelledby="playtest-videos-heading">
+        <div id="playtest-videos"></div>
+        <section class="section" id="playtest-video" aria-labelledby="playtest-videos-heading">
           <div class="section-heading">
             <p class="section-kicker">04 · User Testing</p>
             <h2 id="playtest-videos-heading">Playtest Video</h2>
@@ -257,18 +259,12 @@
 
           <div class="embed-grid">
             <div class="embed-card">
+              <p class="print-media-note">Watch myodyssey-playtest.mp4 (16 min 39 sec). Session 9 is one of nine playtests across four builds. The testing section above describes changes to clickable text, puzzle timing, and scrolling that followed our observations.</p>
               <div class="embed-header">
                 <span class="embed-title">User Playtest #9</span>
                 <a href="https://www.youtube.com/watch?v=y13QXdr4ZWY" target="_blank" rel="noopener noreferrer">Watch on YouTube ↗</a>
               </div>
-              <iframe
-                class="embed-frame"
-                src="https://www.youtube.com/embed/y13QXdr4ZWY"
-                title="Myodyssey Playtest #9 Video (Hunter)"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
-                loading="lazy"
-              ></iframe>
+              <video class="embed-frame" controls preload="metadata" aria-label="Myodyssey playtest 9" src="../../assets/video/myodyssey-playtest.mp4"></video>
             </div>
           </div>
         </section>
@@ -291,38 +287,39 @@
                 class="track-btn is-active"
                 data-src="../../assets/audio/home-sweet-home.mp3"
               >
-                01 · Home Sweet Home
+                01 · Home Sweet Home <span class="track-duration">1:15</span>
               </button>
               <button
                 type="button"
                 class="track-btn"
                 data-src="../../assets/audio/setting-off.mp3"
               >
-                02 · Setting Off
+                02 · Setting Off <span class="track-duration">1:41</span>
               </button>
               <button
                 type="button"
                 class="track-btn"
                 data-src="../../assets/audio/the-wild.mp3"
               >
-                03 · The Wild
+                03 · The Wild <span class="track-duration">1:56</span>
               </button>
               <button
                 type="button"
                 class="track-btn"
                 data-src="../../assets/audio/the-thrashing-hare.mp3"
               >
-                04 · The Thrashing Hare
+                04 · The Thrashing Hare <span class="track-duration">0:43</span>
               </button>
               <button
                 type="button"
                 class="track-btn"
                 data-src="../../assets/audio/the-golden-moss.mp3"
               >
-                05 · The Golden Moss
+                05 · The Golden Moss <span class="track-duration">1:10</span>
               </button>
             </div>
 
+            <p class="print-media-note">The five recordings listed above accompany this case study as individual MP3 files, in soundtrack order.</p>
             <audio id="ost-player" class="audio-player" controls preload="metadata">
               <source id="ost-source" src="../../assets/audio/home-sweet-home.mp3" type="audio/mpeg" />
               Your browser does not support the audio element.

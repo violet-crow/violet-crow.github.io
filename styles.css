@@ -1185,3 +1185,28 @@ footer {
   .project-page:has(#sequence) .case-meta-grid { display: flex; align-items: start; gap: 18pt; }
   .project-page:has(#soundtrack) .section[aria-labelledby="takeaways-heading"] { break-before: page; }
 }
+
+.project-index summary {cursor:pointer; font-weight:700; color:#dedad3; padding-block:5px;}
+.project-index a[aria-current="page"] {font-weight:800;}
+.party-cover {display:grid;place-items:center;min-height:9rem;aspect-ratio:16/9;border-radius:var(--radius);color:#fff3e9;background:radial-gradient(ellipse at 35% 40%,#8c353a,#401b28 55%,#141018);}
+.party-cover span {font:600 clamp(2.4rem,5vw,5rem)/1 "Fraunces",Georgia,serif;letter-spacing:-.06em;}
+.recording-credits {display:flex;flex-wrap:wrap;gap:1.2rem 4rem;margin-top:1rem;}
+.recording-credits p {color:var(--muted);}
+.print-media-note {display:none;}
+@media print {
+  .project-page .print-media-note {display:block;font-size:10pt;line-height:1.4;margin:3pt 5pt;}
+  .project-page #deliverables .embed-grid {display:block;}
+  .project-page .section:has(#deliverables-heading) {break-inside:avoid;}
+  .project-page #recordings {break-inside:avoid;}
+}
+
+.print-media-still {display:none;}
+.track-duration {font-variant-numeric:tabular-nums;opacity:.8;}
+@media print {
+  .project-page #deliverables {break-before:page;}
+  .project-page .print-media-still {display:block;max-height:1.95in;max-width:95%;object-fit:contain;margin:4pt auto;}
+  .project-page #deliverables .embed-card {break-inside:avoid;margin:5pt 0;}
+}
+@media print {
+  .project-page:has(#recordings) #operations {break-before:page;}
+}

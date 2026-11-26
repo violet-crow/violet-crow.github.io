@@ -59,26 +59,17 @@
             <a href="../about/">About Me</a>
             <a href="../contact/">Contact</a>
           </nav>
-          <section class="recent-projects" aria-labelledby="recent-projects-heading">
-            <h2 id="recent-projects-heading">Recent Projects</h2>
-            <ul>
-              <li>
-                <a href="../work/thesis/">Thesis</a>
-              </li>
-              <li>
-                <a href="../work/volunteerverse/">VolunteerVerse</a>
-              </li>
-              <li>
-                <a href="../work/tai/">T.AI</a>
-              </li>
-              <li>
-                <a href="../work/harmonics/">Harmonics</a>
-              </li>
-              <li>
-                <a href="../work/myodyssey/">Myodyssey</a>
-              </li>
-            </ul>
-          </section>
+          <details class="recent-projects project-index" open>
+          <summary>Projects</summary>
+          <ul>
+            <li><a href="../work/thesis/">Honors Thesis</a></li>
+            <li><a href="../work/the-party/">The Party</a></li>
+            <li><a href="../work/myodyssey/">Myodyssey</a></li>
+            <li><a href="../work/tai/">T.AI</a></li>
+            <li><a href="../work/volunteerverse/">VolunteerVerse</a></li>
+            <li><a href="../work/harmonics/">Stanford Harmonics</a></li>
+          </ul>
+        </details>
           <div class="sidebar-actions">
             <a class="social-button" href="https://www.linkedin.com/in/violet-crow/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn">
               <svg viewbox="0 0 24 24" aria-hidden="true">
@@ -113,10 +104,10 @@
               <p>I wrote the protocols, recruited 133 participants, trained five research assistants, and ran every session. Watching people lean toward an avatar made spatial conversation look immediately intuitive. Comparing attention across conditions gave me a reason to question that impression.</p>
               <div class="sample-links">
                 <a href="../work/thesis/">Explore project</a>
-                <a href="thesis.pdf">Case study (PDF)</a>
-                <a href="../assets/docs/thesis-paper.pdf">Full thesis (PDF)</a>
+                <a href="../assets/portfolio/thesis.pdf">Case study (PDF)</a>
+                <a href="../assets/portfolio/thesis-paper.pdf">Full thesis (PDF)</a>
               </div>
-              <p class="print-sample">Accompanying files · thesis.pdf · thesis-paper.pdf · thesis-slides.pdf</p>
+              <p class="print-sample">Accompanying files · thesis.pdf · thesis-paper.pdf · thesis-slides.pdf · thesis-presentation.mp4</p>
             </article>
             <article id="embodied-interface">
               <p class="period">Fall 2025</p>
@@ -124,7 +115,7 @@
               <p>Karan S. Soin and I surveyed biosensing and haptics in extended reality and proposed ways to combine these technologies in future interfaces.</p>
               <p>I wrote the abstract, the survey of current technology, and the proposals for future systems. I also examined their technical requirements, theoretical capabilities and limitations, and implications for individuals and society.</p>
               <div class="sample-links">
-                <a href="embodied-interface.pdf">Full paper (PDF)</a>
+                <a href="../assets/portfolio/embodied-interface.pdf">Full paper (PDF)</a>
               </div>
               <p class="print-sample">Accompanying sample · embodied-interface.pdf</p>
             </article>
@@ -138,7 +129,7 @@
               <p>I built and voiced the experience in Unity. Critiques pushed me beyond recreating a familiar room toward the feelings I remembered most clearly, especially the anxiety of hearing a friend get sick.</p>
               <div class="sample-links">
                 <a href="../work/the-party/">Explore project</a>
-                <a href="the-party.pdf">Case study (PDF)</a>
+                <a href="../assets/portfolio/the-party.pdf">Case study (PDF)</a>
                 <a href="https://github.com/violet-crow/theparty">Unity project on GitHub</a>
               </div>
               <p class="print-sample">Accompanying sample · the-party.pdf</p>
@@ -150,9 +141,10 @@
               <p>I designed and coded the opening level, including its interactive passages, inventory, and vegetable stew puzzle, and composed the five-track soundtrack. Across nine playtests, we saw people reread passages while missing clickable words. We grayed out visited text and marked interactive objects so players could spend more of their attention on the story.</p>
               <div class="sample-links">
                 <a href="../work/myodyssey/">Explore project</a>
-                <a href="myodyssey.pdf">Case study (PDF)</a>
+                <a href="../work/myodyssey/#playtest-video">Playtest video</a>
+                <a href="../assets/portfolio/myodyssey.pdf">Case study (PDF)</a>
               </div>
-              <p class="print-sample">Accompanying sample · myodyssey.pdf</p>
+              <p class="print-sample">Accompanying files · myodyssey.pdf · myodyssey-playtest.mp4 · home-sweet-home.mp3 · setting-off.mp3 · the-wild.mp3 · the-thrashing-hare.mp3 · the-golden-moss.mp3</p>
             </article>
             <article id="tai">
               <p class="period">Fall 2024</p>
@@ -161,10 +153,10 @@
               <p>I helped develop the product concept, built low- and medium-fidelity prototypes, and worked on the poster and report. One consequential change came during evaluation: annotations layered over handwriting crowded the phone screen. Giving the feedback its own space below the image let teachers read it alongside the original work.</p>
               <div class="sample-links">
                 <a href="../work/tai/">Explore project</a>
-                <a href="tai.pdf">Case study (PDF)</a>
-                <a href="../assets/docs/tai-poster.pdf">Project poster (PDF)</a>
+                <a href="../assets/portfolio/tai.pdf">Case study (PDF)</a>
+                <a href="../assets/portfolio/tai-poster.pdf">Project poster (PDF)</a>
               </div>
-              <p class="print-sample">Accompanying files · tai.pdf · tai-poster.pdf</p>
+              <p class="print-sample">Accompanying files · tai.pdf · tai-poster.pdf · tai-demo.mp4 · tai-prototype-screens.pdf</p>
             </article>
             <article id="volunteerverse">
               <p class="period">Fall 2025</p>
@@ -173,7 +165,7 @@
               <p>I scoped the features, designed the initial screens, and connected our React Native frontend to Supabase. I implemented account setup for both roles and real-time event registration. With four weeks to build, we dropped our planned map after running into API limitations and focused on making the entire path from posting to signup work.</p>
               <div class="sample-links">
                 <a href="../work/volunteerverse/">Explore project</a>
-                <a href="volunteerverse.pdf">Case study (PDF)</a>
+                <a href="../assets/portfolio/volunteerverse.pdf">Case study (PDF)</a>
               </div>
               <p class="print-sample">Accompanying sample · volunteerverse.pdf</p>
             </article>
@@ -184,12 +176,13 @@
               <p class="period">2022–2026</p>
               <h3>Stanford Harmonics</h3>
               <p>During four years as publicity director for the Stanford Harmonics, I designed six show posters and accompanying programs, developed audition campaigns, and redesigned the group’s website. Each concert needed a visual identity of its own. For auditions, the challenge was making a group with an experimental rock repertoire feel approachable to someone hearing us for the first time.</p>
-              <p>The website also served listeners and people looking to book us. I brought albums, videos, and streaming embeds together on one Music page. The case study includes the website comparison alongside the print campaigns, so you can see how the group’s identity carried across a screen, a poster, and a concert program.</p>
+              <p>The website also served listeners and people looking to book us. I brought albums, videos, and streaming embeds together on one Music page. For the group’s recordings, I arranged “Big Shot” and performed the solo and worked as a recording engineer on “Deep Blue.” Both recordings are work-in-progress mixes edited by Parthiv Krishna and mixed by Ed Boyer. The case study includes the website comparison alongside the print campaigns, so you can see how the group’s identity carried across a screen, a poster, and a concert program.</p>
               <div class="sample-links">
                 <a href="../work/harmonics/">Explore project</a>
-                <a href="harmonics.pdf">Case study (PDF)</a>
+                <a href="../work/harmonics/#recordings">Listen to the recordings</a>
+                <a href="../assets/portfolio/harmonics.pdf">Case study (PDF)</a>
               </div>
-              <p class="print-sample">Accompanying sample · harmonics.pdf</p>
+              <p class="print-sample">Accompanying files · harmonics.pdf · big-shot.mp3 · deep-blue.mp3</p>
             </article>
           </section>
           <section class="section">
@@ -200,7 +193,7 @@
               <p>An art history paper on homoeroticism in Michelangelo’s David and its Florentine contemporaries, written while studying in Florence.</p>
               <p>I compared the figures’ ages, poses, and scale to ask how Michelangelo changed the relationship between David and the viewer. My photographs let me ground that argument in details I could examine in person.</p>
               <div class="sample-links">
-                <a href="delicate-or-daunting.pdf">Full paper (PDF)</a>
+                <a href="../assets/portfolio/delicate-or-daunting.pdf">Full paper (PDF)</a>
               </div>
               <p class="print-sample">Accompanying sample · delicate-or-daunting.pdf</p>
             </article>
@@ -210,7 +203,7 @@
               <p>A film studies presentation on how The Rocky Horror Picture Show introduces queer experience to a straight audience through Brad and Janet’s changing perspective.</p>
               <p>I traced the move from observation to participation through camera angles, musical numbers, and repeated scenes. The sample pairs my original slides with a lightly edited transcript of my speaker notes.</p>
               <div class="sample-links">
-                <a href="rocky-horror.pdf">Slides and transcript (PDF)</a>
+                <a href="../assets/portfolio/rocky-horror.pdf">Slides and transcript (PDF)</a>
               </div>
               <p class="print-sample">Accompanying sample · rocky-horror.pdf</p>
             </article>
