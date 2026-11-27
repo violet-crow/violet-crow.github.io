@@ -500,6 +500,22 @@ li::marker {
   border-top: 1px solid var(--line);
 }
 
+.case-photo {
+  margin: 0;
+}
+
+.case-photo > img {
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius);
+}
+
+.case-photo > .photo-caption {
+  padding: 8px 0 0;
+  background: transparent;
+  border: 0;
+}
+
 .experience-list {
   display: grid;
   gap: 28px;
@@ -799,11 +815,6 @@ li::marker {
 .case-body strong {
   color: var(--ink);
   font-weight: 700;
-}
-
-.case-body > .photo-card img {
-  height: auto;
-  aspect-ratio: auto;
 }
 
 .callout-box {
