@@ -381,6 +381,10 @@ li::marker {
   justify-content: center;
 }
 
+.party-project .project-image-wrap {
+  background: #000;
+}
+
 .project-image {
   width: 100%;
   height: 100%;
@@ -797,6 +801,11 @@ li::marker {
   font-weight: 700;
 }
 
+.case-body > .photo-card img {
+  height: auto;
+  aspect-ratio: auto;
+}
+
 .callout-box {
   margin: 8px 0;
   padding: 4px 0 4px 20px;
@@ -1188,8 +1197,6 @@ footer {
 
 .project-index summary {cursor:pointer; font-weight:700; color:#dedad3; padding-block:5px;}
 .project-index a[aria-current="page"] {font-weight:800;}
-.party-cover {display:grid;place-items:center;min-height:9rem;aspect-ratio:16/9;border-radius:var(--radius);color:#fff3e9;background:radial-gradient(ellipse at 35% 40%,#8c353a,#401b28 55%,#141018);}
-.party-cover span {font:600 clamp(2.4rem,5vw,5rem)/1 "Fraunces",Georgia,serif;letter-spacing:-.06em;}
 .recording-credits {display:flex;flex-wrap:wrap;gap:1.2rem 4rem;margin-top:1rem;}
 .recording-credits p {color:var(--muted);}
 .print-media-note {display:none;}
