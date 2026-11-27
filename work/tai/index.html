@@ -1,343 +1,157 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta
-    name="description"
-    content="T.AI — A mobile app helping teachers grade assignments, write personalized feedback, and track student progress using AI."
-  />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="T.AI — A mobile app helping teachers grade assignments, write personalized feedback, and track student progress using AI.">
   <title>T.AI | Violet Crow</title>
+  <link rel="icon" href="../../assets/web/butterfly.png">
+  <link rel="stylesheet" href="../../styles.css">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Manrope:wght@400;500;600;700;800&display=swap"
-    rel="stylesheet"
-  />
-  <link rel="stylesheet" href="../../styles.css" />
 </head>
-
-<body class="project-page">
-  <div class="site-shell">
-    <aside class="sidebar" id="sidebar" aria-label="Site navigation">
-      <div class="sidebar-top">
-        <a class="brand" href="../../">Violet Crow</a>
-        <img
-          class="profile-photo"
-          src="../../assets/images/profile.png"
-          alt="Portrait of Violet Crow"
-          width="132"
-          height="132"
-        />
-        <button
-          class="menu-toggle"
-          id="menu-toggle"
-          type="button"
-          aria-expanded="false"
-          aria-controls="sidebar-menu"
-        >
-          Menu
-        </button>
-      </div>
-
-      <div class="sidebar-menu" id="sidebar-menu">
-        <nav class="sidebar-nav" aria-label="Primary">
-          <a href="../../">Home</a>
-          <a href="../../#work">Work</a>
-          <a href="../../portfolio/">Portfolio</a>
-          <a href="../../about/">About Me</a>
-          <a href="../../contact/">Contact</a>
-        </nav>
-
-        <details class="recent-projects project-index" open>
-          <summary>Projects</summary>
-          <ul>
-            <li><a href="../../work/thesis/">Honors Thesis</a></li>
-            <li><a href="../../work/the-party/">The Party</a></li>
-            <li><a href="../../work/myodyssey/">Myodyssey</a></li>
-            <li><a href="../../work/tai/" aria-current="page">T.AI</a></li>
-            <li><a href="../../work/volunteerverse/">VolunteerVerse</a></li>
-            <li><a href="../../work/harmonics/">Stanford Harmonics</a></li>
-          </ul>
-        </details>
-
-        <div class="sidebar-actions">
-          <a
-            class="social-button"
-            href="https://www.linkedin.com/in/violet-crow/"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="LinkedIn"
-            title="LinkedIn"
-          >
-            <svg viewBox="0 0 24 24" aria-hidden="true">
-              <path d="M6.94 8.5H3.4V20h3.54V8.5ZM5.17 3A2.06 2.06 0 1 0 5.17 7.12 2.06 2.06 0 0 0 5.17 3ZM20.6 13.41c0-3.46-1.85-5.07-4.32-5.07-1.99 0-2.88 1.1-3.38 1.87V8.5H9.36V20h3.54v-5.69c0-1.5.28-2.95 2.14-2.95 1.84 0 1.87 1.71 1.87 3.04V20h3.55v-6.59Z" />
-            </svg>
-          </a>
-          <a
-            class="resume-button"
-            href="https://violetcrow.me/assets/docs/VioletCrowResume.pdf"
-            title="Resume"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Resume
-          </a>
+<body class="work-page tai-study">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="masthead">
+    <div class="mast-inner">
+      <a class="brand" href="../../" aria-label="Violet Crow, home"><img src="../../assets/web/butterfly.png" width="40" height="38" alt=""> Violet Crow</a>
+      <nav class="primary" aria-label="Primary">
+        <a href="../../#work" aria-current="location">Work</a>
+        <a href="../../portfolio/">Portfolio</a>
+        <a href="../../about/">About</a>
+        <a href="../../contact/">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <main class="container" id="main" tabindex="-1">
+    <section class="case-hero">
+      <div class="case-lead">
+        <a class="back-link" href="../../#work">Back to Work</a>
+        <p class="eyebrow">CS 147 · Introduction to Human-Computer Interaction Design</p>
+        <h1>T.AI</h1>
+        <p class="case-subtitle">A mobile app that helps teachers grade student work against custom rubrics, give thoughtful feedback in less time, and track how students are learning over the school year.</p>
+        <div class="hero-actions">
+          <a class="pill-button" href="#deliverables">Demo Video, Prototype, &amp; Poster</a>
+          <a class="pill-button secondary" href="https://www.figma.com/proto/utyWo2W1V87F10TjftMStV/MedFi-Prototype--Current-?node-id=98-238&amp;t=ID0Ffh1nkYUGRBFG-1&amp;scaling=scale-down&amp;content-scaling=fixed&amp;page-id=0%3A1&amp;starting-point-node-id=98%3A238" target="_blank" rel="noopener noreferrer">Open in Figma</a>
         </div>
       </div>
-    </aside>
-
-    <main class="main">
-      <div class="container">
-        <!-- Header & Summary -->
-        <section class="case-hero">
-          <a class="back-link" href="../../#work">← Back to Work</a>
-          <p class="eyebrow">CS 147 · Introduction to Human-Computer Interaction Design</p>
-          <h1>T.AI</h1>
-          <p class="case-subtitle">
-            A mobile app that helps teachers grade student work against custom rubrics, give thoughtful feedback in less time, and track how students are learning over the school year.
-          </p>
-
-          <div class="hero-actions">
-            <a class="pill-button" href="#deliverables">
-              Demo Video, Prototype, & Poster
-            </a>
-            <a
-              class="pill-button secondary"
-              href="https://www.figma.com/proto/utyWo2W1V87F10TjftMStV/MedFi-Prototype--Current-?node-id=98-238&t=ID0Ffh1nkYUGRBFG-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=98%3A238"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Open in Figma ↗
-            </a>
-          </div>
-
-          <div class="case-meta-grid">
-            <div class="meta-item">
-              <span class="meta-label">My Role</span>
-              <span class="meta-value">Product Concept, Low- & Med-Fi Prototyping, Poster & Report</span>
-            </div>
-            <div class="meta-item">
-              <span class="meta-label">Timeline</span>
-              <span class="meta-value">Fall 2024 (10 Weeks)</span>
-            </div>
-            <div class="meta-item">
-              <span class="meta-label">Team & Research</span>
-              <span class="meta-value">4-Person Team · Interviews with Teachers & Students</span>
-            </div>
-            <div class="meta-item">
-              <span class="meta-label">Tools</span>
-              <span class="meta-value">Figma, React Native, AI Grading Workflows</span>
-            </div>
-          </div>
-
-          <figure class="case-banner">
-            <img
-              src="../../assets/images/tai.jpg"
-              alt="T.AI mobile app screens showing class management, AI feedback, and student progress tracking"
-            />
-            <figcaption class="photo-caption">
-              Helping teachers spend less time on repetitive grading and more time giving students individualized support.
-            </figcaption>
-          </figure>
-        </section>
-
-        <!-- 1. Needfinding & The Problem -->
-        <section class="section" aria-labelledby="context-heading">
-          <div class="case-grid">
-            <div>
-              <p class="section-kicker">01 · Needfinding</p>
-              <h2 id="context-heading">What Teachers and Students Told Us</h2>
-            </div>
-            <div class="case-body">
-              <p>
-                To understand how AI is actually affecting classrooms, our team ran two rounds of interviews with four educators (an SAT English tutor, two high school teachers, and a K–12 teacher) and two students (an 18-year-old recent high school graduate and a 9-year-old elementary school student), recruiting through the Stanford Graduate School of Education and local schools.
-              </p>
-              <p>
-                Talking with both groups revealed a core problem. Students we spoke to told us that generic grades rarely help them improve, but they worried that relying on AI to revise their writing could get in the way of learning. Teachers said that they want to give personalized feedback, but simply don't have enough time in the day to do so for every student.
-              </p>
-              <p>
-                When we spoke with Francis, a high school English teacher of four years, we were struck by how selective he had to be with his feedback just to keep up with his grading workload. We asked ourselves: how might we help teachers like Francis offer thorough, personalized feedback to every student more efficiently?
-              </p>
-            </div>
-          </div>
-        </section>
-
-        <!-- 2. The Solution & My Role -->
-        <section class="section" aria-labelledby="execution-heading">
-          <div class="case-grid">
-            <div>
-              <p class="section-kicker">02 · The Product</p>
-              <h2 id="execution-heading">How T.AI Works & My Role</h2>
-            </div>
-            <div class="case-body">
-              <p>
-                T.AI gives teachers an "AI TA" to help with grading and feedback.
-              </p>
-              <p>
-                In the app, teachers can create custom rubrics and answer keys for each assignment. To grade, they simply upload a photo of a student's work. T.AI compares it against the assignment rubric and drafts tailored feedback for the teacher's review. Teachers can also open any student's profile to view an AI-generated progress report tracking their learning and growth over time.
-              </p>
-              <p>
-                On our four-person team, I created the initial product concept, designed the low-fidelity sketches and the interactive medium-fidelity prototype in Figma, designed our presentation poster, and wrote the final report documenting our design process from needfinding through high-fidelity implementation.
-              </p>
-            </div>
-          </div>
-        </section>
-
-        <!-- 3. Prototyping & Iteration -->
-        <section class="section" aria-labelledby="iteration-heading">
-          <div class="case-grid">
-            <div>
-              <p class="section-kicker">03 · Iteration</p>
-              <h2 id="iteration-heading">From Sketches to High-Fidelity</h2>
-            </div>
-            <div class="case-body">
-              <p>
-                As we moved from early paper sketches to our interactive Figma prototype and the final high-fidelity app, studio critiques and a formal evaluation against 12 usability heuristics helped us clean up several points of friction.
-              </p>
-              <p>
-                Originally, we placed AI-generated feedback as annotations directly on top of the photo of the student's assignment. While that worked on larger displays, it was too cluttered on phone screens, where most teachers said they wanted to use the app. We moved the generated feedback into a dedicated view directly below the student's work.
-              </p>
-              <p>
-                Based on class and heuristic evaluation feedback, we added a guided tutorial flow to help first-time users get oriented and unified the color scheme across every screen as we progressed into the high-fidelity build.
-              </p>
-            </div>
-          </div>
-
-          <div class="case-gallery three-col">
-            <figure class="photo-card">
-              <img
-                src="../../assets/images/tai-lowfi.jpg"
-                alt="T.AI low-fidelity sketches and paper prototype screens"
-                loading="lazy"
-              />
-              <figcaption class="photo-caption">
-                Low-fidelity sketches mapping out the initial class, rubric, and grading flows.
-              </figcaption>
-            </figure>
-
-            <figure class="photo-card">
-              <img
-                src="../../assets/images/tai-medfi.jpg"
-                alt="T.AI medium-fidelity interactive Figma wireframes"
-                loading="lazy"
-              />
-              <figcaption class="photo-caption">
-                Medium-fidelity Figma prototype used for usability and heuristic evaluation.
-              </figcaption>
-            </figure>
-
-            <figure class="photo-card">
-              <img
-                src="../../assets/images/tai-hifi.jpg"
-                alt="T.AI high-fidelity mobile app screens"
-                loading="lazy"
-              />
-              <figcaption class="photo-caption">
-                High-fidelity app with unified styling, onboarding, and more readable feedback.
-              </figcaption>
-            </figure>
-          </div>
-        </section>
-
-        <!-- 4. Embedded Deliverables -->
-        <section class="section" id="deliverables" aria-labelledby="deliverables-heading">
-          <div class="section-heading">
-            <p class="section-kicker">04 · Deliverables</p>
-            <h2 id="deliverables-heading">Demo Video, Prototype, & Poster</h2>
-          </div>
-
-          <div class="embed-grid">
-            <!-- App Demo Video -->
-            <div class="embed-card">
-              <div class="embed-header">
-                <span class="embed-title">Demo Video</span>
-                <a href="../../assets/video/tai-demo.mp4" target="_blank" rel="noopener noreferrer">Open Video ↗</a>
-              </div>
-              <img class="print-media-still" src="../../assets/portfolio/tai-demo-still.jpg" alt="Still from the T.AI mobile demonstration">
-              <p class="print-media-note">Watch tai-demo.mp4 (1 min 29 sec) for the mobile grading demonstration.</p>
-              <video class="embed-frame" controls preload="metadata">
-                <source src="../../assets/video/tai-demo.mp4" type="video/mp4" />
-                Your browser does not support embedded video.
-              </video>
-            </div>
-
-            <!-- Interactive Figma Prototype -->
-            <div class="embed-card">
-              <div class="embed-header">
-                <span class="embed-title">Interactive Medium-Fidelity Figma Prototype</span>
-                <a href="../../assets/portfolio/tai-prototype-screens.pdf">View screen walkthrough (PDF)</a>
-                <a
-                  href="https://www.figma.com/proto/utyWo2W1V87F10TjftMStV/MedFi-Prototype--Current-?node-id=98-238&t=ID0Ffh1nkYUGRBFG-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=98%3A238"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Open in Figma ↗
-                </a>
-              </div>
-              <img class="print-media-still" src="../../assets/images/tai-medfi.jpg" alt="Class, feedback, and progress screens from the prototype">
-              <p class="print-media-note">Open tai-prototype-screens.pdf to examine class selection, rubric feedback, and student progress in the medium-fidelity design.</p>
-              <iframe
-                class="embed-frame"
-                src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FutyWo2W1V87F10TjftMStV%2FMedFi-Prototype--Current-%3Fnode-id%3D98-238%26t%3DID0Ffh1nkYUGRBFG-1%26scaling%3Dscale-down%26content-scaling%3Dfixed%26page-id%3D0%253A1%26starting-point-node-id%3D98%253A238"
-                title="T.AI Interactive Figma Prototype"
-                allowfullscreen
-                loading="lazy"
-              ></iframe>
-            </div>
-
-            <!-- Presentation Poster -->
-            <div class="embed-card">
-              <div class="embed-header">
-                <span class="embed-title">Project Presentation Poster</span>
-                <a
-                  href="../../assets/portfolio/tai-poster.pdf"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Open Full Poster ↗
-                </a>
-              </div>
-              <img class="print-media-still" src="../../assets/portfolio/tai-poster-preview.jpg" alt="Original T.AI project poster">
-              <p class="print-media-note">Open tai-poster.pdf to read the project poster at its original size.</p>
-              <iframe
-                class="embed-frame"
-                src="../../assets/portfolio/tai-poster.pdf"
-                title="T.AI Presentation Poster"
-                loading="lazy"
-              ></iframe>
-            </div>
-        </section>
-
-        <!-- Next / Previous Project Nav -->
-        <nav class="project-nav-footer" aria-label="Project pagination">
-          <a class="project-nav-link" href="../volunteerverse/">
-            <span class="project-nav-label">Previous Project</span>
-            <span class="project-nav-title">← VolunteerVerse</span>
-          </a>
-          <a class="project-nav-link next" href="../harmonics/">
-            <span class="project-nav-label">Next Project</span>
-            <span class="project-nav-title">Stanford Harmonics →</span>
-          </a>
-        </nav>
-
-        <footer>
-          © 2026 Violet Crow
-        </footer>
+      <figure class="case-banner">
+        <img src="../../assets/web/tai-1500.webp" alt="T.AI mobile app screens showing class management, AI feedback, and student progress tracking" width="1920" height="1080" decoding="async" srcset="../../assets/web/tai-640.webp 640w, ../../assets/web/tai-1500.webp 1500w" sizes="(max-width: 720px) 92vw, (max-width: 1280px) 49vw, 640px">
+        <figcaption class="photo-caption">Helping teachers spend less time on repetitive grading and more time giving students individualized support.</figcaption>
+      </figure>
+      <div class="case-meta-grid">
+        <div class="meta-item">
+          <span class="meta-label">My Role</span>
+          <span class="meta-value">Product Concept, Low- &amp; Med-Fi Prototyping, Poster &amp; Report</span>
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">Timeline</span>
+          <span class="meta-value">Fall 2024 (10 Weeks)</span>
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">Team &amp; Research</span>
+          <span class="meta-value">4-Person Team · Interviews with Teachers &amp; Students</span>
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">Tools</span>
+          <span class="meta-value">Figma, React Native, AI Grading Workflows</span>
+        </div>
       </div>
-    </main>
-  </div>
-
-  <script>
-    const menuToggle = document.getElementById('menu-toggle');
-    const sidebar = document.getElementById('sidebar');
-
-    menuToggle.addEventListener('click', () => {
-      const isOpen = sidebar.classList.toggle('is-open');
-      menuToggle.setAttribute('aria-expanded', isOpen);
-      menuToggle.textContent = isOpen ? 'Close' : 'Menu';
-    });
-  </script>
+    </section>
+    <section class="section" aria-labelledby="context-heading">
+      <div class="case-grid">
+        <div>
+          <h2 id="context-heading">What Teachers and Students Told Us</h2>
+        </div>
+        <div class="case-body">
+          <p>To understand how AI is actually affecting classrooms, our team ran two rounds of interviews with four educators (an SAT English tutor, two high school teachers, and a K–12 teacher) and two students (an 18-year-old recent high school graduate and a 9-year-old elementary school student), recruiting through the Stanford Graduate School of Education and local schools.</p>
+          <p>Talking with both groups revealed a core problem. Students we spoke to told us that generic grades rarely help them improve, but they worried that relying on AI to revise their writing could get in the way of learning. Teachers said that they want to give personalized feedback, but simply don't have enough time in the day to do so for every student.</p>
+          <p>When we spoke with Francis, a high school English teacher of four years, we were struck by how selective he had to be with his feedback just to keep up with his grading workload. We asked ourselves: how might we help teachers like Francis offer thorough, personalized feedback to every student more efficiently?</p>
+        </div>
+      </div>
+    </section>
+    <section class="section" aria-labelledby="execution-heading">
+      <div class="case-grid">
+        <div>
+          <h2 id="execution-heading">How T.AI Works &amp; My Role</h2>
+        </div>
+        <div class="case-body">
+          <p>T.AI gives teachers an "AI TA" to help with grading and feedback.</p>
+          <p>In the app, teachers can create custom rubrics and answer keys for each assignment. To grade, they simply upload a photo of a student's work. T.AI compares it against the assignment rubric and drafts tailored feedback for the teacher's review. Teachers can also open any student's profile to view an AI-generated progress report tracking their learning and growth over time.</p>
+          <p>On our four-person team, I created the initial product concept, designed the low-fidelity sketches and the interactive medium-fidelity prototype in Figma, designed our presentation poster, and wrote the final report documenting our design process from needfinding through high-fidelity implementation.</p>
+        </div>
+      </div>
+    </section>
+    <section class="section" aria-labelledby="iteration-heading">
+      <div class="case-grid">
+        <div>
+          <h2 id="iteration-heading">From Sketches to High-Fidelity</h2>
+        </div>
+        <div class="case-body">
+          <p>As we moved from early paper sketches to our interactive Figma prototype and the final high-fidelity app, studio critiques and a formal evaluation against 12 usability heuristics helped us clean up several points of friction.</p>
+          <p>Originally, we placed AI-generated feedback as annotations directly on top of the photo of the student's assignment. While that worked on larger displays, it was too cluttered on phone screens, where most teachers said they wanted to use the app. We moved the generated feedback into a dedicated view directly below the student's work.</p>
+          <p>Based on class and heuristic evaluation feedback, we added a guided tutorial flow to help first-time users get oriented and unified the color scheme across every screen as we progressed into the high-fidelity build.</p>
+        </div>
+      </div>
+      <div class="case-gallery three-col">
+        <figure class="photo-card">
+          <a href="../../assets/images/tai-lowfi.jpg" aria-label="Full-size image: T.AI low-fidelity sketches and paper prototype screens"><img src="../../assets/web/tai-lowfi-1280.webp" alt="T.AI low-fidelity sketches and paper prototype screens" loading="lazy" width="1280" height="720" decoding="async" srcset="../../assets/web/tai-lowfi-640.webp 640w, ../../assets/web/tai-lowfi-1280.webp 1280w" sizes="(max-width: 720px) 92vw, (max-width: 1280px) 49vw, 640px"></a>
+          <figcaption class="photo-caption">Low-fidelity sketches mapping out the initial class, rubric, and grading flows.</figcaption>
+        </figure>
+        <figure class="photo-card">
+          <a href="../../assets/images/tai-medfi.jpg" aria-label="Full-size image: T.AI medium-fidelity interactive Figma wireframes"><img src="../../assets/web/tai-medfi-1280.webp" alt="T.AI medium-fidelity interactive Figma wireframes" loading="lazy" width="1280" height="720" decoding="async" srcset="../../assets/web/tai-medfi-640.webp 640w, ../../assets/web/tai-medfi-1280.webp 1280w" sizes="(max-width: 720px) 92vw, (max-width: 1280px) 49vw, 640px"></a>
+          <figcaption class="photo-caption">Medium-fidelity Figma prototype used for usability and heuristic evaluation.</figcaption>
+        </figure>
+        <figure class="photo-card">
+          <a href="../../assets/images/tai-hifi.jpg" aria-label="Full-size image: T.AI high-fidelity mobile app screens"><img src="../../assets/web/tai-hifi-1280.webp" alt="T.AI high-fidelity mobile app screens" loading="lazy" width="1280" height="720" decoding="async" srcset="../../assets/web/tai-hifi-640.webp 640w, ../../assets/web/tai-hifi-1280.webp 1280w" sizes="(max-width: 720px) 92vw, (max-width: 1280px) 49vw, 640px"></a>
+          <figcaption class="photo-caption">High-fidelity app with unified styling, onboarding, and more readable feedback.</figcaption>
+        </figure>
+      </div>
+    </section>
+    <section class="section" id="deliverables" aria-labelledby="deliverables-heading">
+      <div class="section-heading">
+        <h2 id="deliverables-heading">Demo Video, Prototype, &amp; Poster</h2>
+      </div>
+      <div class="embed-grid">
+        <div class="embed-card">
+          <div class="embed-header">
+            <span class="embed-title">Demo Video</span>
+            <a href="../../assets/video/tai-demo.mp4" target="_blank" rel="noopener noreferrer">Open Video</a>
+          </div>
+          <img class="print-media-still" src="../../assets/portfolio/tai-demo-still.jpg" alt="Still from the T.AI mobile demonstration" width="364" height="640" decoding="async">
+          <p class="print-media-note">Watch tai-demo.mp4 (1 min 29 sec) for the mobile grading demonstration.</p>
+          <video class="embed-frame" controls preload="none" playsinline="" poster="../../assets/portfolio/tai-demo-still.jpg"> <source src="../../assets/video/tai-demo.mp4" type="video/mp4"> Your browser does not support embedded video. </video>
+        </div>
+        <div class="embed-card">
+          <div class="embed-header">
+            <span class="embed-title">Interactive Medium-Fidelity Figma Prototype</span>
+            <a href="../../assets/portfolio/tai-prototype-screens.pdf">View screen walkthrough (PDF)</a>
+            <a href="https://www.figma.com/proto/utyWo2W1V87F10TjftMStV/MedFi-Prototype--Current-?node-id=98-238&amp;t=ID0Ffh1nkYUGRBFG-1&amp;scaling=scale-down&amp;content-scaling=fixed&amp;page-id=0%3A1&amp;starting-point-node-id=98%3A238" target="_blank" rel="noopener noreferrer">Open in Figma</a>
+          </div>
+          <img class="print-media-still" src="../../assets/web/tai-medfi-1280.webp" alt="Class, feedback, and progress screens from the prototype" width="1280" height="720" decoding="async" srcset="../../assets/web/tai-medfi-640.webp 640w, ../../assets/web/tai-medfi-1280.webp 1280w" sizes="(max-width: 720px) 92vw, (max-width: 1280px) 49vw, 640px">
+          <p class="print-media-note">Open tai-prototype-screens.pdf to examine class selection, rubric feedback, and student progress in the medium-fidelity design.</p>
+          <iframe class="embed-frame" src="https://www.figma.com/embed?embed_host=share&amp;url=https%3A%2F%2Fwww.figma.com%2Fproto%2FutyWo2W1V87F10TjftMStV%2FMedFi-Prototype--Current-%3Fnode-id%3D98-238%26t%3DID0Ffh1nkYUGRBFG-1%26scaling%3Dscale-down%26content-scaling%3Dfixed%26page-id%3D0%253A1%26starting-point-node-id%3D98%253A238" title="T.AI Interactive Figma Prototype" allowfullscreen loading="lazy"></iframe>
+        </div>
+        <div class="embed-card">
+          <div class="embed-header">
+            <span class="embed-title">Project Presentation Poster</span>
+            <a href="../../assets/portfolio/tai-poster.pdf" target="_blank" rel="noopener noreferrer">Open Full Poster</a>
+          </div>
+          <p class="print-media-note">Open tai-poster.pdf to read the project poster at its original size.</p>
+          <a class="document-preview" href="../../assets/portfolio/tai-poster.pdf" aria-label="T.AI Presentation Poster (PDF)"><img src="../../assets/portfolio/tai-poster-preview.jpg" alt="Original T.AI project poster" width="820" height="645" decoding="async"></a>
+        </div>
+      </div>
+    </section>
+    <nav class="project-nav-footer" aria-label="More projects">
+      <a href="../volunteerverse/"><small>Previous project</small>VolunteerVerse</a>
+      <a href="../harmonics/"><small>Next project</small>Stanford Harmonics</a>
+    </nav>
+  </main>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <a class="footer-name" href="../../">Violet Crow</a>
+      <nav aria-label="Contact and résumé"><a href="mailto:crow@alumni.stanford.edu">Email</a><a href="https://www.linkedin.com/in/violet-crow/">LinkedIn</a><a href="../../assets/docs/VioletCrowResume.pdf">Résumé (PDF)</a></nav>
+      <small>© 2026 Violet Crow</small>
+    </div>
+  </footer>
 </body>
 </html>

@@ -1,306 +1,145 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta
-    name="description"
-    content="Honors Thesis by Violet Crow — The Impact of Spatiality and Modality on Group Communications in Extended Reality Teleconferencing."
-  />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Honors Thesis by Violet Crow — The Impact of Spatiality and Modality on Group Communications in Extended Reality Teleconferencing.">
   <title>Honors Thesis | Violet Crow</title>
+  <link rel="icon" href="../../assets/web/butterfly.png">
+  <link rel="stylesheet" href="../../styles.css">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Manrope:wght@400;500;600;700;800&display=swap"
-    rel="stylesheet"
-  />
-  <link rel="stylesheet" href="../../styles.css" />
 </head>
-
-<body class="project-page">
-  <div class="site-shell">
-    <aside class="sidebar" id="sidebar" aria-label="Site navigation">
-      <div class="sidebar-top">
-        <a class="brand" href="../../">Violet Crow</a>
-        <img
-          class="profile-photo"
-          src="../../assets/images/profile.png"
-          alt="Portrait of Violet Crow"
-          width="132"
-          height="132"
-        />
-        <button
-          class="menu-toggle"
-          id="menu-toggle"
-          type="button"
-          aria-expanded="false"
-          aria-controls="sidebar-menu"
-        >
-          Menu
-        </button>
-      </div>
-
-      <div class="sidebar-menu" id="sidebar-menu">
-        <nav class="sidebar-nav" aria-label="Primary">
-          <a href="../../">Home</a>
-          <a href="../../#work">Work</a>
-          <a href="../../portfolio/">Portfolio</a>
-          <a href="../../about/">About Me</a>
-          <a href="../../contact/">Contact</a>
-        </nav>
-
-        <details class="recent-projects project-index" open>
-          <summary>Projects</summary>
-          <ul>
-            <li><a href="../../work/thesis/" aria-current="page">Honors Thesis</a></li>
-            <li><a href="../../work/the-party/">The Party</a></li>
-            <li><a href="../../work/myodyssey/">Myodyssey</a></li>
-            <li><a href="../../work/tai/">T.AI</a></li>
-            <li><a href="../../work/volunteerverse/">VolunteerVerse</a></li>
-            <li><a href="../../work/harmonics/">Stanford Harmonics</a></li>
-          </ul>
-        </details>
-
-        <div class="sidebar-actions">
-          <a
-            class="social-button"
-            href="https://www.linkedin.com/in/violet-crow/"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="LinkedIn"
-            title="LinkedIn"
-          >
-            <svg viewBox="0 0 24 24" aria-hidden="true">
-              <path d="M6.94 8.5H3.4V20h3.54V8.5ZM5.17 3A2.06 2.06 0 1 0 5.17 7.12 2.06 2.06 0 0 0 5.17 3ZM20.6 13.41c0-3.46-1.85-5.07-4.32-5.07-1.99 0-2.88 1.1-3.38 1.87V8.5H9.36V20h3.54v-5.69c0-1.5.28-2.95 2.14-2.95 1.84 0 1.87 1.71 1.87 3.04V20h3.55v-6.59Z" />
-            </svg>
-          </a>
-          <a
-            class="resume-button"
-            href="https://violetcrow.me/assets/docs/VioletCrowResume.pdf"
-            title="Resume"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Resume
-          </a>
+<body class="work-page thesis-study">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="masthead">
+    <div class="mast-inner">
+      <a class="brand" href="../../" aria-label="Violet Crow, home"><img src="../../assets/web/butterfly.png" width="40" height="38" alt=""> Violet Crow</a>
+      <nav class="primary" aria-label="Primary">
+        <a href="../../#work" aria-current="location">Work</a>
+        <a href="../../portfolio/">Portfolio</a>
+        <a href="../../about/">About</a>
+        <a href="../../contact/">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <main class="container" id="main" tabindex="-1">
+    <section class="case-hero">
+      <div class="case-lead">
+        <a class="back-link" href="../../#work">Back to Work</a>
+        <p class="eyebrow">Stanford Virtual Human Interaction Lab (VHIL) · Honors Research</p>
+        <h1>Honors Thesis</h1>
+        <p class="case-subtitle">The Impact of Spatiality and Modality on Group Communications in Extended Reality Teleconferencing</p>
+        <div class="hero-actions">
+          <a class="pill-button" href="../../assets/portfolio/thesis-paper.pdf" target="_blank" rel="noopener noreferrer">Read Full Paper (PDF)</a>
+          <a class="pill-button secondary" href="https://doi.org/10.25740/my027tc4249" target="_blank" rel="noopener noreferrer">Stanford Repository (DOI)</a>
+          <a class="pill-button secondary" href="#deliverables">Presentation &amp; Slides</a>
         </div>
       </div>
-    </aside>
-
-    <main class="main">
-      <div class="container">
-        <!-- Header & Summary -->
-        <section class="case-hero">
-          <a class="back-link" href="../../#work">← Back to Work</a>
-          <p class="eyebrow">Stanford Virtual Human Interaction Lab (VHIL) · Honors Research</p>
-          <h1>Honors Thesis</h1>
-          <p class="case-subtitle">
-            The Impact of Spatiality and Modality on Group Communications in Extended Reality Teleconferencing
-          </p>
-
-          <div class="hero-actions">
-            <a
-              class="pill-button"
-              href="../../assets/portfolio/thesis-paper.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Read Full Paper (PDF) ↗
-            </a>
-            <a
-              class="pill-button secondary"
-              href="https://doi.org/10.25740/my027tc4249"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Stanford Repository (DOI) ↗
-            </a>
-            <a class="pill-button secondary" href="#deliverables">
-              Presentation & Slides
-            </a>
-          </div>
-
-          <div class="case-meta-grid">
-            <div class="meta-item">
-              <span class="meta-label">My Role</span>
-              <span class="meta-value">Lead Researcher</span>
-            </div>
-            <div class="meta-item">
-              <span class="meta-label">Timeline</span>
-              <span class="meta-value">May 2025 - June 2026</span>
-            </div>
-            <div class="meta-item">
-              <span class="meta-label">Scale</span>
-              <span class="meta-value">133 Participants · 5 Research Assistants</span>
-            </div>
-            <div class="meta-item">
-              <span class="meta-label">Tools</span>
-              <span class="meta-value">Apple Vision Pro, Python</span>
-            </div>
-          </div>
-
-          <figure class="case-banner">
-            <img
-              src="../../assets/images/thesis.jpg"
-              alt="Extended Reality teleconferencing study using Apple Vision Pro Personas"
-            />
-            <figcaption class="photo-caption">
-              Testing how 3D spatial layouts and virtual environments affect group conversations in Apple Vision Pro FaceTime calls.
-            </figcaption>
-          </figure>
-        </section>
-
-        <!-- 1. Context & Problem -->
-        <section class="section" aria-labelledby="context-heading">
-          <div class="case-grid">
-            <div>
-              <p class="section-kicker">01 · The Question</p>
-              <h2 id="context-heading">What We Wanted to Know</h2>
-            </div>
-            <div class="case-body">
-              <p>
-                Products like Zoom and Microsoft Teams often assume that making teleconferencing feel more like real-life conversations is an automatic improvement.
-              </p>
-              <p>
-                Working with Stanford's Virtual Human Interaction Lab (VHIL), I set out to test that assumption. Using the fully-tracked photorealistic avatars ('Personas') possible on the Apple Vision Pro, we brought groups of 2, 3, and 4 people into spatial FaceTime calls to see how two major design choices affect group communication: arranging people in 3D space versus a traditional 2D grid, and meeting in mixed-reality passthrough versus a fully virtual environment.
-              </p>
-            </div>
-          </div>
-        </section>
-
-        <!-- 2. Role & Execution -->
-        <section class="section" aria-labelledby="execution-heading">
-          <div class="case-grid">
-            <div>
-              <p class="section-kicker">02 · My Contribution</p>
-              <h2 id="execution-heading">Running the Study</h2>
-            </div>
-            <div class="case-body">
-              <p>
-                In my senior year, I led this project from its initial idea to the finished paper. Taking over 12 months, it was easily the most challenging thing I did during my time at Stanford, but also the most rewarding.
-              </p>
-              <p>
-                I wrote the session protocols, designed our data scheme, recruited 133 participants, and trained five research assistants to assist in getting participants set up. I ran every participant session myself, guiding groups through calibrating their headsets, creating their Apple Vision Pro Personas, and walking them through a verbal exercise in their assigned FaceTime condition.
-              </p>
-              <p>
-                Our data sources included questionnaires, audio transcripts of participant conversations, room video, and first-person video from inside the headsets. I wrote custom scripts in Python to extract and clean our video data, and scripts in R for analysis. The finished thesis fulfilled my Honors requirement for Symbolic Systems, and is the foundation for an upcoming publication from the lab.
-              </p>
-            </div>
-          </div>
-
-          <div class="case-gallery">
-            <figure class="photo-card">
-              <img
-                src="../../assets/images/thesis-conditions.jpg"
-                alt="Comparison of spatial versus grid Persona layouts in passthrough and virtual environments"
-                loading="lazy"
-              />
-              <figcaption class="photo-caption">
-                Participant POV across Spatial vs. Grid layouts and MR vs. VR environments.
-              </figcaption>
-            </figure>
-
-            <figure class="photo-card">
-              <img
-                src="../../assets/images/thesis-setup.jpg"
-                alt="VHIL experiment room and Apple Vision Pro hardware setup"
-                loading="lazy"
-              />
-              <figcaption class="photo-caption">
-                Experimental room setup. Up to four rooms were used for each group.
-              </figcaption>
-            </figure>
-          </div>
-        </section>
-
-        <!-- 3. Product Takeaways -->
-        <section class="section" aria-labelledby="takeaways-heading">
-          <div class="case-grid">
-            <div>
-              <p class="section-kicker">03 · Findings</p>
-              <h2 id="takeaways-heading">Why It Matters for Product Design</h2>
-            </div>
-            <div class="case-body">
-              <p>
-                Our findings challenged the idea that more immersion is always better. When people are already navigating an unfamiliar medium like VR, forcing them into a novel 3D spatial arrangement can result in more social friction than the familiar 2D grid.
-              </p>
-
-              <div class="callout-box">
-                <p class="callout-kicker">From the Paper</p>
-                <blockquote>
-                  <p>
-                    “For developers and enterprise adopters of XR teleconferencing, these findings necessitate a critical re-evaluation of design priorities. The current industry trajectory assumes that maximizing spatial realism and environmental immersion results in better collaborative experiences. However, the data reveal that spatial configurations do not automatically mitigate the cognitive or physical toll of remote interactions. In practice, forcing users into three-dimensional spatial arrangements may actually increase social friction compared to standard grid layouts. Teleconferencing platforms should reconsider the push to deprecate traditional two-dimensional grid views, as these structures provide a safe, established social boundary that users may prefer when navigating the complexities of multi-person interactions in less familiar modalities like VR.”
-                  </p>
-                </blockquote>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <!-- 4. Embedded Deliverables -->
-        <section class="section" id="deliverables" aria-labelledby="deliverables-heading">
-          <div class="section-heading">
-            <p class="section-kicker">04 · Deliverables</p>
-            <h2 id="deliverables-heading">Presentation & Slides</h2>
-          </div>
-
-          <div class="embed-grid">
-            <div class="embed-card">
-              <div class="embed-header">
-                <span class="embed-title">SymSys Honors Forum Presentation</span>
-                <a href="../../assets/video/thesis-presentation.mp4" target="_blank" rel="noopener noreferrer">Open Video ↗</a>
-              </div>
-              <img class="print-media-still" src="../../assets/portfolio/thesis-talk-still.jpg" alt="Frame from the recorded honors presentation">
-              <p class="print-media-note">Watch thesis-presentation.mp4 (6 min 42 sec) for the recorded talk.</p>
-              <video class="embed-frame" controls preload="metadata">
-                <source src="../../assets/video/thesis-presentation.mp4" type="video/mp4" />
-                Your browser does not support embedded video.
-              </video>
-            </div>
-
-            <div class="embed-card">
-              <div class="embed-header">
-                <span class="embed-title">Honors Forum Slide Deck</span>
-                <a href="../../assets/portfolio/thesis-slides.pdf" target="_blank" rel="noopener noreferrer">Open PDF ↗</a>
-              </div>
-              <img class="print-media-still" src="../../assets/portfolio/thesis-slide-preview.jpg" alt="Slide presenting the experimental conditions">
-              <p class="print-media-note">Follow the talk with thesis-slides.pdf. The full study is included as thesis-paper.pdf.</p>
-              <iframe
-                class="embed-frame"
-                src="../../assets/portfolio/thesis-slides.pdf"
-                title="Honors Thesis Presentation Slides"
-                loading="lazy"
-              ></iframe>
-            </div>
-          </div>
-        </section>
-
-        <!-- Next Project Nav -->
-        <nav class="project-nav-footer" aria-label="Project pagination">
-          <a class="back-link" href="../../#work">← All Projects</a>
-          <a class="project-nav-link next" href="../volunteerverse/">
-            <span class="project-nav-label">Next Project</span>
-            <span class="project-nav-title">VolunteerVerse →</span>
-          </a>
-        </nav>
-
-        <footer>
-          © 2026 Violet Crow
-        </footer>
+      <figure class="case-banner">
+        <img src="../../assets/web/thesis-1280.webp" alt="Extended Reality teleconferencing study using Apple Vision Pro Personas" width="1280" height="720" decoding="async" srcset="../../assets/web/thesis-640.webp 640w, ../../assets/web/thesis-1280.webp 1280w" sizes="(max-width: 720px) 92vw, (max-width: 1280px) 49vw, 640px">
+        <figcaption class="photo-caption">Testing how 3D spatial layouts and virtual environments affect group conversations in Apple Vision Pro FaceTime calls.</figcaption>
+      </figure>
+      <div class="case-meta-grid">
+        <div class="meta-item">
+          <span class="meta-label">My Role</span>
+          <span class="meta-value">Lead Researcher</span>
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">Timeline</span>
+          <span class="meta-value">May 2025 - June 2026</span>
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">Scale</span>
+          <span class="meta-value">133 Participants · 5 Research Assistants</span>
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">Tools</span>
+          <span class="meta-value">Apple Vision Pro, Python</span>
+        </div>
       </div>
-    </main>
-  </div>
-
-  <script>
-    const menuToggle = document.getElementById('menu-toggle');
-    const sidebar = document.getElementById('sidebar');
-
-    menuToggle.addEventListener('click', () => {
-      const isOpen = sidebar.classList.toggle('is-open');
-      menuToggle.setAttribute('aria-expanded', isOpen);
-      menuToggle.textContent = isOpen ? 'Close' : 'Menu';
-    });
-  </script>
+    </section>
+    <section class="section" aria-labelledby="context-heading">
+      <div class="case-grid">
+        <div>
+          <h2 id="context-heading">What We Wanted to Know</h2>
+        </div>
+        <div class="case-body">
+          <p>Products like Zoom and Microsoft Teams often assume that making teleconferencing feel more like real-life conversations is an automatic improvement.</p>
+          <p>Working with Stanford's Virtual Human Interaction Lab (VHIL), I set out to test that assumption. Using the fully-tracked photorealistic avatars ('Personas') possible on the Apple Vision Pro, we brought groups of 2, 3, and 4 people into spatial FaceTime calls to see how two major design choices affect group communication: arranging people in 3D space versus a traditional 2D grid, and meeting in mixed-reality passthrough versus a fully virtual environment.</p>
+        </div>
+      </div>
+    </section>
+    <section class="section" aria-labelledby="execution-heading">
+      <div class="case-grid">
+        <div>
+          <h2 id="execution-heading">Running the Study</h2>
+        </div>
+        <div class="case-body">
+          <p>In my senior year, I led this project from its initial idea to the finished paper. Taking over 12 months, it was easily the most challenging thing I did during my time at Stanford, but also the most rewarding.</p>
+          <p>I wrote the session protocols, designed our data scheme, recruited 133 participants, and trained five research assistants to assist in getting participants set up. I ran every participant session myself, guiding groups through calibrating their headsets, creating their Apple Vision Pro Personas, and walking them through a verbal exercise in their assigned FaceTime condition.</p>
+          <p>Our data sources included questionnaires, audio transcripts of participant conversations, room video, and first-person video from inside the headsets. I wrote custom scripts in Python to extract and clean our video data, and scripts in R for analysis. The finished thesis fulfilled my Honors requirement for Symbolic Systems, and is the foundation for an upcoming publication from the lab.</p>
+        </div>
+      </div>
+      <div class="case-gallery">
+        <figure class="photo-card">
+          <a href="../../assets/images/thesis-conditions.jpg" aria-label="Full-size image: Comparison of spatial versus grid Persona layouts in passthrough and virtual environments"><img src="../../assets/web/thesis-conditions-1280.webp" alt="Comparison of spatial versus grid Persona layouts in passthrough and virtual environments" loading="lazy" width="1280" height="720" decoding="async" srcset="../../assets/web/thesis-conditions-640.webp 640w, ../../assets/web/thesis-conditions-1280.webp 1280w" sizes="(max-width: 720px) 92vw, (max-width: 1280px) 49vw, 640px"></a>
+          <figcaption class="photo-caption">Participant POV across Spatial vs. Grid layouts and MR vs. VR environments.</figcaption>
+        </figure>
+        <figure class="photo-card">
+          <a href="../../assets/images/thesis-setup.jpg" aria-label="Full-size image: VHIL experiment room and Apple Vision Pro hardware setup"><img src="../../assets/web/thesis-setup-1280.webp" alt="VHIL experiment room and Apple Vision Pro hardware setup" loading="lazy" width="1280" height="720" decoding="async" srcset="../../assets/web/thesis-setup-640.webp 640w, ../../assets/web/thesis-setup-1280.webp 1280w" sizes="(max-width: 720px) 92vw, (max-width: 1280px) 49vw, 640px"></a>
+          <figcaption class="photo-caption">Experimental room setup. Up to four rooms were used for each group.</figcaption>
+        </figure>
+      </div>
+    </section>
+    <section class="section" aria-labelledby="takeaways-heading">
+      <div class="case-grid">
+        <div>
+          <h2 id="takeaways-heading">Why It Matters for Product Design</h2>
+        </div>
+        <div class="case-body">
+          <p>Our findings challenged the idea that more immersion is always better. When people are already navigating an unfamiliar medium like VR, forcing them into a novel 3D spatial arrangement can result in more social friction than the familiar 2D grid.</p>
+          <div class="callout-box">
+            <p class="callout-kicker">From the Paper</p>
+            <blockquote> <p>“For developers and enterprise adopters of XR teleconferencing, these findings necessitate a critical re-evaluation of design priorities. The current industry trajectory assumes that maximizing spatial realism and environmental immersion results in better collaborative experiences. However, the data reveal that spatial configurations do not automatically mitigate the cognitive or physical toll of remote interactions. In practice, forcing users into three-dimensional spatial arrangements may actually increase social friction compared to standard grid layouts. Teleconferencing platforms should reconsider the push to deprecate traditional two-dimensional grid views, as these structures provide a safe, established social boundary that users may prefer when navigating the complexities of multi-person interactions in less familiar modalities like VR.”</p> </blockquote>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section" id="deliverables" aria-labelledby="deliverables-heading">
+      <div class="section-heading">
+        <h2 id="deliverables-heading">Presentation &amp; Slides</h2>
+      </div>
+      <div class="embed-grid">
+        <div class="embed-card">
+          <div class="embed-header">
+            <span class="embed-title">SymSys Honors Forum Presentation</span>
+            <a href="../../assets/video/thesis-presentation.mp4" target="_blank" rel="noopener noreferrer">Open Video</a>
+          </div>
+          <img class="print-media-still" src="../../assets/portfolio/thesis-talk-still.jpg" alt="Frame from the recorded honors presentation" width="760" height="428" decoding="async">
+          <p class="print-media-note">Watch thesis-presentation.mp4 (6 min 42 sec) for the recorded talk.</p>
+          <video class="embed-frame" controls preload="none" playsinline="" poster="../../assets/portfolio/thesis-talk-still.jpg"> <source src="../../assets/video/thesis-presentation.mp4" type="video/mp4"> Your browser does not support embedded video. </video>
+        </div>
+        <div class="embed-card">
+          <div class="embed-header">
+            <span class="embed-title">Honors Forum Slide Deck</span>
+            <a href="../../assets/portfolio/thesis-slides.pdf" target="_blank" rel="noopener noreferrer">Open PDF</a>
+          </div>
+          <p class="print-media-note">Follow the talk with thesis-slides.pdf. The full study is included as thesis-paper.pdf.</p>
+          <a class="document-preview" href="../../assets/portfolio/thesis-slides.pdf" aria-label="Honors Thesis Presentation Slides (PDF)"><img src="../../assets/portfolio/thesis-slide-preview.jpg" alt="Slide presenting the experimental conditions" width="820" height="462" decoding="async"></a>
+        </div>
+      </div>
+    </section>
+    <nav class="project-nav-footer" aria-label="More projects">
+      <a href="../myodyssey/"><small>Previous project</small>Myodyssey</a>
+      <a href="../the-party/"><small>Next project</small>The Party</a>
+    </nav>
+  </main>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <a class="footer-name" href="../../">Violet Crow</a>
+      <nav aria-label="Contact and résumé"><a href="mailto:crow@alumni.stanford.edu">Email</a><a href="https://www.linkedin.com/in/violet-crow/">LinkedIn</a><a href="../../assets/docs/VioletCrowResume.pdf">Résumé (PDF)</a></nav>
+      <small>© 2026 Violet Crow</small>
+    </div>
+  </footer>
 </body>
 </html>

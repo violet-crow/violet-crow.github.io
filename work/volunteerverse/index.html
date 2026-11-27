@@ -1,277 +1,117 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta
-    name="description"
-    content="VolunteerVerse — A mobile app connecting local volunteers and community organizations, designed and built by Violet Crow."
-  />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="VolunteerVerse — A mobile app connecting local volunteers and community organizations, designed and built by Violet Crow.">
   <title>VolunteerVerse | Violet Crow</title>
+  <link rel="icon" href="../../assets/web/butterfly.png">
+  <link rel="stylesheet" href="../../styles.css">
 
-  <!-- Font: Fraunces for headlines, Manrope for body text. -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Manrope:wght@400;500;600;700;800&display=swap"
-    rel="stylesheet"
-  />
-  <link rel="stylesheet" href="../../styles.css" />
 </head>
-
-<body class="project-page">
-  <div class="site-shell">
-    <aside class="sidebar" id="sidebar" aria-label="Site navigation">
-      <div class="sidebar-top">
-        <a class="brand" href="../../">Violet Crow</a>
-        <img
-          class="profile-photo"
-          src="../../assets/images/profile.png"
-          alt="Portrait of Violet Crow"
-          width="132"
-          height="132"
-        />
-        <button
-          class="menu-toggle"
-          id="menu-toggle"
-          type="button"
-          aria-expanded="false"
-          aria-controls="sidebar-menu"
-        >
-          Menu
-        </button>
-      </div>
-
-      <div class="sidebar-menu" id="sidebar-menu">
-        <nav class="sidebar-nav" aria-label="Primary">
-          <a href="../../">Home</a>
-          <a href="../../#work">Work</a>
-          <a href="../../portfolio/">Portfolio</a>
-          <a href="../../about/">About Me</a>
-          <a href="../../contact/">Contact</a>
-        </nav>
-
-        <details class="recent-projects project-index" open>
-          <summary>Projects</summary>
-          <ul>
-            <li><a href="../../work/thesis/">Honors Thesis</a></li>
-            <li><a href="../../work/the-party/">The Party</a></li>
-            <li><a href="../../work/myodyssey/">Myodyssey</a></li>
-            <li><a href="../../work/tai/">T.AI</a></li>
-            <li><a href="../../work/volunteerverse/" aria-current="page">VolunteerVerse</a></li>
-            <li><a href="../../work/harmonics/">Stanford Harmonics</a></li>
-          </ul>
-        </details>
-
-        <div class="sidebar-actions">
-          <a
-            class="social-button"
-            href="https://www.linkedin.com/in/violet-crow/"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="LinkedIn"
-            title="LinkedIn"
-          >
-            <svg viewBox="0 0 24 24" aria-hidden="true">
-              <path d="M6.94 8.5H3.4V20h3.54V8.5ZM5.17 3A2.06 2.06 0 1 0 5.17 7.12 2.06 2.06 0 0 0 5.17 3ZM20.6 13.41c0-3.46-1.85-5.07-4.32-5.07-1.99 0-2.88 1.1-3.38 1.87V8.5H9.36V20h3.54v-5.69c0-1.5.28-2.95 2.14-2.95 1.84 0 1.87 1.71 1.87 3.04V20h3.55v-6.59Z" />
-            </svg>
-          </a>
-          <a
-            class="resume-button"
-            href="https://violetcrow.me/assets/docs/VioletCrowResume.pdf"
-            title="Resume"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Resume
-          </a>
+<body class="work-page volunteerverse-study">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="masthead">
+    <div class="mast-inner">
+      <a class="brand" href="../../" aria-label="Violet Crow, home"><img src="../../assets/web/butterfly.png" width="40" height="38" alt=""> Violet Crow</a>
+      <nav class="primary" aria-label="Primary">
+        <a href="../../#work" aria-current="location">Work</a>
+        <a href="../../portfolio/">Portfolio</a>
+        <a href="../../about/">About</a>
+        <a href="../../contact/">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <main class="container" id="main" tabindex="-1">
+    <section class="case-hero">
+      <div class="case-lead">
+        <a class="back-link" href="../../#work">Back to Work</a>
+        <div class="eyebrow">CS 147L · Mobile App Development</div>
+        <h1>VolunteerVerse</h1>
+        <div class="case-subtitle"> A mobile app that brings local organizations and volunteers together in one place, built with React Native and Supabase. </div>
+        <div class="hero-actions">
+          <a class="pill-button" href="https://github.com/cs147L-25au/Final-Project-volunteer_verse" target="_blank" rel="noopener noreferrer">View GitHub Repo</a>
+          <a class="pill-button secondary" href="#execution-heading">What I Built</a>
         </div>
       </div>
-    </aside>
-
-    <main class="main">
-      <div class="container">
-        <!-- Header & Summary -->
-        <section class="case-hero">
-          <a class="back-link" href="../../#work">← Back to Work</a>
-          <div class="eyebrow">CS 147L · Mobile App Development</div>
-          <h1>VolunteerVerse</h1>
-          <div class="case-subtitle">
-            A mobile app that brings local organizations and volunteers together in one place, built with React Native and Supabase.
-          </div>
-
-          <div class="hero-actions">
-            <a
-              class="pill-button"
-              href="https://github.com/cs147L-25au/Final-Project-volunteer_verse"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              View GitHub Repo ↗
-            </a>
-            <a class="pill-button secondary" href="#execution-heading">
-              What I Built
-            </a>
-          </div>
-
-          <div class="case-meta-grid">
-            <div class="meta-item">
-              <span class="meta-label">My Role</span>
-              <span class="meta-value">UX Design, Feature Scoping, Frontend & Backend</span>
-            </div>
-            <div class="meta-item">
-              <span class="meta-label">Timeline</span>
-              <span class="meta-value">Fall 2025</span>
-            </div>
-            <div class="meta-item">
-              <span class="meta-label">Team</span>
-              <span class="meta-value">3-Person Team</span>
-            </div>
-            <div class="meta-item">
-              <span class="meta-label">Built With</span>
-              <span class="meta-value">React Native, Expo Go, Supabase</span>
-            </div>
-          </div>
-
-          <figure class="case-banner">
-            <img
-              src="../../assets/images/volunteerverse.jpg"
-              alt="VolunteerVerse mobile app screens"
-            />
-            <figcaption class="photo-caption">
-              VolunteerVerse makes it easy for community organizations to post shifts and for local volunteers to find ways to help.
-            </figcaption>
-          </figure>
-        </section>
-
-        <!-- 1. Context & Problem -->
-        <section class="section" aria-labelledby="context-heading">
-          <div class="case-grid">
-            <div>
-              <div class="section-kicker">01 · The Problem</div>
-              <h2 id="context-heading">Why We Built It</h2>
-            </div>
-            <div class="case-body">
-              <p>
-                Finding ways to volunteer in your own neighborhood shouldn't require detective work. Usually, people looking to help out have to piece together information from across Instagram stories, local Facebook groups, and outdated nonprofit websites.
-              </p>
-              <p>
-                On the other side, local organizations often struggle to get the word out and keep track of who has committed to helping. We built VolunteerVerse so both sides could meet in one place: organizations can create profiles, post upcoming events, and track signups, and volunteers can discover causes they care about, sign up for shifts, and keep track of their volunteering schedule.
-              </p>
-            </div>
-          </div>
-        </section>
-
-        <!-- 2. Role & Execution -->
-        <section class="section" aria-labelledby="execution-heading">
-          <div class="case-grid">
-            <div>
-              <div class="section-kicker">02 · My Contribution</div>
-              <h2 id="execution-heading">What I Built</h2>
-            </div>
-            <div class="case-body">
-              <p>
-                Working on a three-person team for CS 147L, I worked across design and engineering. I started by scoping out our core features and designing the initial app screens, then spent most of the project building the React Native frontend and hooking it up to our Supabase database.
-              </p>
-              <p>
-                I built the login, authentication, and onboarding flows so individual volunteers and local organizations could set up and manage their profiles.
-              </p>
-              <p>
-                I built the real-time event creation and registration system. When an organization posts a new volunteer opportunity, it immediately appears in the app for volunteers to view. Volunteers can sign up with a tap and view all of their upcoming shifts in one place.
-              </p>
-            </div>
-          </div>
-
-          <div class="case-gallery">
-            <figure class="photo-card">
-              <img
-                src="../../assets/images/volunteerverse-volunteer.jpg"
-                alt="VolunteerVerse screens for volunteer onboarding, discovering organizations, and tracking shifts"
-                loading="lazy"
-              />
-              <figcaption class="photo-caption">
-                The volunteer experience: onboarding, discovering local organizations, and tracking upcoming shifts.
-              </figcaption>
-            </figure>
-
-            <figure class="photo-card">
-              <img
-                src="../../assets/images/volunteerverse-org.jpg"
-                alt="VolunteerVerse screens for organization profiles and real-time event posting"
-                loading="lazy"
-              />
-              <figcaption class="photo-caption">
-                The organization experience: managing org details and posting real-time volunteer events.
-              </figcaption>
-            </figure>
-          </div>
-        </section>
-
-        <!-- 3. Scoping & Tradeoffs -->
-        <section class="section" aria-labelledby="takeaways-heading">
-          <div class="case-grid">
-            <div>
-              <div class="section-kicker">03 · Decisions</div>
-              <h2 id="takeaways-heading">Focusing on What Matters</h2>
-            </div>
-            <div class="case-body">
-              <p>
-                With a small team and 4 weeks to build, our biggest challenge was deciding where to spend our time.
-              </p>
-                <p>
-                  Early on, we imagined the main screen being a map view so volunteers could browse opportunities by location. While this was a cool idea, we ran into issues with our free map APIs. Rather than spending time re-working this functionality, we chose to pivot to a more straightforward UX. Our final product was database-backed and fully usable, meaning user and org accounts, event creation, and shift signups worked end to end.
-                </p>
-          </div>
-        </section>
-
-        <!-- 4. Embedded Demo Video
-        <section class="section" id="demo" aria-labelledby="demo-heading">
-          <div class="section-heading">
-            <div class="section-kicker">04 · Walkthrough</div>
-            <h2 id="demo-heading">App Demo</h2>
-          </div>
-
-          <div class="embed-grid">
-            <div class="embed-card">
-              <div class="embed-header">
-                <span class="embed-title">VolunteerVerse Demo Video</span>
-                <a href="../../assets/video/volunteerverse-demo.mp4" target="_blank" rel="noopener noreferrer">Open Video ↗</a>
-              </div>
-              <video class="embed-frame" controls preload="metadata">
-                <source src="../../assets/video/volunteerverse-demo.mp4" type="video/mp4" />
-                Your browser does not support embedded video.
-              </video>
-            </div>
-          </div>
-        </section>
-        -->
-        <!-- Next / Previous Project Nav -->
-        <nav class="project-nav-footer" aria-label="Project pagination">
-          <a class="project-nav-link" href="../thesis/">
-            <span class="project-nav-label">Previous Project</span>
-            <span class="project-nav-title">← Honors Thesis</span>
-          </a>
-          <a class="project-nav-link next" href="../tai/">
-            <span class="project-nav-label">Next Project</span>
-            <span class="project-nav-title">T.AI →</span>
-          </a>
-        </nav>
-
-        <footer>
-          © 2026 Violet Crow
-        </footer>
+      <figure class="case-banner">
+        <img src="../../assets/web/volunteerverse-1280.webp" alt="VolunteerVerse mobile app screens" width="1280" height="720" decoding="async" srcset="../../assets/web/volunteerverse-640.webp 640w, ../../assets/web/volunteerverse-1280.webp 1280w" sizes="(max-width: 720px) 92vw, (max-width: 1280px) 49vw, 640px">
+        <figcaption class="photo-caption">VolunteerVerse makes it easy for community organizations to post shifts and for local volunteers to find ways to help.</figcaption>
+      </figure>
+      <div class="case-meta-grid">
+        <div class="meta-item">
+          <span class="meta-label">My Role</span>
+          <span class="meta-value">UX Design, Feature Scoping, Frontend &amp; Backend</span>
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">Timeline</span>
+          <span class="meta-value">Fall 2025</span>
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">Team</span>
+          <span class="meta-value">3-Person Team</span>
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">Built With</span>
+          <span class="meta-value">React Native, Expo Go, Supabase</span>
+        </div>
       </div>
-    </main>
-  </div>
-  <script>
-    const menuToggle = document.getElementById('menu-toggle');
-    const sidebar = document.getElementById('sidebar');
-
-    menuToggle.addEventListener('click', () => {
-      const isOpen = sidebar.classList.toggle('is-open');
-      menuToggle.setAttribute('aria-expanded', isOpen);
-      menuToggle.textContent = isOpen ? 'Close' : 'Menu';
-    });
-  </script>
+    </section>
+    <section class="section" aria-labelledby="context-heading">
+      <div class="case-grid">
+        <div>
+          <h2 id="context-heading">Why We Built It</h2>
+        </div>
+        <div class="case-body">
+          <p>Finding ways to volunteer in your own neighborhood shouldn't require detective work. Usually, people looking to help out have to piece together information from across Instagram stories, local Facebook groups, and outdated nonprofit websites.</p>
+          <p>On the other side, local organizations often struggle to get the word out and keep track of who has committed to helping. We built VolunteerVerse so both sides could meet in one place: organizations can create profiles, post upcoming events, and track signups, and volunteers can discover causes they care about, sign up for shifts, and keep track of their volunteering schedule.</p>
+        </div>
+      </div>
+    </section>
+    <section class="section" aria-labelledby="execution-heading">
+      <div class="case-grid">
+        <div>
+          <h2 id="execution-heading">What I Built</h2>
+        </div>
+        <div class="case-body">
+          <p>Working on a three-person team for CS 147L, I worked across design and engineering. I started by scoping out our core features and designing the initial app screens, then spent most of the project building the React Native frontend and hooking it up to our Supabase database.</p>
+          <p>I built the login, authentication, and onboarding flows so individual volunteers and local organizations could set up and manage their profiles.</p>
+          <p>I built the real-time event creation and registration system. When an organization posts a new volunteer opportunity, it immediately appears in the app for volunteers to view. Volunteers can sign up with a tap and view all of their upcoming shifts in one place.</p>
+        </div>
+      </div>
+      <div class="case-gallery">
+        <figure class="photo-card">
+          <a href="../../assets/images/volunteerverse-volunteer.jpg" aria-label="Full-size image: VolunteerVerse screens for volunteer onboarding, discovering organizations, and tracking shifts"><img src="../../assets/web/volunteerverse-volunteer-1280.webp" alt="VolunteerVerse screens for volunteer onboarding, discovering organizations, and tracking shifts" loading="lazy" width="1280" height="720" decoding="async" srcset="../../assets/web/volunteerverse-volunteer-640.webp 640w, ../../assets/web/volunteerverse-volunteer-1280.webp 1280w" sizes="(max-width: 720px) 92vw, (max-width: 1280px) 49vw, 640px"></a>
+          <figcaption class="photo-caption">The volunteer experience: onboarding, discovering local organizations, and tracking upcoming shifts.</figcaption>
+        </figure>
+        <figure class="photo-card">
+          <a href="../../assets/images/volunteerverse-org.jpg" aria-label="Full-size image: VolunteerVerse screens for organization profiles and real-time event posting"><img src="../../assets/web/volunteerverse-org-1280.webp" alt="VolunteerVerse screens for organization profiles and real-time event posting" loading="lazy" width="1280" height="720" decoding="async" srcset="../../assets/web/volunteerverse-org-640.webp 640w, ../../assets/web/volunteerverse-org-1280.webp 1280w" sizes="(max-width: 720px) 92vw, (max-width: 1280px) 49vw, 640px"></a>
+          <figcaption class="photo-caption">The organization experience: managing org details and posting real-time volunteer events.</figcaption>
+        </figure>
+      </div>
+    </section>
+    <section class="section" aria-labelledby="takeaways-heading">
+      <div class="case-grid">
+        <div>
+          <h2 id="takeaways-heading">Focusing on What Matters</h2>
+        </div>
+        <div class="case-body">
+          <p>With a small team and 4 weeks to build, our biggest challenge was deciding where to spend our time.</p>
+          <p>We wanted the main screen to be a map so people could find opportunities near home. When we ran into limits with the free map APIs, we dropped the map and spent that time on signups. By the end of the four weeks, an organizer could post a shift and a volunteer could see it, sign up, and find it on their schedule.</p>
+        </div>
+      </div>
+    </section>
+    <nav class="project-nav-footer" aria-label="More projects">
+      <a href="../the-party/"><small>Previous project</small>The Party</a>
+      <a href="../tai/"><small>Next project</small>T.AI</a>
+    </nav>
+  </main>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <a class="footer-name" href="../../">Violet Crow</a>
+      <nav aria-label="Contact and résumé"><a href="mailto:crow@alumni.stanford.edu">Email</a><a href="https://www.linkedin.com/in/violet-crow/">LinkedIn</a><a href="../../assets/docs/VioletCrowResume.pdf">Résumé (PDF)</a></nav>
+      <small>© 2026 Violet Crow</small>
+    </div>
+  </footer>
 </body>
 </html>

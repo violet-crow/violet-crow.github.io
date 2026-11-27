@@ -1,321 +1,127 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta
-    name="description"
-    content="Violet Crow — Stanford Symbolic Systems graduate ('26) working across product, design, research, and engineering."
-  />
-  <title>Violet Crow | Product & HCI</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Violet Crow — Stanford Symbolic Systems graduate (&#x27;26) working across product, design, research, and engineering.">
+  <title>Violet Crow | Product &amp; HCI</title>
+  <link rel="icon" href="assets/web/butterfly.png">
+  <link rel="stylesheet" href="styles.css">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Manrope:wght@400;500;600;700;800&display=swap"
-    rel="stylesheet"
-  />
-  <link rel="stylesheet" href="styles.css" />
 </head>
-
-<body>
-  <div class="site-shell">
-    <aside class="sidebar" id="sidebar" aria-label="Site navigation">
-      <div class="sidebar-top">
-        <a class="brand" href="./">Violet Crow</a>
-        <img
-          class="profile-photo"
-          src="assets/images/profile.png"
-          alt="Portrait of Violet Crow"
-          width="132"
-          height="132"
-        />
-        <button
-          class="menu-toggle"
-          id="menu-toggle"
-          type="button"
-          aria-expanded="false"
-          aria-controls="sidebar-menu"
-        >
-          Menu
-        </button>
-      </div>
-
-      <div class="sidebar-menu" id="sidebar-menu">
-        <nav class="sidebar-nav" aria-label="Primary">
-          <a href="./" aria-current="page">Home</a>
-          <a href="#work">Work</a>
-          <a href="portfolio/">Portfolio</a>
-          <a href="about/">About Me</a>
-          <a href="contact/">Contact</a>
-        </nav>
-
-        <details class="recent-projects project-index" open>
-          <summary>Projects</summary>
-          <ul>
-            <li><a href="work/thesis/">Honors Thesis</a></li>
-            <li><a href="work/the-party/">The Party</a></li>
-            <li><a href="work/myodyssey/">Myodyssey</a></li>
-            <li><a href="work/tai/">T.AI</a></li>
-            <li><a href="work/volunteerverse/">VolunteerVerse</a></li>
-            <li><a href="work/harmonics/">Stanford Harmonics</a></li>
-          </ul>
-        </details>
-
-        <div class="sidebar-actions">
-          <a
-            class="social-button"
-            href="https://www.linkedin.com/in/violet-crow/"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="LinkedIn"
-            title="LinkedIn"
-          >
-            <svg viewBox="0 0 24 24" aria-hidden="true">
-              <path d="M6.94 8.5H3.4V20h3.54V8.5ZM5.17 3A2.06 2.06 0 1 0 5.17 7.12 2.06 2.06 0 0 0 5.17 3ZM20.6 13.41c0-3.46-1.85-5.07-4.32-5.07-1.99 0-2.88 1.1-3.38 1.87V8.5H9.36V20h3.54v-5.69c0-1.5.28-2.95 2.14-2.95 1.84 0 1.87 1.71 1.87 3.04V20h3.55v-6.59Z" />
-            </svg>
-          </a>
-          <a
-            class="resume-button"
-            href="https://violetcrow.me/assets/docs/VioletCrowResume.pdf"
-            title="Resume"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Resume
-          </a>
+<body class="home-page">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="masthead">
+    <div class="mast-inner">
+      <a class="brand" href="./" aria-label="Violet Crow, home"><img src="assets/web/butterfly.png" width="40" height="38" alt=""> Violet Crow</a>
+      <nav class="primary" aria-label="Primary">
+        <a href="#work">Work</a>
+        <a href="portfolio/">Portfolio</a>
+        <a href="about/">About</a>
+        <a href="contact/">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <main class="container" id="main" tabindex="-1">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Product · Human-computer interaction</p>
+        <h1>Hello!<br> I’m <em>Violet.</em></h1>
+        <p class="hero-note">I’m a recent Stanford Symbolic Systems Honors graduate ('26) with a concentration in Human-Computer Interaction. I love working across research, design, and code to build elegant, easy-to-use products.</p>
+        <div class="hero-actions">
+          <a class="pill-button" href="#work">Explore Work</a>
+          <a class="pill-button secondary" href="about/">About Me</a>
         </div>
       </div>
-    </aside>
-
-    <main class="main">
-      <div class="container">
-        <section class="hero">
-          <div class="hero-grid">
-            <div class="hero-copy">
-              <p class="eyebrow">Product · Human-Computer Interaction · Design & Engineering</p>
-              <h1>Hello! I'm Violet.</h1>
-              <p class="hero-note">
-                I’m a recent Stanford Symbolic Systems Honors graduate ('26) with a concentration in Human-Computer Interaction. I love working across research, design, and code to build elegant, easy-to-use products.
-              </p>
-
-              <div class="hero-actions">
-                <a class="pill-button" href="#work">Explore Work</a>
-                <a class="pill-button secondary" href="about/">About Me</a>
-              </div>
-            </div>
-
-            <div class="hero-media">
-              <img
-                class="hero-collage media-placeholder"
-                src="assets/images/hero-collage.png"
-                alt="Collage of Violet Crow's research, design, and engineering projects"
-              />
-            </div>
-          </div>
-        </section>
-
-        <section class="section" id="work" aria-labelledby="work-heading">
-          <div class="section-heading">
-            <h2 id="work-heading">Work</h2>
-          </div>
-
-          <div class="project-list">
-            <!-- 1. Honors Thesis -->
-            <article class="project">
-              <a class="project-image-wrap" href="work/thesis/" aria-label="View Honors Thesis">
-                <img
-                  class="project-image"
-                  src="assets/images/thesis.jpg"
-                  alt="Honors thesis preview"
-                  loading="lazy"
-                />
-              </a>
-
-              <div class="project-copy">
-                <h3 class="project-title">
-                  <a href="work/thesis/">Honors Thesis</a>
-                </h3>
-
-                <div class="project-meta">
-                  <span>XR Research · Study Operations · Python/R Data Analysis</span>
-                  <span class="dot">/</span>
-                  <a href="work/thesis/">Read More</a>
-                  <span class="dot">/</span>
-                  <a href="https://violetcrow.me/assets/portfolio/thesis-paper.pdf" target="_blank" rel="noopener noreferrer" aria-label="Read thesis paper">Paper</a>
-                  <span class="dot">/</span>
-                  <a href="https://doi.org/10.25740/my027tc4249" target="_blank" rel="noopener noreferrer" aria-label="Stanford repository DOI">DOI</a>
-                </div>
-
-                <p class="project-description">
-                  Led a 12-month study at the Stanford Virtual Human Interaction Lab testing the impact of spatialization and virtual environments on group communication. Recruited and ran 133 participants, trained 5 research assistants, and wrote Python and R scripts to process data. We found that 2D grids often create less social friction than 3D spatial setups.
-                </p>
-              </div>
-            </article>
-
-            <!-- The Party -->
-            <article class="project party-project">
-              <a class="project-image-wrap" href="work/the-party/" aria-label="Explore The Party">
-                <img
-                  class="project-image"
-                  src="assets/images/party-credits.png"
-                  alt="The Party by Violet Crow for ARTSTUDI 169. Special thanks to the Harmonics."
-                  width="895"
-                  height="539"
-                  loading="lazy"
-                />
-              </a>
-              <div class="project-copy"><h3 class="project-title"><a href="work/the-party/">The Party</a></h3>
-                <div class="project-meta"><span>Narrative VR · Unity · Fall 2025</span></div>
-                <p class="project-description">Directed and developed a narrative virtual reality experience exploring the psychological and social
-consequences of collegiate alcohol abuse.</p>
-                <a class="back-link" href="work/the-party/">Explore the project →</a>
-              </div>
-            </article>
-
-            <article class="project">
-              <a class="project-image-wrap" href="work/volunteerverse/" aria-label="View VolunteerVerse">
-                <img
-                  class="project-image"
-                  src="assets/images/volunteerverse.jpg"
-                  alt="VolunteerVerse mobile app preview"
-                  loading="lazy"
-                />
-              </a>
-
-              <div class="project-copy">
-                <h3 class="project-title">
-                  <a href="work/volunteerverse/">VolunteerVerse</a>
-                </h3>
-
-                <div class="project-meta">
-                  <span>Feature Scoping · UX Design · React Native & Supabase</span>
-                  <span class="dot">/</span>
-                  <a href="work/volunteerverse/">Read More</a>
-                  <span class="dot">/</span>
-                  <a href="https://github.com/cs147L-25au/Final-Project-volunteer_verse" target="_blank" rel="noopener noreferrer">GitHub</a>
-                </div>
-
-                <p class="project-description">
-                  Designed and built a mobile app that brings local volunteering opportunities into one place. Working on a 3-person team, I scoped our core features, designed the initial UX, and built the React Native frontend and Supabase backend for account onboarding, real-time event posting, and shift signups on Expo Go.
-                </p>
-              </div>
-            </article>
-
-            <!-- 3. T.AI -->
-            <article class="project">
-              <a class="project-image-wrap" href="work/tai/" aria-label="View T.AI">
-                <img
-                  class="project-image"
-                  src="assets/images/tai.jpg"
-                  alt="T.AI mobile app preview"
-                  loading="lazy"
-                />
-              </a>
-
-              <div class="project-copy">
-                <h3 class="project-title">
-                  <a href="work/tai/">T.AI</a>
-                </h3>
-
-                <div class="project-meta">
-                  <span>Needfinding · Product Concept · Figma Prototyping</span>
-                  <span class="dot">/</span>
-                  <a href="work/tai/">Read More</a>
-                  <span class="dot">/</span>
-                  <a href="https://www.figma.com/proto/utyWo2W1V87F10TjftMStV/MedFi-Prototype--Current-?node-id=98-238&t=ID0Ffh1nkYUGRBFG-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=98%3A238" target="_blank" rel="noopener noreferrer">Prototype</a>
-                  <span class="dot">/</span>
-                  <a href="https://violetcrow.me/work/tai/#deliverables" target="_blank" rel="noopener noreferrer">Demo Video & Poster</a>
-                </div>
-
-                <p class="project-description">
-                  After interviewing teachers and students about how AI is used in classrooms, I conceived and designed a mobile assistant that helps teachers grade assignments, draft personalized feedback, and track student progress over time.
-                </p>
-              </div>
-            </article>
-
-            <!-- 4. Stanford Harmonics -->
-            <article class="project">
-              <a class="project-image-wrap" href="work/harmonics/" aria-label="View Stanford Harmonics project">
-                <img
-                  class="project-image"
-                  src="assets/images/harmonics.jpg"
-                  alt="Stanford Harmonics website and visual design work"
-                  loading="lazy"
-                />
-              </a>
-
-              <div class="project-copy">
-                <h3 class="project-title">
-                  <a href="work/harmonics/">Stanford Harmonics</a>
-                </h3>
-
-                <div class="project-meta">
-                  <span>Web Redesign · Visual Design · Operations & Production</span>
-                  <span class="dot">/</span>
-                  <a href="work/harmonics/">Read More</a>
-                  <span class="dot">/</span>
-                  <a href="https://stanfordharmonics.com" target="_blank" rel="noopener noreferrer" aria-label="Visit Harmonics website">Website</a>
-                </div>
-
-                <p class="project-description">
-                  Redesigned our a cappella group’s outdated website to consolidate pages into streamlined Music and Shows hubs, growing monthly traffic by 75% and doubling September audition traffic. Across four years, I also served as Publicity Director, President, and Album Manager for our upcoming studio album, <em>Ashes to Ashes</em>.
-                </p>
-              </div>
-            </article>
-
-            <!-- 5. Myodyssey -->
-            <article class="project">
-              <a class="project-image-wrap" href="work/myodyssey/" aria-label="View Myodyssey">
-                <img
-                  class="project-image"
-                  src="assets/images/myodyssey.jpg"
-                  alt="Myodyssey game preview"
-                  loading="lazy"
-                />
-              </a>
-
-              <div class="project-copy">
-                <h3 class="project-title">
-                  <a href="work/myodyssey/">Myodyssey</a>
-                </h3>
-
-                <div class="project-meta">
-                  <span>Game Design · Frontend Integration · Original Soundtrack</span>
-                  <span class="dot">/</span>
-                  <a href="work/myodyssey/">Read More</a>
-                  <span class="dot">/</span>
-                  <a href="work/myodyssey/#playtest-video">Playtest video</a>
-                  <span class="dot">/</span>
-                  <a href="https://venef.itch.io/myodyssey" target="_blank" rel="noopener noreferrer">Play</a>
-                  <span class="dot">/</span>
-                  <a href="https://github.com/F10naH/Myopus_game" target="_blank" rel="noopener noreferrer">GitHub</a>
-                </div>
-
-                <p class="project-description">
-                  Developed a browser-based adventure game about a wood lemming navigating habitat loss. On a 5-person team, I created the core mechanics, coded the opening chapter, integrated our levels, and composed the soundtrack.
-                </p>
-              </div>
-            </article>
-          </div>
-        </section>
-
-        <footer>
-          © 2026 Violet Crow
-        </footer>
+      <figure class="portrait-print">
+        <div class="portrait-frame">
+          <img src="assets/web/profile-1200.webp" alt="Violet in her Stanford graduation stole, surrounded by illustrated butterflies" fetchpriority="high" width="1200" height="1200" decoding="async" srcset="assets/web/profile-640.webp 640w, assets/web/profile-1200.webp 1200w" sizes="(max-width: 720px) 92vw, (max-width: 1280px) 49vw, 640px">
+        </div>
+        <figcaption>Stanford University <span>Class of ’26</span></figcaption>
+      </figure>
+    </section>
+    <section class="section" id="work" aria-labelledby="work-heading">
+      <div class="section-heading">
+        <h2 id="work-heading">Selected work</h2>
+        <a href="portfolio/">Full portfolio</a>
       </div>
-    </main>
-  </div>
-
-  <script>
-    const menuToggle = document.getElementById('menu-toggle');
-    const sidebar = document.getElementById('sidebar');
-
-    menuToggle.addEventListener('click', () => {
-      const isOpen = sidebar.classList.toggle('is-open');
-      menuToggle.setAttribute('aria-expanded', isOpen);
-      menuToggle.textContent = isOpen ? 'Close' : 'Menu';
-    });
-  </script>
+      <div class="project-list">
+        <article class="project">
+          <a class="project-image-wrap" href="work/thesis/" aria-label="View Honors Thesis" tabindex="-1"><img class="project-image" src="assets/web/thesis-conditions-1280.webp" alt="Spatial and grid conversations in mixed and virtual reality" loading="lazy" width="1280" height="720" decoding="async" srcset="assets/web/thesis-conditions-640.webp 640w, assets/web/thesis-conditions-1280.webp 1280w" sizes="(max-width: 720px) 92vw, (max-width: 1280px) 49vw, 640px"></a>
+          <div class="project-copy">
+            <p class="project-discipline">XR Research · Study Operations · Python/R Data Analysis</p>
+            <h3 class="project-title"><a href="work/thesis/">Honors Thesis</a></h3>
+            <p class="project-description">Led a 12-month study at the Stanford Virtual Human Interaction Lab testing the impact of spatialization and virtual environments on group communication. Recruited and ran 133 participants, trained 5 research assistants, and wrote Python and R scripts to process data. We found that 2D grids often create less social friction than 3D spatial setups.</p>
+            <div class="project-meta">
+              <a href="assets/portfolio/thesis-paper.pdf" target="_blank" rel="noopener noreferrer" aria-label="Read thesis paper">Paper</a>
+              <a href="https://doi.org/10.25740/my027tc4249" target="_blank" rel="noopener noreferrer" aria-label="Stanford repository DOI">DOI</a>
+            </div>
+          </div>
+        </article>
+        <article class="project">
+          <a class="project-image-wrap" href="work/the-party/" aria-label="Explore The Party" tabindex="-1"><img class="project-image" src="assets/web/party-interaction-1500.webp" alt="Inside the virtual afterparty, facing a guest you can talk to" width="1626" height="875" loading="lazy" decoding="async" srcset="assets/web/party-interaction-640.webp 640w, assets/web/party-interaction-1500.webp 1500w" sizes="(max-width: 720px) 92vw, (max-width: 1280px) 49vw, 640px"></a>
+          <div class="project-copy">
+            <p class="project-discipline">Narrative VR · Unity · Fall 2025</p>
+            <h3 class="project-title"><a href="work/the-party/">The Party</a></h3>
+            <p class="project-description">Directed and developed a narrative virtual reality experience exploring the psychological and social consequences of collegiate alcohol abuse.</p>
+          </div>
+        </article>
+        <article class="project">
+          <a class="project-image-wrap" href="work/volunteerverse/" aria-label="View VolunteerVerse" tabindex="-1"><img class="project-image" src="assets/web/volunteerverse-1280.webp" alt="VolunteerVerse logo and app branding" loading="lazy" width="1280" height="720" decoding="async" srcset="assets/web/volunteerverse-640.webp 640w, assets/web/volunteerverse-1280.webp 1280w" sizes="(max-width: 720px) 92vw, (max-width: 1280px) 49vw, 640px"></a>
+          <div class="project-copy">
+            <p class="project-discipline">Feature Scoping · UX Design · React Native &amp; Supabase</p>
+            <h3 class="project-title"><a href="work/volunteerverse/">VolunteerVerse</a></h3>
+            <p class="project-description">Designed and built a mobile app that brings local volunteering opportunities into one place. Working on a 3-person team, I scoped our core features, designed the initial UX, and built the React Native frontend and Supabase backend for account onboarding, real-time event posting, and shift signups on Expo Go.</p>
+            <div class="project-meta">
+              <a href="https://github.com/cs147L-25au/Final-Project-volunteer_verse" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </div>
+          </div>
+        </article>
+        <article class="project">
+          <a class="project-image-wrap" href="work/tai/" aria-label="View T.AI" tabindex="-1"><img class="project-image" src="assets/web/tai-1500.webp" alt="T.AI mobile teaching assistant" loading="lazy" width="1920" height="1080" decoding="async" srcset="assets/web/tai-640.webp 640w, assets/web/tai-1500.webp 1500w" sizes="(max-width: 720px) 92vw, (max-width: 1280px) 49vw, 640px"></a>
+          <div class="project-copy">
+            <p class="project-discipline">Needfinding · Product Concept · Figma Prototyping</p>
+            <h3 class="project-title"><a href="work/tai/">T.AI</a></h3>
+            <p class="project-description">After interviewing teachers and students about how AI is used in classrooms, I conceived and designed a mobile assistant that helps teachers grade assignments, draft personalized feedback, and track student progress over time.</p>
+            <div class="project-meta">
+              <a href="https://www.figma.com/proto/utyWo2W1V87F10TjftMStV/MedFi-Prototype--Current-?node-id=98-238&amp;t=ID0Ffh1nkYUGRBFG-1&amp;scaling=scale-down&amp;content-scaling=fixed&amp;page-id=0%3A1&amp;starting-point-node-id=98%3A238" target="_blank" rel="noopener noreferrer">Prototype</a>
+              <a href="work/tai/#deliverables" target="_blank" rel="noopener noreferrer">Demo Video &amp; Poster</a>
+            </div>
+          </div>
+        </article>
+        <article class="project">
+          <a class="project-image-wrap" href="work/harmonics/" aria-label="View Stanford Harmonics project" tabindex="-1"><img class="project-image" src="assets/web/harmonics-posters-1280.webp" alt="A selection of concert posters Violet designed for the Harmonics" loading="lazy" width="1280" height="720" decoding="async" srcset="assets/web/harmonics-posters-640.webp 640w, assets/web/harmonics-posters-1280.webp 1280w" sizes="(max-width: 720px) 92vw, (max-width: 1280px) 49vw, 640px"></a>
+          <div class="project-copy">
+            <p class="project-discipline">Web Redesign · Visual Design · Operations &amp; Production</p>
+            <h3 class="project-title"><a href="work/harmonics/">Stanford Harmonics</a></h3>
+            <p class="project-description">I rebuilt our a cappella group’s website around the things people came for: hearing our music and finding our shows. Monthly traffic grew by 75%, and we saw twice as many visits during September auditions. Across four years, I also served as Publicity Director, President, and Album Manager for our upcoming studio album, <em>Ashes to Ashes</em>.</p>
+            <div class="project-meta">
+              <a href="https://stanfordharmonics.com" target="_blank" rel="noopener noreferrer" aria-label="Visit Harmonics website">Website</a>
+            </div>
+          </div>
+        </article>
+        <article class="project">
+          <a class="project-image-wrap" href="work/myodyssey/" aria-label="View Myodyssey" tabindex="-1"><img class="project-image" src="assets/web/myodyssey-1280.webp" alt="Myodyssey game title screen" loading="lazy" width="1280" height="720" decoding="async" srcset="assets/web/myodyssey-640.webp 640w, assets/web/myodyssey-1280.webp 1280w" sizes="(max-width: 720px) 92vw, (max-width: 1280px) 49vw, 640px"></a>
+          <div class="project-copy">
+            <p class="project-discipline">Game Design · Frontend Integration · Original Soundtrack</p>
+            <h3 class="project-title"><a href="work/myodyssey/">Myodyssey</a></h3>
+            <p class="project-description">Developed a browser-based adventure game about a wood lemming navigating habitat loss. On a 5-person team, I created the core mechanics, coded the opening chapter, integrated our levels, and composed the soundtrack.</p>
+            <div class="project-meta">
+              <a href="work/myodyssey/#playtest-video">Playtest video</a>
+              <a href="https://venef.itch.io/myodyssey" target="_blank" rel="noopener noreferrer">Play</a>
+              <a href="https://github.com/F10naH/Myopus_game" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <a class="footer-name" href="./">Violet Crow</a>
+      <nav aria-label="Contact and résumé"><a href="mailto:crow@alumni.stanford.edu">Email</a><a href="https://www.linkedin.com/in/violet-crow/">LinkedIn</a><a href="assets/docs/VioletCrowResume.pdf">Résumé (PDF)</a></nav>
+      <small>© 2026 Violet Crow</small>
+    </div>
+  </footer>
 </body>
 </html>

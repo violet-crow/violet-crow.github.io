@@ -1,335 +1,166 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta
-    name="description"
-    content="Stanford Harmonics — Website redesign, visual design, group operations, and album production by Violet Crow."
-  />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Stanford Harmonics — Website redesign, visual design, group operations, and album production by Violet Crow.">
   <title>Stanford Harmonics | Violet Crow</title>
+  <link rel="icon" href="../../assets/web/butterfly.png">
+  <link rel="stylesheet" href="../../styles.css">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Manrope:wght@400;500;600;700;800&display=swap"
-    rel="stylesheet"
-  />
-  <link rel="stylesheet" href="../../styles.css" />
 </head>
-
-<body class="project-page">
-  <div class="site-shell">
-    <aside class="sidebar" id="sidebar" aria-label="Site navigation">
-      <div class="sidebar-top">
-        <a class="brand" href="../../">Violet Crow</a>
-        <img
-          class="profile-photo"
-          src="../../assets/images/profile.png"
-          alt="Portrait of Violet Crow"
-          width="132"
-          height="132"
-        />
-        <button
-          class="menu-toggle"
-          id="menu-toggle"
-          type="button"
-          aria-expanded="false"
-          aria-controls="sidebar-menu"
-        >
-          Menu
-        </button>
-      </div>
-
-      <div class="sidebar-menu" id="sidebar-menu">
-        <nav class="sidebar-nav" aria-label="Primary">
-          <a href="../../">Home</a>
-          <a href="../../#work">Work</a>
-          <a href="../../portfolio/">Portfolio</a>
-          <a href="../../about/">About Me</a>
-          <a href="../../contact/">Contact</a>
-        </nav>
-
-        <details class="recent-projects project-index" open>
-          <summary>Projects</summary>
-          <ul>
-            <li><a href="../../work/thesis/">Honors Thesis</a></li>
-            <li><a href="../../work/the-party/">The Party</a></li>
-            <li><a href="../../work/myodyssey/">Myodyssey</a></li>
-            <li><a href="../../work/tai/">T.AI</a></li>
-            <li><a href="../../work/volunteerverse/">VolunteerVerse</a></li>
-            <li><a href="../../work/harmonics/" aria-current="page">Stanford Harmonics</a></li>
-          </ul>
-        </details>
-
-        <div class="sidebar-actions">
-          <a
-            class="social-button"
-            href="https://www.linkedin.com/in/violet-crow/"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="LinkedIn"
-            title="LinkedIn"
-          >
-            <svg viewBox="0 0 24 24" aria-hidden="true">
-              <path d="M6.94 8.5H3.4V20h3.54V8.5ZM5.17 3A2.06 2.06 0 1 0 5.17 7.12 2.06 2.06 0 0 0 5.17 3ZM20.6 13.41c0-3.46-1.85-5.07-4.32-5.07-1.99 0-2.88 1.1-3.38 1.87V8.5H9.36V20h3.54v-5.69c0-1.5.28-2.95 2.14-2.95 1.84 0 1.87 1.71 1.87 3.04V20h3.55v-6.59Z" />
-            </svg>
-          </a>
-          <a
-            class="resume-button"
-            href="https://violetcrow.me/assets/docs/VioletCrowResume.pdf"
-            title="Resume"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Resume
-          </a>
+<body class="work-page harmonics-study">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="masthead">
+    <div class="mast-inner">
+      <a class="brand" href="../../" aria-label="Violet Crow, home"><img src="../../assets/web/butterfly.png" width="40" height="38" alt=""> Violet Crow</a>
+      <nav class="primary" aria-label="Primary">
+        <a href="../../#work" aria-current="location">Work</a>
+        <a href="../../portfolio/">Portfolio</a>
+        <a href="../../about/">About</a>
+        <a href="../../contact/">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <main class="container" id="main" tabindex="-1">
+    <section class="case-hero">
+      <div class="case-lead">
+        <a class="back-link" href="../../#work">Back to Work</a>
+        <p class="eyebrow">Web Redesign · Visual Design · Operations &amp; Production</p>
+        <h1>Stanford Harmonics</h1>
+        <p class="case-subtitle">Redesigning the website, shaping the visual identity, and leading operations and album production across four years with Stanford’s award-winning rock &amp; experimental a cappella group.</p>
+        <div class="hero-actions">
+          <a class="pill-button" href="https://stanfordharmonics.com" target="_blank" rel="noopener noreferrer">Visit Live Website</a>
+          <a class="pill-button secondary" href="#brand-gallery">Posters &amp; Brand Work</a>
+          <a class="pill-button secondary" href="#operations">Operations &amp; Album Production</a>
         </div>
       </div>
-    </aside>
-
-    <main class="main">
-      <div class="container">
-        <!-- Header & Summary -->
-        <section class="case-hero">
-          <a class="back-link" href="../../#work">← Back to Work</a>
-          <p class="eyebrow">Web Redesign · Visual Design · Operations & Production</p>
-          <h1>Stanford Harmonics</h1>
-          <p class="case-subtitle">
-            Redesigning the website, shaping the visual identity, and leading operations and album production across four years with Stanford’s award-winning rock & experimental a cappella group.
-          </p>
-
-          <div class="hero-actions">
-            <a
-              class="pill-button"
-              href="https://stanfordharmonics.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Visit Live Website ↗
-            </a>
-            <a class="pill-button secondary" href="#brand-gallery">
-              Posters & Brand Work
-            </a>
-            <a class="pill-button secondary" href="#operations">
-              Operations & Album Production
-            </a>
-          </div>
-
-          <div class="case-meta-grid">
-            <div class="meta-item">
-              <span class="meta-label">My Roles</span>
-              <span class="meta-value">Publicity Director, President, Album Manager</span>
-            </div>
-            <div class="meta-item">
-              <span class="meta-label">Timeline</span>
-              <span class="meta-value">2022–2026</span>
-            </div>
-            <div class="meta-item">
-              <span class="meta-label">Impact</span>
-              <span class="meta-value">+75% Monthly Traffic · 2x Peak Audition Traffic · 2x Rental Revenue</span>
-            </div>
-            <div class="meta-item">
-              <span class="meta-label">Key Work</span>
-              <span class="meta-value">Website Overhaul, 6 Show Posters, 3 Audition Campaigns, 1 Album</span>
-            </div>
-          </div>
-
-          <figure class="case-banner">
-            <img
-              src="../../assets/images/harmonics.jpg"
-              alt="Stanford Harmonics redesigned website and visual design work"
-            />
-            <figcaption class="photo-caption">
-              A refreshed digital presence and visual identity across stanfordharmonics.com, streaming platforms, and live shows.
-            </figcaption>
-          </figure>
-        </section>
-
-        <!-- 1. The Problem -->
-        <section class="section" aria-labelledby="context-heading">
-          <div class="case-grid">
-            <div>
-              <p class="section-kicker">01 · The Problem</p>
-              <h2 id="context-heading">Why the Site Needed an Overhaul</h2>
-            </div>
-            <div class="case-body">
-              <p>
-                A cappella at Stanford is competitive, and every September our website is the first place new students and prospective auditionees go to check us out. A clear, welcoming site makes a huge difference in convincing people to audition.
-              </p>
-              <p>
-                Our old site was built on a 2014 Squarespace 7.0 template that had become outdated and confusing to navigate. Information was spread across too many separate pages, photos and member bios were out of date, and there were very few modern media embeds for our music or videos. There was no easy way for visitors to book us, listen to our albums, or find our next show date.
-              </p>
-            </div>
-          </div>
-        </section>
-
-        <!-- 2. Website Redesign -->
-        <section class="section" aria-labelledby="web-heading">
-          <div class="case-grid">
-            <div>
-              <p class="section-kicker">02 · Website Redesign</p>
-              <h2 id="web-heading">Making Information Easy to Find</h2>
-            </div>
-            <div class="case-body">
-              <p>
-                I decided to bring the website more in line with our current image, rethinking both the look of the site and how the pages were organized so visitors could immediately find what they came for:
-              </p>
-              <p>
-                I combined the separate “Listen,” “Albums,” and “Videos” pages into a single Music page with streaming embeds and music videos. I also added an Accolades section to highlight the group’s awards, which are one of our key differentiators in Stanford's competitive a cappella scene.
-              </p>
-              <p>
-                I created a new Shows page featuring upcoming concert info alongside an archive of past show posters and links to their YouTube playlists, and turned the contact page into a simple fillable form.
-              </p>
-              <p>
-                Because future group members might not have a technical background, I built the new site on the modern Squarespace engine so it remains easy for the group to update and maintain long after I graduate.
-              </p>
-                <p>
-                  Following the redesign, average monthly traffic grew from roughly 200 to 350 visitors (+75%), and peak September traffic during audition season doubled from around 600 to 1,200 visitors (+100%).
-                </p>
-          </div>
+      <figure class="case-banner">
+        <img src="../../assets/web/harmonics-1280.webp" alt="Stanford Harmonics redesigned website and visual design work" width="1280" height="720" decoding="async" srcset="../../assets/web/harmonics-640.webp 640w, ../../assets/web/harmonics-1280.webp 1280w" sizes="(max-width: 720px) 92vw, (max-width: 1280px) 49vw, 640px">
+        <figcaption class="photo-caption">A refreshed digital presence and visual identity across stanfordharmonics.com, streaming platforms, and live shows.</figcaption>
+      </figure>
+      <div class="case-meta-grid">
+        <div class="meta-item">
+          <span class="meta-label">My Roles</span>
+          <span class="meta-value">Publicity Director, President, Album Manager</span>
         </div>
-          <div class="case-gallery single">
-            <figure class="photo-card">
-              <img
-                src="../../assets/images/harmonics-web-comparison.jpg"
-                alt="Example screenshots of pages from the new site"
-                loading="lazy"
-              />
-              <figcaption class="photo-caption">
-                Examples of page designs featured on the new site.
-              </figcaption>
-            </figure>
-          </div>
-        </section>
-
-        <!-- 3. Publicity & Visual Design -->
-        <section class="section" id="brand-gallery" aria-labelledby="brand-heading">
-          <div class="case-grid">
-            <div>
-              <p class="section-kicker">03 · Visual Design</p>
-              <h2 id="brand-heading">Four Years as Publicity Director</h2>
-            </div>
-            <div class="case-body">
-              <p>
-                Beyond the website, I served as the Harmonics’ Publicity Director all four years at Stanford, handling the group’s visual identity, marketing, and print design.
-              </p>
-              <p>
-                I designed 6 show posters and programs across four years of performances.
-              </p>
-              <p>
-                I also created posters and multimedia promotional materials for 3 fall audition seasons, and designed the group's annual member merch all four years.
-              </p>
-            </div>
-          </div>
-
-          <div class="case-gallery">
-            <figure class="photo-card">
-              <img
-                src="../../assets/images/harmonics-posters.jpg"
-                alt="Selected Harmonics concert posters and show programs designed by Violet Crow"
-                loading="lazy"
-              />
-              <figcaption class="photo-caption">
-                Some of the show posters and programs I designed.
-              </figcaption>
-            </figure>
-
-            <figure class="photo-card">
-              <img
-                src="../../assets/images/harmonics-campaigns.jpg"
-                alt="Audition promotional graphics"
-                loading="lazy"
-              />
-              <figcaption class="photo-caption">
-                Graphics I designed for audition campaigns, including posters, postcards, and digital media.
-              </figcaption>
-            </figure>
-          </div>
-        </section>
-
-        <!-- 4. Operations & Album Production -->
-        <section class="section" id="operations" aria-labelledby="operations-heading">
-          <div class="case-grid">
-            <div>
-              <p class="section-kicker">04 · Leadership & Production</p>
-              <h2 id="operations-heading">President & Album Manager</h2>
-            </div>
-            <div class="case-body">
-              <p>
-                Alongside my design work, I helped run the group’s day-to-day operations and music production:
-              </p>
-              <p>
-                As Business Manager (President), I managed all group operations, finances, equipment purchases, event logistics, internal knowledge management, and communications.
-              </p>
-              <p>
-                As Album Manager & Lead Recording Engineer, I led production for the group’s upcoming studio album, <em>Ashes to Ashes</em>, releasing later in 2026. I managed the recording process, schedule, and timeline and coordinated with our editor, mixer, mastering engineer, licensing partners, cover artist, and distributors. My arrangement of Toby Fox’s <em>“BIG SHOT”</em> will be featured on the album, as well as my solo on "Bottom of the Deep Blue Sea".
-              </p>
-            </div>
-          </div>
-
-          <div class="case-gallery single">
-            <figure class="photo-card">
-              <img
-                src="../../assets/images/harmonics-album.jpg"
-                alt="Recording engineering and production workflow for Stanford Harmonics album Ashes to Ashes"
-                loading="lazy"
-              />
-              <figcaption class="photo-caption">
-                Recording vocals at Stanford for our upcoming album <em>Ashes to Ashes</em>.
-              </figcaption>
-            </figure>
-          </div>
-        </section>
-
-        <!-- Next / Previous Project Nav -->
-        <section class="section" id="recordings"><h2>Selected recordings</h2>
-          <div class="recording-credits">
-            <div>
-              <h3>Big Shot</h3>
-              <p>Arrangement · Violet Crow</p>
-              <p>Edited by Parthiv Krishna · Mixed by Ed Boyer</p>
-              <p><em>Work-in-progress mix</em></p>
-              <audio controls preload="none" style="max-width:100%" aria-label="Big Shot, work-in-progress mix" src="../../assets/audio/big-shot.mp3"></audio>
-              <p class="print-media-note">Audio file · big-shot.mp3</p>
-            </div>
-            <div>
-              <h3>Deep Blue</h3>
-              <p>Solo vocals and recording engineering · Violet Crow</p>
-              <p>Edited by Parthiv Krishna · Mixed by Ed Boyer</p>
-              <p><em>Work-in-progress mix</em></p>
-              <audio controls preload="none" style="max-width:100%" aria-label="Deep Blue, work-in-progress mix" src="../../assets/audio/deep-blue.mp3"></audio>
-              <p class="print-media-note">Audio file · deep-blue.mp3</p>
-            </div>
-          </div>
-        </section>
-        <nav class="project-nav-footer" aria-label="Project pagination">
-          <a class="project-nav-link" href="../tai/">
-            <span class="project-nav-label">Previous Project</span>
-            <span class="project-nav-title">← T.AI</span>
-          </a>
-          <a class="project-nav-link next" href="../myodyssey/">
-            <span class="project-nav-label">Next Project</span>
-            <span class="project-nav-title">Myodyssey →</span>
-          </a>
-        </nav>
-
-        <footer>
-          © 2026 Violet Crow
-        </footer>
+        <div class="meta-item">
+          <span class="meta-label">Timeline</span>
+          <span class="meta-value">2022–2026</span>
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">Impact</span>
+          <span class="meta-value">+75% Monthly Traffic · 2x Peak Audition Traffic · 2x Rental Revenue</span>
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">Key Work</span>
+          <span class="meta-value">Website Overhaul, 6 Show Posters, 3 Audition Campaigns, 1 Album</span>
+        </div>
       </div>
-    </main>
-  </div>
-
-  <script>
-    const menuToggle = document.getElementById('menu-toggle');
-    const sidebar = document.getElementById('sidebar');
-
-    menuToggle.addEventListener('click', () => {
-      const isOpen = sidebar.classList.toggle('is-open');
-      menuToggle.setAttribute('aria-expanded', isOpen);
-      menuToggle.textContent = isOpen ? 'Close' : 'Menu';
-    });
-  </script>
+    </section>
+    <section class="section" aria-labelledby="context-heading">
+      <div class="case-grid">
+        <div>
+          <h2 id="context-heading">Why the Site Needed an Overhaul</h2>
+        </div>
+        <div class="case-body">
+          <p>A cappella at Stanford is competitive, and every September our website is the first place new students and prospective auditionees go to check us out. A clear, welcoming site makes a huge difference in convincing people to audition.</p>
+          <p>Our old site was built on a 2014 Squarespace 7.0 template that had become outdated and confusing to navigate. Information was spread across too many separate pages, photos and member bios were out of date, and there were very few modern media embeds for our music or videos. There was no easy way for visitors to book us, listen to our albums, or find our next show date.</p>
+        </div>
+      </div>
+    </section>
+    <section class="section" aria-labelledby="web-heading">
+      <div class="case-grid">
+        <div>
+          <h2 id="web-heading">Making Information Easy to Find</h2>
+        </div>
+        <div class="case-body">
+          <p>I started with the pages people came to our site to find: our music, our shows, and how to book us.</p>
+          <p>I combined the separate “Listen,” “Albums,” and “Videos” pages into a single Music page with streaming embeds and music videos. I also gave our awards a place of their own so prospective auditionees could see what the group had done.</p>
+          <p>I created a new Shows page featuring upcoming concert info alongside an archive of past show posters and links to their YouTube playlists, and turned the contact page into a simple fillable form.</p>
+          <p>Because future group members might not have a technical background, I built the new site on the modern Squarespace engine so it remains easy for the group to update and maintain long after I graduate.</p>
+          <p>Following the redesign, average monthly traffic grew from roughly 200 to 350 visitors (+75%), and peak September traffic during audition season doubled from around 600 to 1,200 visitors (+100%).</p>
+        </div>
+      </div>
+      <div class="case-gallery single">
+        <figure class="photo-card">
+          <a href="../../assets/images/harmonics-web-comparison.jpg" aria-label="Full-size image: Example screenshots of pages from the new site"><img src="../../assets/web/harmonics-web-comparison-1280.webp" alt="Example screenshots of pages from the new site" loading="lazy" width="1280" height="720" decoding="async" srcset="../../assets/web/harmonics-web-comparison-640.webp 640w, ../../assets/web/harmonics-web-comparison-1280.webp 1280w" sizes="(max-width: 1180px) 92vw, 1120px"></a>
+          <figcaption class="photo-caption">Examples of page designs featured on the new site.</figcaption>
+        </figure>
+      </div>
+    </section>
+    <section class="section" id="brand-gallery" aria-labelledby="brand-heading">
+      <div class="case-grid">
+        <div>
+          <h2 id="brand-heading">Four Years as Publicity Director</h2>
+        </div>
+        <div class="case-body">
+          <p>Beyond the website, I served as the Harmonics’ Publicity Director all four years at Stanford, handling the group’s visual identity, marketing, and print design.</p>
+          <p>I designed 6 show posters and programs across four years of performances.</p>
+          <p>I also created posters and multimedia promotional materials for 3 fall audition seasons, and designed the group's annual member merch all four years.</p>
+        </div>
+      </div>
+      <div class="case-gallery">
+        <figure class="photo-card">
+          <a href="../../assets/images/harmonics-posters.jpg" aria-label="Full-size image: Selected Harmonics concert posters and show programs designed by Violet Crow"><img src="../../assets/web/harmonics-posters-1280.webp" alt="Selected Harmonics concert posters and show programs designed by Violet Crow" loading="lazy" width="1280" height="720" decoding="async" srcset="../../assets/web/harmonics-posters-640.webp 640w, ../../assets/web/harmonics-posters-1280.webp 1280w" sizes="(max-width: 720px) 92vw, (max-width: 1280px) 49vw, 640px"></a>
+          <figcaption class="photo-caption">Some of the show posters and programs I designed.</figcaption>
+        </figure>
+        <figure class="photo-card">
+          <a href="../../assets/images/harmonics-campaigns.jpg" aria-label="Full-size image: Audition promotional graphics"><img src="../../assets/web/harmonics-campaigns-1280.webp" alt="Audition promotional graphics" loading="lazy" width="1280" height="720" decoding="async" srcset="../../assets/web/harmonics-campaigns-640.webp 640w, ../../assets/web/harmonics-campaigns-1280.webp 1280w" sizes="(max-width: 720px) 92vw, (max-width: 1280px) 49vw, 640px"></a>
+          <figcaption class="photo-caption">Graphics I designed for audition campaigns, including posters, postcards, and digital media.</figcaption>
+        </figure>
+      </div>
+    </section>
+    <section class="section" id="operations" aria-labelledby="operations-heading">
+      <div class="case-grid">
+        <div>
+          <h2 id="operations-heading">President &amp; Album Manager</h2>
+        </div>
+        <div class="case-body">
+          <p>Alongside my design work, I helped run the group’s day-to-day operations and music production:</p>
+          <p>As Business Manager (President), I managed all group operations, finances, equipment purchases, event logistics, internal knowledge management, and communications.</p>
+          <p>As Album Manager &amp; Lead Recording Engineer, I led production for the group’s upcoming studio album, <em>Ashes to Ashes</em>, releasing later in 2026. I managed the recording process, schedule, and timeline and coordinated with our editor, mixer, mastering engineer, licensing partners, cover artist, and distributors. My arrangement of Toby Fox’s <em>“BIG SHOT”</em> will be featured on the album, as well as my solo on "Bottom of the Deep Blue Sea".</p>
+        </div>
+      </div>
+      <div class="case-gallery single">
+        <figure class="photo-card">
+          <a href="../../assets/images/harmonics-album.jpg" aria-label="Full-size image: Recording engineering and production workflow for Stanford Harmonics album Ashes to Ashes"><img src="../../assets/web/harmonics-album-1280.webp" alt="Recording engineering and production workflow for Stanford Harmonics album Ashes to Ashes" loading="lazy" width="1280" height="720" decoding="async" srcset="../../assets/web/harmonics-album-640.webp 640w, ../../assets/web/harmonics-album-1280.webp 1280w" sizes="(max-width: 1180px) 92vw, 1120px"></a>
+          <figcaption class="photo-caption">Recording vocals at Stanford for our upcoming album <em>Ashes to Ashes</em>.</figcaption>
+        </figure>
+      </div>
+    </section>
+    <section class="section" id="recordings">
+      <h2>Selected recordings</h2>
+      <div class="recording-credits">
+        <div>
+          <h3>Big Shot</h3>
+          <p>Arrangement · Violet Crow</p>
+          <p>Edited by Parthiv Krishna · Mixed by Ed Boyer</p>
+          <p><em>Work-in-progress mix</em></p>
+          <audio controls preload="none" aria-label="Big Shot, work-in-progress mix" src="../../assets/audio/big-shot.mp3"></audio>
+          <p class="print-media-note">Audio file · big-shot.mp3</p>
+        </div>
+        <div>
+          <h3>Deep Blue</h3>
+          <p>Solo vocals and recording engineering · Violet Crow</p>
+          <p>Edited by Parthiv Krishna · Mixed by Ed Boyer</p>
+          <p><em>Work-in-progress mix</em></p>
+          <audio controls preload="none" aria-label="Deep Blue, work-in-progress mix" src="../../assets/audio/deep-blue.mp3"></audio>
+          <p class="print-media-note">Audio file · deep-blue.mp3</p>
+        </div>
+      </div>
+    </section>
+    <nav class="project-nav-footer" aria-label="More projects">
+      <a href="../tai/"><small>Previous project</small>T.AI</a>
+      <a href="../myodyssey/"><small>Next project</small>Myodyssey</a>
+    </nav>
+  </main>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <a class="footer-name" href="../../">Violet Crow</a>
+      <nav aria-label="Contact and résumé"><a href="mailto:crow@alumni.stanford.edu">Email</a><a href="https://www.linkedin.com/in/violet-crow/">LinkedIn</a><a href="../../assets/docs/VioletCrowResume.pdf">Résumé (PDF)</a></nav>
+      <small>© 2026 Violet Crow</small>
+    </div>
+  </footer>
 </body>
 </html>

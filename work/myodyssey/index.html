@@ -1,375 +1,167 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta
-    name="description"
-    content="Myodyssey — An educational point-and-click adventure game about habitat loss, co-designed and built by Violet Crow."
-  />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Myodyssey — An educational point-and-click adventure game about habitat loss, co-designed and built by Violet Crow.">
   <title>Myodyssey | Violet Crow</title>
-
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Manrope:wght@400;500;600;700;800&display=swap"
-    rel="stylesheet"
-  />
-  <link rel="stylesheet" href="../../styles.css" />
+  <link rel="icon" href="../../assets/web/butterfly.png">
+  <link rel="stylesheet" href="../../styles.css">
+  <script defer src="../../media.js"></script>
 </head>
-
-<body class="project-page">
-  <div class="site-shell">
-    <aside class="sidebar" id="sidebar" aria-label="Site navigation">
-      <div class="sidebar-top">
-        <a class="brand" href="../../">Violet Crow</a>
-        <img
-          class="profile-photo"
-          src="../../assets/images/profile.png"
-          alt="Portrait of Violet Crow"
-          width="132"
-          height="132"
-        />
-        <button
-          class="menu-toggle"
-          id="menu-toggle"
-          type="button"
-          aria-expanded="false"
-          aria-controls="sidebar-menu"
-        >
-          Menu
-        </button>
-      </div>
-
-      <div class="sidebar-menu" id="sidebar-menu">
-        <nav class="sidebar-nav" aria-label="Primary">
-          <a href="../../">Home</a>
-          <a href="../../#work">Work</a>
-          <a href="../../portfolio/">Portfolio</a>
-          <a href="../../about/">About Me</a>
-          <a href="../../contact/">Contact</a>
-        </nav>
-
-        <details class="recent-projects project-index" open>
-          <summary>Projects</summary>
-          <ul>
-            <li><a href="../../work/thesis/">Honors Thesis</a></li>
-            <li><a href="../../work/the-party/">The Party</a></li>
-            <li><a href="../../work/myodyssey/" aria-current="page">Myodyssey</a></li>
-            <li><a href="../../work/tai/">T.AI</a></li>
-            <li><a href="../../work/volunteerverse/">VolunteerVerse</a></li>
-            <li><a href="../../work/harmonics/">Stanford Harmonics</a></li>
-          </ul>
-        </details>
-
-        <div class="sidebar-actions">
-          <a
-            class="social-button"
-            href="https://www.linkedin.com/in/violet-crow/"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="LinkedIn"
-            title="LinkedIn"
-          >
-            <svg viewBox="0 0 24 24" aria-hidden="true">
-              <path d="M6.94 8.5H3.4V20h3.54V8.5ZM5.17 3A2.06 2.06 0 1 0 5.17 7.12 2.06 2.06 0 0 0 5.17 3ZM20.6 13.41c0-3.46-1.85-5.07-4.32-5.07-1.99 0-2.88 1.1-3.38 1.87V8.5H9.36V20h3.54v-5.69c0-1.5.28-2.95 2.14-2.95 1.84 0 1.87 1.71 1.87 3.04V20h3.55v-6.59Z" />
-            </svg>
-          </a>
-          <a
-            class="resume-button"
-            href="https://violetcrow.me/assets/docs/VioletCrowResume.pdf"
-            title="Resume"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Resume
-          </a>
+<body class="work-page myodyssey-study">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="masthead">
+    <div class="mast-inner">
+      <a class="brand" href="../../" aria-label="Violet Crow, home"><img src="../../assets/web/butterfly.png" width="40" height="38" alt=""> Violet Crow</a>
+      <nav class="primary" aria-label="Primary">
+        <a href="../../#work" aria-current="location">Work</a>
+        <a href="../../portfolio/">Portfolio</a>
+        <a href="../../about/">About</a>
+        <a href="../../contact/">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <main class="container" id="main" tabindex="-1">
+    <section class="case-hero">
+      <div class="case-lead">
+        <a class="back-link" href="../../#work">Back to Work</a>
+        <p class="eyebrow">CS 247G · Design for Play</p>
+        <h1>Myodyssey</h1>
+        <p class="case-subtitle">An educational point-and-click adventure game about habitat loss and survival, told from the perspective of a woodland lemming.</p>
+        <div class="hero-actions">
+          <a class="pill-button" href="https://venef.itch.io/myodyssey" target="_blank" rel="noopener noreferrer">Play on itch.io</a>
+          <a class="pill-button secondary" href="https://github.com/F10naH/Myopus_game" target="_blank" rel="noopener noreferrer">View GitHub Repo</a>
+          <a class="pill-button secondary" href="#soundtrack">Soundtrack</a>
+          <a class="pill-button secondary" href="#playtest-video">Playtest Video</a>
         </div>
       </div>
-    </aside>
-
-    <main class="main">
-      <div class="container">
-        <!-- Header & Summary -->
-        <section class="case-hero">
-          <a class="back-link" href="../../#work">← Back to Work</a>
-          <p class="eyebrow">CS 247G · Design for Play</p>
-          <h1>Myodyssey</h1>
-          <p class="case-subtitle">
-            An educational point-and-click adventure game about habitat loss and survival, told from the perspective of a woodland lemming.
-          </p>
-
-          <div class="hero-actions">
-            <a
-              class="pill-button"
-              href="https://venef.itch.io/myodyssey"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Play on itch.io ↗
-            </a>
-            <a
-              class="pill-button secondary"
-              href="https://github.com/F10naH/Myopus_game"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              View GitHub Repo ↗
-            </a>
-            <a class="pill-button secondary" href="#soundtrack">
-              Soundtrack
-            </a>
-            <a class="pill-button secondary" href="#playtest-video">
-              Playtest Video
-            </a>
-          </div>
-
-          <div class="case-meta-grid">
-            <div class="meta-item">
-              <span class="meta-label">My Role</span>
-              <span class="meta-value">Game Concept, Level 1 Dev, UI Integration & Soundtrack</span>
-            </div>
-            <div class="meta-item">
-              <span class="meta-label">Timeline</span>
-              <span class="meta-value">Spring 2026 (10 Weeks)</span>
-            </div>
-            <div class="meta-item">
-              <span class="meta-label">Team & Testing</span>
-              <span class="meta-value">5-Person Team · 9 Playtests Across 4 Versions</span>
-            </div>
-            <div class="meta-item">
-              <span class="meta-label">Built With</span>
-              <span class="meta-value">HTML, CSS, JavaScript, Figma</span>
-            </div>
-          </div>
-
-          <figure class="case-banner">
-            <img
-              src="../../assets/images/myodyssey.jpg"
-              alt="Myodyssey gameplay screen showing storybook illustration and interactive text"
-            />
-            <figcaption class="photo-caption">
-              Players step into the shoes of a small myopus (wood lemming) solving puzzles and navigating a changing forest to find rare Golden Moss for their sick partner.
-            </figcaption>
-          </figure>
-        </section>
-
-        <!-- 1. The Concept -->
-        <section class="section" aria-labelledby="context-heading">
-          <div class="case-grid">
-            <div>
-              <p class="section-kicker">01 · The Concept</p>
-              <h2 id="context-heading">How the Game Works</h2>
-            </div>
-            <div class="case-body">
-              <p>
-                <em>Myodyssey</em> grew out of our group's assigned team name "myopus", a small woodland lemming. We wanted to build a game centered on nature, vulnerability, and survival, where players feel like a helpless animal in a world increasingly shaped by human development.
-              </p>
-              <p>
-                Early on, we considered making a 1990s-style graphical point-and-click game, but realized that collaborating across a mix of operating systems would make development and testing difficult. Instead, I developed our core concept as a browser-based, text-and-illustration adventure game in HTML and JavaScript. That choice let our team build smoothly together and kept the game approachable for people who don't usually play video games.
-              </p>
-              <p>
-                We built each level around items and puzzles that move the journey forward. In level 1, players click highlighted words in the story text to gather ingredients from the forest, cook a vegetable stew, and trade it with a beaver blocking their path. In levels 2 and 3, players complete minigames to keep moving deeper into the woods as the environment shifts from a safe, cozy storybook forest into a darker industrial landscape.
-              </p>
-            </div>
-          </div>
-        </section>
-
-        <!-- 2. My Contribution -->
-        <section class="section" aria-labelledby="execution-heading">
-          <div class="case-grid">
-            <div>
-              <p class="section-kicker">02 · My Contribution</p>
-              <h2 id="execution-heading">What I Built</h2>
-            </div>
-            <div class="case-body">
-              <p>
-                On our five-person team, I helped shape the initial game concept, organize roles and tasks, and bring everyone's work together into one cohesive game.
-              </p>
-              <p>
-                I designed and coded the opening level of the game, including the interactive text mechanics, the inventory system, and the vegetable stew puzzle.
-              </p>
-              <p>
-                Because teammates built different levels in parallel, early versions looked and felt disconnected. Once the levels were completed, I combined them into a single package and updated the UI across the game so the style felt consistent from start to finish.
-              </p>
-              <p>
-                To help set the mood as the forest changes around the player, I composed, arranged, and mixed the game's five-track soundtrack (which you can listen to below!).
-              </p>
-            </div>
-          </div>
-
-          <div class="case-gallery">
-            <figure class="photo-card">
-              <img
-                src="../../assets/images/myodyssey-system.jpg"
-                alt="Myodyssey system model and early Figma wireframes"
-                loading="lazy"
-              />
-              <figcaption class="photo-caption">
-                System model mapping the game's mechanical and thematic progression.
-              </figcaption>
-            </figure>
-
-            <figure class="photo-card">
-              <img
-                src="../../assets/images/myodyssey-iteration.jpg"
-                alt="Comparison of initial and iterated UI and puzzle screens across versions"
-                loading="lazy"
-              />
-              <figcaption class="photo-caption">
-                Design documents, prototype UIs, and iteration.
-              </figcaption>
-            </figure>
-          </div>
-        </section>
-
-        <!-- 3. Playtesting & Iteration -->
-        <section class="section" aria-labelledby="takeaways-heading">
-          <div class="case-grid">
-            <div>
-              <p class="section-kicker">03 · Playtesting</p>
-              <h2 id="takeaways-heading">Testing & Iteration</h2>
-            </div>
-            <div class="case-body">
-              <p>
-                We ran 9 playtests across 4 versions of the game, testing with non-gamers, UX designers, and experienced gamers alike. We learned where players were getting stuck or losing the thread of the story.
-              </p>
-              <p>
-                Our first testers had trouble remembering which passages they had already read and didn't always realize which words were clickable. We updated the text so already-read passages grayed out, added small icons to areas with interactive items, and introduced an on-screen inventory so players could easily see what they had collected in level 1.
-              </p>
-              <p>
-                In later playtests, we noticed that our minigame speeds were tied to each computer's screen refresh rate, making some puzzles way too difficult. We also found that long dialogue sections could trap players who didn't have a mouse scroll wheel. We fixed the minigame timing so it ran at the same speed on every computer, added automatic scrolling with extra padding for long text, and clarified the instructions across our puzzles.
-              </p>
-              <p>
-                Working alongside a colorblind teammate, we made sure no puzzle relied on color alone to solve. After a playtester flagged flashing effects in a level 3 minigame, we redesigned the flashes so the game would be safe for photosensitive players.
-              </p>
-                <p>
-                  During mid-level testing, a few testers who mentioned they didn't feel strongly about animals found the game's ending abrupt and sad. However, testers in our target audience (people who care about animals and enjoy story-driven games) told us the ending was the most impactful part of the experience. Instead of softening the ending, we decided to keep the story intact and focused on fixing bugs that lessened its impact.
-                </p>
-          </div>
-        </section>
-
-        <!-- 4. Playtest Videos -->
-        <div id="playtest-videos"></div>
-        <section class="section" id="playtest-video" aria-labelledby="playtest-videos-heading">
-          <div class="section-heading">
-            <p class="section-kicker">04 · User Testing</p>
-            <h2 id="playtest-videos-heading">Playtest Video</h2>
-          </div>
-
-          <div class="embed-grid">
-            <div class="embed-card">
-              <p class="print-media-note">Watch myodyssey-playtest.mp4 (16 min 39 sec). Session 9 is one of nine playtests across four builds. The testing section above describes changes to clickable text, puzzle timing, and scrolling that followed our observations.</p>
-              <div class="embed-header">
-                <span class="embed-title">User Playtest #9</span>
-                <a href="https://www.youtube.com/watch?v=y13QXdr4ZWY" target="_blank" rel="noopener noreferrer">Watch on YouTube ↗</a>
-              </div>
-              <video class="embed-frame" controls preload="metadata" aria-label="Myodyssey playtest 9" src="../../assets/video/myodyssey-playtest.mp4"></video>
-            </div>
-          </div>
-        </section>
-
-        <!-- 5. Original Soundtrack -->
-        <section class="section" id="soundtrack" aria-labelledby="soundtrack-heading">
-          <div class="section-heading">
-            <p class="section-kicker">05 · Original Audio</p>
-            <h2 id="soundtrack-heading">Official Soundtrack</h2>
-          </div>
-
-          <div class="audio-card">
-            <div class="audio-card-header">
-              <span class="embed-title">Composed, Arranged & Mixed by Violet Crow</span>
-            </div>
-
-            <div class="track-list" role="group" aria-label="Select soundtrack track">
-              <button
-                type="button"
-                class="track-btn is-active"
-                data-src="../../assets/audio/home-sweet-home.mp3"
-              >
-                01 · Home Sweet Home <span class="track-duration">1:15</span>
-              </button>
-              <button
-                type="button"
-                class="track-btn"
-                data-src="../../assets/audio/setting-off.mp3"
-              >
-                02 · Setting Off <span class="track-duration">1:41</span>
-              </button>
-              <button
-                type="button"
-                class="track-btn"
-                data-src="../../assets/audio/the-wild.mp3"
-              >
-                03 · The Wild <span class="track-duration">1:56</span>
-              </button>
-              <button
-                type="button"
-                class="track-btn"
-                data-src="../../assets/audio/the-thrashing-hare.mp3"
-              >
-                04 · The Thrashing Hare <span class="track-duration">0:43</span>
-              </button>
-              <button
-                type="button"
-                class="track-btn"
-                data-src="../../assets/audio/the-golden-moss.mp3"
-              >
-                05 · The Golden Moss <span class="track-duration">1:10</span>
-              </button>
-            </div>
-
-            <p class="print-media-note">The five recordings listed above accompany this case study as individual MP3 files, in soundtrack order.</p>
-            <audio id="ost-player" class="audio-player" controls preload="metadata">
-              <source id="ost-source" src="../../assets/audio/home-sweet-home.mp3" type="audio/mpeg" />
-              Your browser does not support the audio element.
-            </audio>
-          </div>
-        </section>
-
-        <!-- Next / Previous Project Nav -->
-        <nav class="project-nav-footer" aria-label="Project pagination">
-          <a class="project-nav-link" href="../harmonics/">
-            <span class="project-nav-label">Previous Project</span>
-            <span class="project-nav-title">← Stanford Harmonics</span>
-          </a>
-          <a class="project-nav-link next" href="../thesis/">
-            <span class="project-nav-label">Next Project</span>
-            <span class="project-nav-title">Honors Thesis →</span>
-          </a>
-        </nav>
-
-        <footer>
-          © 2026 Violet Crow
-        </footer>
+      <figure class="case-banner">
+        <img src="../../assets/web/myodyssey-1280.webp" alt="Myodyssey title screen fading from sunset orange to purple" width="1280" height="720" decoding="async" srcset="../../assets/web/myodyssey-640.webp 640w, ../../assets/web/myodyssey-1280.webp 1280w" sizes="(max-width: 720px) 92vw, (max-width: 1280px) 49vw, 640px">
+        <figcaption class="photo-caption">Players step into the shoes of a small myopus (wood lemming) solving puzzles and navigating a changing forest to find rare Golden Moss for their sick partner.</figcaption>
+      </figure>
+      <div class="case-meta-grid">
+        <div class="meta-item">
+          <span class="meta-label">My Role</span>
+          <span class="meta-value">Game Concept, Level 1 Dev, UI Integration &amp; Soundtrack</span>
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">Timeline</span>
+          <span class="meta-value">Spring 2026 (10 Weeks)</span>
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">Team &amp; Testing</span>
+          <span class="meta-value">5-Person Team · 9 Playtests Across 4 Versions</span>
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">Built With</span>
+          <span class="meta-value">HTML, CSS, JavaScript, Figma</span>
+        </div>
       </div>
-    </main>
-  </div>
-
-  <script>
-    const menuToggle = document.getElementById('menu-toggle');
-    const sidebar = document.getElementById('sidebar');
-
-    menuToggle.addEventListener('click', () => {
-      const isOpen = sidebar.classList.toggle('is-open');
-      menuToggle.setAttribute('aria-expanded', isOpen);
-      menuToggle.textContent = isOpen ? 'Close' : 'Menu';
-    });
-
-    const player = document.getElementById('ost-player');
-    const source = document.getElementById('ost-source');
-    const trackButtons = document.querySelectorAll('.track-btn');
-
-    trackButtons.forEach((button) => {
-      button.addEventListener('click', () => {
-        trackButtons.forEach((btn) => btn.classList.remove('is-active'));
-        button.classList.add('is-active');
-
-        source.src = button.dataset.src;
-        player.load();
-        player.play();
-      });
-    });
-  </script>
+    </section>
+    <section class="section" aria-labelledby="context-heading">
+      <div class="case-grid">
+        <div>
+          <h2 id="context-heading">How the Game Works</h2>
+        </div>
+        <div class="case-body">
+          <p><em>Myodyssey</em> grew out of our group's assigned team name "myopus", a small woodland lemming. We wanted to build a game centered on nature, vulnerability, and survival, where players feel like a helpless animal in a world increasingly shaped by human development.</p>
+          <p>Early on, we considered making a 1990s-style graphical point-and-click game, but realized that collaborating across a mix of operating systems would make development and testing difficult. Instead, I developed our core concept as a browser-based, text-and-illustration adventure game in HTML and JavaScript. That choice let our team build smoothly together and kept the game approachable for people who don't usually play video games.</p>
+          <p>We built each level around items and puzzles that move the journey forward. In level 1, players click highlighted words in the story text to gather ingredients from the forest, cook a vegetable stew, and trade it with a beaver blocking their path. In levels 2 and 3, players complete minigames to keep moving deeper into the woods as the environment shifts from a safe, cozy storybook forest into a darker industrial landscape.</p>
+        </div>
+      </div>
+    </section>
+    <section class="section" aria-labelledby="execution-heading">
+      <div class="case-grid">
+        <div>
+          <h2 id="execution-heading">What I Built</h2>
+        </div>
+        <div class="case-body">
+          <p>On our five-person team, I helped shape the initial game concept, organize roles and tasks, and bring everyone's work together into one cohesive game.</p>
+          <p>I designed and coded the opening level of the game, including the interactive text mechanics, the inventory system, and the vegetable stew puzzle.</p>
+          <p>Because teammates built different levels in parallel, early versions looked and felt disconnected. Once the levels were completed, I combined them into a single package and updated the UI across the game so the style felt consistent from start to finish.</p>
+          <p>To help set the mood as the forest changes around the player, I composed, arranged, and mixed the game's five-track soundtrack (which you can listen to below!).</p>
+        </div>
+      </div>
+      <div class="case-gallery">
+        <figure class="photo-card">
+          <a href="../../assets/images/myodyssey-system.jpg" aria-label="Full-size image: Myodyssey system model and early Figma wireframes"><img src="../../assets/web/myodyssey-system-2244.webp" alt="Myodyssey system model and early Figma wireframes" loading="lazy" width="2244" height="2904" decoding="async" srcset="../../assets/web/myodyssey-system-640.webp 640w, ../../assets/web/myodyssey-system-2244.webp 2244w" sizes="(max-width: 720px) 92vw, (max-width: 1280px) 49vw, 640px"></a>
+          <figcaption class="photo-caption">System model mapping the game's mechanical and thematic progression.</figcaption>
+        </figure>
+        <figure class="photo-card">
+          <a href="../../assets/images/myodyssey-iteration.jpg" aria-label="Full-size image: Comparison of initial and iterated UI and puzzle screens across versions"><img src="../../assets/web/myodyssey-iteration-1280.webp" alt="Comparison of initial and iterated UI and puzzle screens across versions" loading="lazy" width="1280" height="720" decoding="async" srcset="../../assets/web/myodyssey-iteration-640.webp 640w, ../../assets/web/myodyssey-iteration-1280.webp 1280w" sizes="(max-width: 720px) 92vw, (max-width: 1280px) 49vw, 640px"></a>
+          <figcaption class="photo-caption">Design documents, prototype UIs, and iteration.</figcaption>
+        </figure>
+      </div>
+    </section>
+    <section class="section" aria-labelledby="takeaways-heading">
+      <div class="case-grid">
+        <div>
+          <h2 id="takeaways-heading">Testing &amp; Iteration</h2>
+        </div>
+        <div class="case-body">
+          <p>We ran 9 playtests across 4 versions of the game, testing with non-gamers, UX designers, and experienced gamers alike. We learned where players were getting stuck or losing the thread of the story.</p>
+          <p>Our first testers had trouble remembering which passages they had already read and didn't always realize which words were clickable. We updated the text so already-read passages grayed out, added small icons to areas with interactive items, and introduced an on-screen inventory so players could easily see what they had collected in level 1.</p>
+          <p>In later playtests, we noticed that our minigame speeds were tied to each computer's screen refresh rate, making some puzzles way too difficult. We also found that long dialogue sections could trap players who didn't have a mouse scroll wheel. We fixed the minigame timing so it ran at the same speed on every computer, added automatic scrolling with extra padding for long text, and clarified the instructions across our puzzles.</p>
+          <p>Working alongside a colorblind teammate, we made sure no puzzle relied on color alone to solve. After a playtester flagged flashing effects in a level 3 minigame, we redesigned the flashes so the game would be safe for photosensitive players.</p>
+          <p>During mid-level testing, a few testers who mentioned they didn't feel strongly about animals found the game's ending abrupt and sad. However, testers in our target audience (people who care about animals and enjoy story-driven games) told us the ending was the most impactful part of the experience. Instead of softening the ending, we decided to keep the story intact and focused on fixing bugs that lessened its impact.</p>
+        </div>
+      </div>
+    </section>
+    <div id="playtest-videos"></div>
+    <section class="section" id="playtest-video" aria-labelledby="playtest-videos-heading">
+      <div class="section-heading">
+        <h2 id="playtest-videos-heading">Playtest Video</h2>
+      </div>
+      <div class="embed-grid">
+        <div class="embed-card">
+          <p class="print-media-note">Watch myodyssey-playtest.mp4 (16 min 39 sec). Session 9 is one of nine playtests across four builds. The testing section above describes changes to clickable text, puzzle timing, and scrolling that followed our observations.</p>
+          <div class="embed-header">
+            <span class="embed-title">User Playtest #9</span>
+            <a href="https://www.youtube.com/watch?v=y13QXdr4ZWY" target="_blank" rel="noopener noreferrer">Watch on YouTube</a>
+          </div>
+          <video class="embed-frame" controls preload="none" aria-label="Myodyssey playtest 9" src="../../assets/video/myodyssey-playtest.mp4" playsinline="" poster="../../assets/web/myodyssey-640.webp"></video>
+        </div>
+      </div>
+    </section>
+    <section class="section" id="soundtrack" aria-labelledby="soundtrack-heading">
+      <div class="section-heading">
+        <h2 id="soundtrack-heading">Official Soundtrack</h2>
+      </div>
+      <div class="audio-card">
+        <div class="audio-card-header">
+          <span class="embed-title">Composed, Arranged &amp; Mixed by Violet Crow</span>
+        </div>
+        <div class="track-list" hidden role="group" aria-label="Select soundtrack track">
+          <button type="button" class="track-btn" data-src="../../assets/audio/home-sweet-home.mp3" aria-pressed="true">01 · Home Sweet Home <span class="track-duration">1:15</span></button>
+          <button type="button" class="track-btn" data-src="../../assets/audio/setting-off.mp3" aria-pressed="false">02 · Setting Off <span class="track-duration">1:41</span></button>
+          <button type="button" class="track-btn" data-src="../../assets/audio/the-wild.mp3" aria-pressed="false">03 · The Wild <span class="track-duration">1:56</span></button>
+          <button type="button" class="track-btn" data-src="../../assets/audio/the-thrashing-hare.mp3" aria-pressed="false">04 · The Thrashing Hare <span class="track-duration">0:43</span></button>
+          <button type="button" class="track-btn" data-src="../../assets/audio/the-golden-moss.mp3" aria-pressed="false">05 · The Golden Moss <span class="track-duration">1:10</span></button>
+        </div>
+        <p class="print-media-note">The five recordings listed above accompany this case study as individual MP3 files, in soundtrack order.</p>
+        <audio id="ost-player" class="audio-player" controls preload="none" aria-label="Home Sweet Home"> <source id="ost-source" src="../../assets/audio/home-sweet-home.mp3" type="audio/mpeg"> Your browser does not support the audio element. </audio>
+        <p id="track-status" role="status"></p>
+        <noscript>
+          <a href="../../assets/audio/home-sweet-home.mp3">Home Sweet Home</a>
+          <a href="../../assets/audio/setting-off.mp3">Setting Off</a>
+          <a href="../../assets/audio/the-wild.mp3">The Wild</a>
+          <a href="../../assets/audio/the-thrashing-hare.mp3">The Thrashing Hare</a>
+          <a href="../../assets/audio/the-golden-moss.mp3">The Golden Moss</a>
+        </noscript>
+      </div>
+    </section>
+    <nav class="project-nav-footer" aria-label="More projects">
+      <a href="../harmonics/"><small>Previous project</small>Stanford Harmonics</a>
+      <a href="../thesis/"><small>Next project</small>Honors Thesis</a>
+    </nav>
+  </main>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <a class="footer-name" href="../../">Violet Crow</a>
+      <nav aria-label="Contact and résumé"><a href="mailto:crow@alumni.stanford.edu">Email</a><a href="https://www.linkedin.com/in/violet-crow/">LinkedIn</a><a href="../../assets/docs/VioletCrowResume.pdf">Résumé (PDF)</a></nav>
+      <small>© 2026 Violet Crow</small>
+    </div>
+  </footer>
 </body>
 </html>

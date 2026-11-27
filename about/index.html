@@ -1,351 +1,200 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta
-    name="description"
-    content="About Violet Crow — Stanford Symbolic Systems (HCI) graduate working across product, research, design, and engineering."
-  />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="About Violet Crow — Stanford Symbolic Systems (HCI) graduate working across product, research, design, and engineering.">
   <title>About Me | Violet Crow</title>
+  <link rel="icon" href="../assets/web/butterfly.png">
+  <link rel="stylesheet" href="../styles.css">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Manrope:wght@400;500;600;700;800&display=swap"
-    rel="stylesheet"
-  />
-  <link rel="stylesheet" href="../styles.css" />
 </head>
-
-<body>
-  <div class="site-shell">
-    <aside class="sidebar" id="sidebar" aria-label="Site navigation">
-      <div class="sidebar-top">
-        <a class="brand" href="../">Violet Crow</a>
-        <img
-          class="profile-photo"
-          src="../assets/images/profile.png"
-          alt="Portrait of Violet Crow"
-          width="132"
-          height="132"
-        />
-        <button
-          class="menu-toggle"
-          id="menu-toggle"
-          type="button"
-          aria-expanded="false"
-          aria-controls="sidebar-menu"
-        >
-          Menu
-        </button>
+<body class="about-page">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="masthead">
+    <div class="mast-inner">
+      <a class="brand" href="../" aria-label="Violet Crow, home"><img src="../assets/web/butterfly.png" width="40" height="38" alt=""> Violet Crow</a>
+      <nav class="primary" aria-label="Primary">
+        <a href="../#work">Work</a>
+        <a href="../portfolio/">Portfolio</a>
+        <a href="../about/" aria-current="page">About</a>
+        <a href="../contact/">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <main class="container" id="main" tabindex="-1">
+    <section class="page-hero">
+      <div class="about-intro-grid">
+        <div>
+          <h1>About Me</h1>
+          <div class="prose">
+            <p>I recently graduated with honors from Stanford University, where I studied Symbolic Systems with a concentration in Human-Computer Interaction.</p>
+            <p>My interest in products started with graphic design. According to my mom, I could recognize Dunkin' Donuts stores from their logo (and ask for a donut, of course) before I could read. I have always cared about how things look, how they're organized, and how people make sense of them. At Stanford, I chose Symbolic Systems because it let me combine my love of design with computer science and cognitive psychology, learning how to build software to match how people think and behave.</p>
+            <p>Whether I’m working on a research study, a class project, or a student organization, I usually gravitate toward roles that hold things together. I love talking to users, figuring out what to build, writing code to connect the pieces, and collaborating to keep everything on track.</p>
+          </div>
+          <div class="hero-actions">
+            <a class="pill-button" href="../assets/docs/VioletCrowResume.pdf" target="_blank" rel="noopener noreferrer">View Resume</a>
+            <a class="pill-button secondary" href="../contact/">Get in Touch</a>
+          </div>
+        </div>
+        <figure class="photo-card">
+          <img src="../assets/web/about-portrait-1280.webp" alt="Violet Crow on Stanford's campus" width="1280" height="720" decoding="async" srcset="../assets/web/about-portrait-640.webp 640w, ../assets/web/about-portrait-1280.webp 1280w" sizes="(max-width: 720px) 92vw, (max-width: 1280px) 49vw, 640px">
+          <figcaption class="photo-caption">Stanford University · B.S. Symbolic Systems with Honors ('26)</figcaption>
+        </figure>
       </div>
-
-      <div class="sidebar-menu" id="sidebar-menu">
-        <nav class="sidebar-nav" aria-label="Primary">
-          <a href="../">Home</a>
-          <a href="../#work">Work</a>
-          <a href="../portfolio/">Portfolio</a>
-          <a href="./" aria-current="page">About Me</a>
-          <a href="../contact/">Contact</a>
-        </nav>
-
-        <details class="recent-projects project-index" open>
-          <summary>Projects</summary>
-          <ul>
-            <li><a href="../work/thesis/">Honors Thesis</a></li>
-            <li><a href="../work/the-party/">The Party</a></li>
-            <li><a href="../work/myodyssey/">Myodyssey</a></li>
-            <li><a href="../work/tai/">T.AI</a></li>
-            <li><a href="../work/volunteerverse/">VolunteerVerse</a></li>
-            <li><a href="../work/harmonics/">Stanford Harmonics</a></li>
+      <div class="photo-strip">
+        <figure class="photo-card">
+          <img src="../assets/web/about-presenting-1280.webp" alt="Violet presenting HCI and product research" loading="lazy" width="1280" height="720" decoding="async" srcset="../assets/web/about-presenting-640.webp 640w, ../assets/web/about-presenting-1280.webp 1280w" sizes="(max-width: 720px) 92vw, (max-width: 1280px) 49vw, 640px">
+          <figcaption class="photo-caption">Presenting T.AI at the CS 147 project fair</figcaption>
+        </figure>
+        <figure class="photo-card">
+          <img src="../assets/web/about-harmonics-1280.webp" alt="Violet with the Stanford Harmonics" loading="lazy" width="1280" height="720" decoding="async" srcset="../assets/web/about-harmonics-640.webp 640w, ../assets/web/about-harmonics-1280.webp 1280w" sizes="(max-width: 720px) 92vw, (max-width: 1280px) 49vw, 640px">
+          <figcaption class="photo-caption">Performing with the Stanford Harmonics</figcaption>
+        </figure>
+      </div>
+    </section>
+    <section class="section" aria-labelledby="experience-heading">
+      <div class="section-heading">
+        <h2 id="experience-heading">Experience &amp; Leadership</h2>
+      </div>
+      <div class="experience-list">
+        <article class="experience-item">
+          <div>
+            <h3 class="experience-org">Stanford Virtual Human Interaction Lab (VHIL)</h3>
+            <p class="experience-period">Honors Research Lead</p>
+          </div>
+          <div>
+            <h4 class="experience-role">Study Design, Operations &amp; Data Analysis</h4>
+            <p class="experience-desc">For my senior honors thesis, I spent a year running a 133-person study on how spatial layouts and virtual environments affect group telecommunications. I wrote the study protocols, trained five research assistants, ran every participant session, and wrote Python scripts to clean and analyze the data.</p>
+          </div>
+        </article>
+        <article class="experience-item">
+          <div>
+            <h3 class="experience-org">The Stanford Harmonics</h3>
+            <p class="experience-period">2022–2026</p>
+          </div>
+          <div class="sub-roles">
+            <div>
+              <h4 class="experience-role">Business Manager / President</h4>
+              <p class="experience-desc">I ran the group's day-to-day operations, including our auditions season, budget, equipment purchases, show and tour logistics, and communication with the university.</p>
+            </div>
+            <div>
+              <h4 class="experience-role">Album Manager &amp; Lead Recording Engineer</h4>
+              <p class="experience-desc">I managed production for our upcoming studio album <em>Ashes to Ashes</em>. I recorded over half of the tracks, set our production schedule, and coordinated with contractors for editing, mixing, mastering, cover art, licensing, and distribution.</p>
+            </div>
+            <div>
+              <h4 class="experience-role">Publicity Director</h4>
+              <p class="experience-desc">I designed 6 concert posters and programs, 3 audition season campaigns, and 4 years of group merch. I also rebuilt our website, which grew our average monthly traffic by 75% and doubled traffic during fall auditions.</p>
+            </div>
+          </div>
+        </article>
+        <article class="experience-item">
+          <div>
+            <h3 class="experience-org">Stanford R&amp;DE Summer Conferences</h3>
+            <p class="experience-period">Service Center Lead</p>
+          </div>
+          <div>
+            <h4 class="experience-role">Housing &amp; Guest Operations</h4>
+            <p class="experience-desc">I helped run summer conference housing and turn over 18 undergraduate dorms (1,600 beds) for summer and fall quarters, coordinating student move-out, maintenance, billing, and documentation on a tight turnaround.</p>
+          </div>
+        </article>
+        <article class="experience-item">
+          <div>
+            <h3 class="experience-org">Stanford Frosh 101</h3>
+            <p class="experience-period">Lead Trainer TA &amp; Section Lead</p>
+          </div>
+          <div>
+            <h4 class="experience-role">Teaching &amp; Facilitator Training</h4>
+            <p class="experience-desc">I co-led a weekly discussion section for 9 freshmen to help them adjust to life at Stanford, then returned for two quarters as a Course TA to help plan the curriculum and train new student leaders.</p>
+          </div>
+        </article>
+        <article class="experience-item">
+          <div>
+            <h3 class="experience-org">Stanford Residential Education</h3>
+            <p class="experience-period">Neighborhood Communications Intern</p>
+          </div>
+          <div>
+            <h4 class="experience-role">Graphic Design &amp; Communications</h4>
+            <p class="experience-desc">I created event posters, graphics, and newsletters for two years for a multi-house neighborhood in Stanford's residential system.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+    <section class="section" aria-labelledby="skills-heading">
+      <div class="section-heading">
+        <h2 id="skills-heading">Skills &amp; Tools</h2>
+      </div>
+      <div class="card-grid-3">
+        <div class="info-card">
+          <h3>Product &amp; Research</h3>
+          <ul class="skill-list">
+            <li>User Interviews &amp; Needfinding</li>
+            <li>Feature Scoping</li>
+            <li>Usability &amp; Playtesting</li>
+            <li>Experimental Study Design</li>
+            <li>Survey &amp; Quantitative Analysis</li>
+            <li>Project &amp; Vendor Coordination</li>
           </ul>
-        </details>
-
-        <div class="sidebar-actions">
-          <a
-            class="social-button"
-            href="https://www.linkedin.com/in/violet-crow/"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="LinkedIn"
-            title="LinkedIn"
-          >
-            <svg viewBox="0 0 24 24" aria-hidden="true">
-              <path d="M6.94 8.5H3.4V20h3.54V8.5ZM5.17 3A2.06 2.06 0 1 0 5.17 7.12 2.06 2.06 0 0 0 5.17 3ZM20.6 13.41c0-3.46-1.85-5.07-4.32-5.07-1.99 0-2.88 1.1-3.38 1.87V8.5H9.36V20h3.54v-5.69c0-1.5.28-2.95 2.14-2.95 1.84 0 1.87 1.71 1.87 3.04V20h3.55v-6.59Z" />
-            </svg>
-          </a>
-          <a
-            class="resume-button"
-            href="https://violetcrow.me/assets/docs/VioletCrowResume.pdf"
-            title="Resume"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Resume
-          </a>
+        </div>
+        <div class="info-card">
+          <h3>Engineering</h3>
+          <ul class="skill-list">
+            <li>Python (Data Cleaning &amp; Analysis)</li>
+            <li>React Native &amp; Expo Go</li>
+            <li>JavaScript, HTML &amp; CSS</li>
+            <li>Supabase</li>
+            <li>Unity &amp; XR Development</li>
+            <li>Git &amp; GitHub</li>
+          </ul>
+        </div>
+        <div class="info-card">
+          <h3>Design &amp; Media</h3>
+          <ul class="skill-list">
+            <li>Figma (Wireframing &amp; Prototyping)</li>
+            <li>UI / UX &amp; Web Design</li>
+            <li>Print &amp; Campaign Design</li>
+            <li>Audio Recording &amp; Mixing</li>
+            <li>Musical Arrangement &amp; Composition</li>
+          </ul>
         </div>
       </div>
-    </aside>
-
-    <main class="main">
-      <div class="container">
-        <!-- 1. Intro -->
-        <section class="page-hero">
-          <div class="about-intro-grid">
-            <div>
-              <h1>About Me</h1>
-              <div class="prose">
-                <p>
-                  I recently graduated with honors from Stanford University, where I studied Symbolic Systems with a concentration in Human-Computer Interaction.
-                </p>
-                <p>
-                  My interest in products started with graphic design. According to my mom, I could recognize Dunkin' Donuts stores from their logo (and ask for a donut, of course) before I could read. I have always cared about how things look, how they're organized, and how people make sense of them. At Stanford, I chose Symbolic Systems because it let me combine my love of design with computer science and cognitive psychology, learning how to build software to match how people think and behave.
-                </p>
-                <p>
-                  Whether I’m working on a research study, a class project, or a student organization, I usually gravitate toward roles that hold things together. I love talking to users, figuring out what to build, writing code to connect the pieces, and collaborating to keep everything on track.
-                </p>
-              </div>
-
-              <div class="hero-actions">
-                <a
-                  class="pill-button"
-                  href="https://violetcrow.me/assets/docs/VioletCrowResume.pdf"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  View Resume ↗
-                </a>
-                <a class="pill-button secondary" href="../contact/">Get in Touch</a>
-              </div>
-            </div>
-
-            <figure class="photo-card">
-              <img
-                src="../assets/images/about-portrait.jpg"
-                alt="Violet Crow on Stanford's campus"
-              />
-              <figcaption class="photo-caption">
-                Stanford University · B.S. Symbolic Systems with Honors ('26)
-              </figcaption>
-            </figure>
-          </div>
-
-          <div class="photo-strip">
-            <figure class="photo-card">
-              <img
-                src="../assets/images/about-presenting.jpg"
-                alt="Violet presenting HCI and product research"
-                loading="lazy"
-              />
-              <figcaption class="photo-caption">
-                Presenting T.AI at the CS 147 project fair
-              </figcaption>
-            </figure>
-
-            <figure class="photo-card">
-              <img
-                src="../assets/images/about-harmonics.jpg"
-                alt="Violet with the Stanford Harmonics"
-                loading="lazy"
-              />
-              <figcaption class="photo-caption">
-                Performing with the Stanford Harmonics
-              </figcaption>
-            </figure>
-          </div>
-        </section>
-
-        <!-- 2. Experience & Leadership -->
-        <section class="section" aria-labelledby="experience-heading">
-          <div class="section-heading">
-            <h2 id="experience-heading">Experience & Leadership</h2>
-          </div>
-
-          <div class="experience-list">
-            <!-- VHIL -->
-            <article class="experience-item">
-              <div>
-                <h3 class="experience-org">Stanford Virtual Human Interaction Lab (VHIL)</h3>
-                <p class="experience-period">Honors Research Lead</p>
-              </div>
-              <div>
-                <h4 class="experience-role">Study Design, Operations & Data Analysis</h4>
-                <p class="experience-desc">
-                  For my senior honors thesis, I spent a year running a 133-person study on how spatial layouts and virtual environments affect group telecommunications. I wrote the study protocols, trained five research assistants, ran every participant session, and wrote Python scripts to clean and analyze vast data.
-                </p>
-              </div>
-            </article>
-
-            <!-- Stanford Harmonics -->
-            <article class="experience-item">
-              <div>
-                <h3 class="experience-org">The Stanford Harmonics</h3>
-                <p class="experience-period">2022–2026</p>
-              </div>
-              <div class="sub-roles">
-                <div>
-                  <h4 class="experience-role">Business Manager / President</h4>
-                  <p class="experience-desc">
-                    I ran the group's day-to-day operations, including our auditions season, budget, equipment purchases, show and tour logistics, and communication with the university.
-                  </p>
-                </div>
-                <div>
-                  <h4 class="experience-role">Album Manager & Lead Recording Engineer</h4>
-                  <p class="experience-desc">
-                    I managed production for our upcoming studio album <em>Ashes to Ashes</em>. I recorded over half of the tracks, set our production schedule, and coordinated with contractors for editing, mixing, mastering, cover art, licensing, and distribution.
-                  </p>
-                </div>
-                <div>
-                  <h4 class="experience-role">Publicity Director</h4>
-                  <p class="experience-desc">
-                    I designed 6 concert posters and programs, 3 audition season campaigns, and 4 years of group merch. I also rebuilt our website, which grew our average monthly traffic by 75% and doubled traffic during fall auditions.
-                  </p>
-                </div>
-              </div>
-            </article>
-
-            <!-- Stanford R&DE -->
-            <article class="experience-item">
-              <div>
-                <h3 class="experience-org">Stanford R&DE Summer Conferences</h3>
-                <p class="experience-period">Service Center Lead</p>
-              </div>
-              <div>
-                <h4 class="experience-role">Housing & Guest Operations</h4>
-                <p class="experience-desc">
-                  I helped run summer conference housing and turn over 18 undergraduate dorms (1,600 beds) for summer and fall quarters, coordinating student move-out, maintenance, billing, and documentation on a tight turnaround.
-                </p>
-              </div>
-            </article>
-
-            <!-- Frosh 101 -->
-            <article class="experience-item">
-              <div>
-                <h3 class="experience-org">Stanford Frosh 101</h3>
-                <p class="experience-period">Lead Trainer TA & Section Lead</p>
-              </div>
-              <div>
-                <h4 class="experience-role">Teaching & Facilitator Training</h4>
-                <p class="experience-desc">
-                  I co-led a weekly discussion section for 9 freshmen to help them adjust to life at Stanford, then returned for two quarters as a Course TA to help plan the curriculum and train new student leaders.
-                </p>
-              </div>
-            </article>
-
-            <!-- Stanford ResEd -->
-            <article class="experience-item">
-              <div>
-                <h3 class="experience-org">Stanford Residential Education</h3>
-                <p class="experience-period">Neighborhood Communications Intern</p>
-              </div>
-              <div>
-                <h4 class="experience-role">Graphic Design & Communications</h4>
-                <p class="experience-desc">
-                  I created event posters, graphics, and newsletters for two years for a multi-house neighborhood in Stanford's residential system.
-                </p>
-              </div>
-            </article>
-          </div>
-        </section>
-
-        <!-- 3. Skills & Tools -->
-        <section class="section" aria-labelledby="skills-heading">
-          <div class="section-heading">
-            <h2 id="skills-heading">Skills & Tools</h2>
-          </div>
-
-          <div class="card-grid-3">
-            <div class="info-card">
-              <h3>Product & Research</h3>
-              <ul class="skill-list">
-                <li>User Interviews & Needfinding</li>
-                <li>Feature Scoping</li>
-                <li>Usability & Playtesting</li>
-                <li>Experimental Study Design</li>
-                <li>Survey & Quantitative Analysis</li>
-                <li>Project & Vendor Coordination</li>
-              </ul>
-            </div>
-
-            <div class="info-card">
-              <h3>Engineering</h3>
-              <ul class="skill-list">
-                <li>Python (Data Cleaning & Analysis)</li>
-                <li>React Native & Expo Go</li>
-                <li>JavaScript, HTML & CSS</li>
-                <li>Supabase</li>
-                <li>Unity & XR Development</li>
-                <li>Git & GitHub</li>
-              </ul>
-            </div>
-
-            <div class="info-card">
-              <h3>Design & Media</h3>
-              <ul class="skill-list">
-                <li>Figma (Wireframing & Prototyping)</li>
-                <li>UI / UX & Web Design</li>
-                <li>Print & Campaign Design</li>
-                <li>Audio Recording & Mixing</li>
-                <li>Musical Arrangement & Composition</li>
-              </ul>
-            </div>
-          </div>
-        </section>
-
-        <!-- 4. Outside of Work -->
-        <section class="section" aria-labelledby="beyond-heading">
-          <div class="section-heading">
-            <h2 id="beyond-heading">Outside of Work</h2>
-          </div>
-
-          <div class="beyond-grid">
-            <div class="prose">
-              <p>
-                Outside of class and research, most of my time at Stanford revolved around music. Along with singing in the Harmonics, I arranged several of our songs. My arrangement of Toby Fox’s “BIG SHOT” will be on our upcoming album <em>Ashes to Ashes</em> later this year.
-              </p>
-              <p>
-                When I’m not working on music, I’m usually listening to jazz piano, playing games with my friends, or watching movies.
-              </p>
-            </div>
-
-            <dl class="favorites-box" aria-label="Quick favorites">
-              <div class="favorite-row">
-                <dt class="favorite-label">Favorite Film</dt>
-                <dd class="favorite-value">Oppenheimer</dd>
-              </div>
-              <div class="favorite-row">
-                <dt class="favorite-label">Favorite Musician</dt>
-                <dd class="favorite-value">Bill Evans</dd>
-              </div>
-              <div class="favorite-row">
-                <dt class="favorite-label">Favorite Poet</dt>
-                <dd class="favorite-value">Virgil</dd>
-              </div>
-              <div class="favorite-row">
-                <dt class="favorite-label">Listening To...</dt>
-                <dd class="favorite-value">“The Rubber Teeth Talk”, Daisy the Great</dd>
-              </div>
-            </dl>
-          </div>
-        </section>
-
-        <footer>
-          © 2026 Violet Crow
-        </footer>
+    </section>
+    <section class="section" aria-labelledby="beyond-heading">
+      <div class="section-heading">
+        <h2 id="beyond-heading">Outside of Work</h2>
       </div>
-    </main>
-  </div>
-
-  <script>
-    const menuToggle = document.getElementById('menu-toggle');
-    const sidebar = document.getElementById('sidebar');
-
-    menuToggle.addEventListener('click', () => {
-      const isOpen = sidebar.classList.toggle('is-open');
-      menuToggle.setAttribute('aria-expanded', isOpen);
-      menuToggle.textContent = isOpen ? 'Close' : 'Menu';
-    });
-  </script>
+      <div class="beyond-grid">
+        <div class="prose">
+          <p>Outside of class and research, most of my time at Stanford revolved around music. Along with singing in the Harmonics, I arranged several of our songs. My arrangement of Toby Fox’s “BIG SHOT” will be on our upcoming album <em>Ashes to Ashes</em> later this year.</p>
+          <p>When I’m not working on music, I’m usually listening to jazz piano, playing games with my friends, or watching movies.</p>
+        </div>
+        <dl class="favorites-box" aria-label="Quick favorites">
+          <div class="favorite-row">
+            <dt class="favorite-label">Favorite Film</dt>
+            <dd class="favorite-value">Oppenheimer</dd>
+          </div>
+          <div class="favorite-row">
+            <dt class="favorite-label">Favorite Musician</dt>
+            <dd class="favorite-value">Bill Evans</dd>
+          </div>
+          <div class="favorite-row">
+            <dt class="favorite-label">Favorite Poet</dt>
+            <dd class="favorite-value">Virgil</dd>
+          </div>
+          <div class="favorite-row">
+            <dt class="favorite-label">Listening To...</dt>
+            <dd class="favorite-value">“The Rubber Teeth Talk”, Daisy the Great</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <a class="footer-name" href="../">Violet Crow</a>
+      <nav aria-label="Contact and résumé"><a href="mailto:crow@alumni.stanford.edu">Email</a><a href="https://www.linkedin.com/in/violet-crow/">LinkedIn</a><a href="../assets/docs/VioletCrowResume.pdf">Résumé (PDF)</a></nav>
+      <small>© 2026 Violet Crow</small>
+    </div>
+  </footer>
 </body>
 </html>
