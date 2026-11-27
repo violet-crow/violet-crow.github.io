@@ -6,8 +6,8 @@
   <meta name="description" content="T.AI — A mobile app helping teachers grade assignments, write personalized feedback, and track student progress using AI.">
   <title>T.AI | Violet Crow</title>
   <link rel="icon" href="../../assets/web/butterfly.png">
-  <link rel="stylesheet" href="../../styles.css">
-
+  <link rel="stylesheet" href="../../assets/css/site.css">
+  <script defer src="../../assets/js/site.js"></script>
 </head>
 <body class="work-page tai-study">
   <a class="skip-link" href="#main">Skip to content</a>
@@ -15,7 +15,18 @@
     <div class="mast-inner">
       <a class="brand" href="../../" aria-label="Violet Crow, home"><img src="../../assets/web/butterfly.png" width="40" height="38" alt=""> Violet Crow</a>
       <nav class="primary" aria-label="Primary">
-        <a href="../../#work" aria-current="location">Work</a>
+        <details class="work-menu">
+          <summary>Work</summary>
+          <div class="work-links">
+            <a href="../../#work">All work</a>
+            <a href="../../work/thesis/">Honors Thesis</a>
+            <a href="../../work/the-party/">The Party</a>
+            <a href="../../work/volunteerverse/">VolunteerVerse</a>
+            <a href="../../work/tai/" aria-current="page">T.AI</a>
+            <a href="../../work/harmonics/">Stanford Harmonics</a>
+            <a href="../../work/myodyssey/">Myodyssey</a>
+          </div>
+        </details>
         <a href="../../portfolio/">Portfolio</a>
         <a href="../../about/">About</a>
         <a href="../../contact/">Contact</a>
@@ -113,31 +124,33 @@
       </div>
       <div class="embed-grid">
         <div class="embed-card">
-          <div class="embed-header">
-            <span class="embed-title">Demo Video</span>
-            <a href="../../assets/video/tai-demo.mp4" target="_blank" rel="noopener noreferrer">Open Video</a>
-          </div>
+          <h3 class="embed-title">Demo video</h3>
           <img class="print-media-still" src="../../assets/portfolio/tai-demo-still.jpg" alt="Still from the T.AI mobile demonstration" width="364" height="640" decoding="async">
           <p class="print-media-note">Watch tai-demo.mp4 (1 min 29 sec) for the mobile grading demonstration.</p>
           <video class="embed-frame" controls preload="none" playsinline="" poster="../../assets/portfolio/tai-demo-still.jpg"> <source src="../../assets/video/tai-demo.mp4" type="video/mp4"> Your browser does not support embedded video. </video>
+          <div class="media-links">
+            <a href="../../assets/video/tai-demo.mp4" target="_blank" rel="noopener noreferrer">Open Video</a>
+          </div>
         </div>
         <div class="embed-card">
-          <div class="embed-header">
-            <span class="embed-title">Interactive Medium-Fidelity Figma Prototype</span>
-            <a href="../../assets/portfolio/tai-prototype-screens.pdf">View screen walkthrough (PDF)</a>
+          <h3 class="embed-title">Figma prototype</h3>
+          <div class="prototype-preview">
+            <img src="../../assets/web/tai-medfi-1280.webp" alt="Class, feedback, and progress screens from the prototype" width="1280" height="720" decoding="async" srcset="../../assets/web/tai-medfi-640.webp 640w, ../../assets/web/tai-medfi-1280.webp 1280w" sizes="(max-width: 720px) 92vw, (max-width: 1280px) 49vw, 640px">
+            <button type="button" class="pill-button" data-prototype="https://www.figma.com/embed?embed_host=share&amp;url=https%3A%2F%2Fwww.figma.com%2Fproto%2FutyWo2W1V87F10TjftMStV%2FMedFi-Prototype--Current-%3Fnode-id%3D98-238%26t%3DID0Ffh1nkYUGRBFG-1%26scaling%3Dscale-down%26content-scaling%3Dfixed%26page-id%3D0%253A1%26starting-point-node-id%3D98%253A238" hidden>Load prototype</button>
+          </div>
+          <p class="print-media-note">Open tai-prototype-screens.pdf to examine class selection, rubric feedback, and student progress in the medium-fidelity design.</p>
+          <div class="media-links">
+            <a href="../../assets/portfolio/tai-prototype-screens.pdf">Screen walkthrough (PDF)</a>
             <a href="https://www.figma.com/proto/utyWo2W1V87F10TjftMStV/MedFi-Prototype--Current-?node-id=98-238&amp;t=ID0Ffh1nkYUGRBFG-1&amp;scaling=scale-down&amp;content-scaling=fixed&amp;page-id=0%3A1&amp;starting-point-node-id=98%3A238" target="_blank" rel="noopener noreferrer">Open in Figma</a>
           </div>
-          <img class="print-media-still" src="../../assets/web/tai-medfi-1280.webp" alt="Class, feedback, and progress screens from the prototype" width="1280" height="720" decoding="async" srcset="../../assets/web/tai-medfi-640.webp 640w, ../../assets/web/tai-medfi-1280.webp 1280w" sizes="(max-width: 720px) 92vw, (max-width: 1280px) 49vw, 640px">
-          <p class="print-media-note">Open tai-prototype-screens.pdf to examine class selection, rubric feedback, and student progress in the medium-fidelity design.</p>
-          <iframe class="embed-frame" src="https://www.figma.com/embed?embed_host=share&amp;url=https%3A%2F%2Fwww.figma.com%2Fproto%2FutyWo2W1V87F10TjftMStV%2FMedFi-Prototype--Current-%3Fnode-id%3D98-238%26t%3DID0Ffh1nkYUGRBFG-1%26scaling%3Dscale-down%26content-scaling%3Dfixed%26page-id%3D0%253A1%26starting-point-node-id%3D98%253A238" title="T.AI Interactive Figma Prototype" allowfullscreen loading="lazy"></iframe>
         </div>
         <div class="embed-card">
-          <div class="embed-header">
-            <span class="embed-title">Project Presentation Poster</span>
-            <a href="../../assets/portfolio/tai-poster.pdf" target="_blank" rel="noopener noreferrer">Open Full Poster</a>
-          </div>
+          <h3 class="embed-title">Project poster</h3>
           <p class="print-media-note">Open tai-poster.pdf to read the project poster at its original size.</p>
           <a class="document-preview" href="../../assets/portfolio/tai-poster.pdf" aria-label="T.AI Presentation Poster (PDF)"><img src="../../assets/portfolio/tai-poster-preview.jpg" alt="Original T.AI project poster" width="820" height="645" decoding="async"></a>
+          <div class="media-links">
+            <a href="../../assets/portfolio/tai-poster.pdf" target="_blank" rel="noopener noreferrer">Open Full Poster</a>
+          </div>
         </div>
       </div>
     </section>

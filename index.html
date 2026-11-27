@@ -6,8 +6,8 @@
   <meta name="description" content="Violet Crow — Stanford Symbolic Systems graduate (&#x27;26) working across product, design, research, and engineering.">
   <title>Violet Crow | Product &amp; HCI</title>
   <link rel="icon" href="assets/web/butterfly.png">
-  <link rel="stylesheet" href="styles.css">
-
+  <link rel="stylesheet" href="assets/css/site.css">
+  <script defer src="assets/js/site.js"></script>
 </head>
 <body class="home-page">
   <a class="skip-link" href="#main">Skip to content</a>
@@ -15,7 +15,18 @@
     <div class="mast-inner">
       <a class="brand" href="./" aria-label="Violet Crow, home"><img src="assets/web/butterfly.png" width="40" height="38" alt=""> Violet Crow</a>
       <nav class="primary" aria-label="Primary">
-        <a href="#work">Work</a>
+        <details class="work-menu">
+          <summary>Work</summary>
+          <div class="work-links">
+            <a href="#work">All work</a>
+            <a href="work/thesis/">Honors Thesis</a>
+            <a href="work/the-party/">The Party</a>
+            <a href="work/volunteerverse/">VolunteerVerse</a>
+            <a href="work/tai/">T.AI</a>
+            <a href="work/harmonics/">Stanford Harmonics</a>
+            <a href="work/myodyssey/">Myodyssey</a>
+          </div>
+        </details>
         <a href="portfolio/">Portfolio</a>
         <a href="about/">About</a>
         <a href="contact/">Contact</a>
@@ -49,9 +60,9 @@
         <article class="project">
           <a class="project-image-wrap" href="work/thesis/" aria-label="View Honors Thesis" tabindex="-1"><img class="project-image" src="assets/web/thesis-conditions-1280.webp" alt="Spatial and grid conversations in mixed and virtual reality" loading="lazy" width="1280" height="720" decoding="async" srcset="assets/web/thesis-conditions-640.webp 640w, assets/web/thesis-conditions-1280.webp 1280w" sizes="(max-width: 720px) 92vw, (max-width: 1280px) 49vw, 640px"></a>
           <div class="project-copy">
-            <p class="project-discipline">XR Research · Study Operations · Python/R Data Analysis</p>
+            <p class="project-discipline">Group communication in XR</p>
             <h3 class="project-title"><a href="work/thesis/">Honors Thesis</a></h3>
-            <p class="project-description">Led a 12-month study at the Stanford Virtual Human Interaction Lab testing the impact of spatialization and virtual environments on group communication. Recruited and ran 133 participants, trained 5 research assistants, and wrote Python and R scripts to process data. We found that 2D grids often create less social friction than 3D spatial setups.</p>
+            <p class="project-description">Led a 12-month study at the Stanford Virtual Human Interaction Lab testing the impact of spatialization and virtual environments on group communication. Recruited 143 participants and ran their sessions, trained seven research assistants, and wrote Python and R scripts to process data. We found that 2D grids often create less social friction than 3D spatial setups.</p>
             <div class="project-meta">
               <a href="assets/portfolio/thesis-paper.pdf" target="_blank" rel="noopener noreferrer" aria-label="Read thesis paper">Paper</a>
               <a href="https://doi.org/10.25740/my027tc4249" target="_blank" rel="noopener noreferrer" aria-label="Stanford repository DOI">DOI</a>
@@ -61,7 +72,7 @@
         <article class="project">
           <a class="project-image-wrap" href="work/the-party/" aria-label="Explore The Party" tabindex="-1"><img class="project-image" src="assets/web/party-interaction-1500.webp" alt="Inside the virtual afterparty, facing a guest you can talk to" width="1626" height="875" loading="lazy" decoding="async" srcset="assets/web/party-interaction-640.webp 640w, assets/web/party-interaction-1500.webp 1500w" sizes="(max-width: 720px) 92vw, (max-width: 1280px) 49vw, 640px"></a>
           <div class="project-copy">
-            <p class="project-discipline">Narrative VR · Unity · Fall 2025</p>
+            <p class="project-discipline">Narrative VR &amp; spatial sound</p>
             <h3 class="project-title"><a href="work/the-party/">The Party</a></h3>
             <p class="project-description">Directed and developed a narrative virtual reality experience exploring the psychological and social consequences of collegiate alcohol abuse.</p>
           </div>
@@ -69,7 +80,7 @@
         <article class="project">
           <a class="project-image-wrap" href="work/volunteerverse/" aria-label="View VolunteerVerse" tabindex="-1"><img class="project-image" src="assets/web/volunteerverse-1280.webp" alt="VolunteerVerse logo and app branding" loading="lazy" width="1280" height="720" decoding="async" srcset="assets/web/volunteerverse-640.webp 640w, assets/web/volunteerverse-1280.webp 1280w" sizes="(max-width: 720px) 92vw, (max-width: 1280px) 49vw, 640px"></a>
           <div class="project-copy">
-            <p class="project-discipline">Feature Scoping · UX Design · React Native &amp; Supabase</p>
+            <p class="project-discipline">Mobile product design &amp; development</p>
             <h3 class="project-title"><a href="work/volunteerverse/">VolunteerVerse</a></h3>
             <p class="project-description">Designed and built a mobile app that brings local volunteering opportunities into one place. Working on a 3-person team, I scoped our core features, designed the initial UX, and built the React Native frontend and Supabase backend for account onboarding, real-time event posting, and shift signups on Expo Go.</p>
             <div class="project-meta">
@@ -80,7 +91,7 @@
         <article class="project">
           <a class="project-image-wrap" href="work/tai/" aria-label="View T.AI" tabindex="-1"><img class="project-image" src="assets/web/tai-1500.webp" alt="T.AI mobile teaching assistant" loading="lazy" width="1920" height="1080" decoding="async" srcset="assets/web/tai-640.webp 640w, assets/web/tai-1500.webp 1500w" sizes="(max-width: 720px) 92vw, (max-width: 1280px) 49vw, 640px"></a>
           <div class="project-copy">
-            <p class="project-discipline">Needfinding · Product Concept · Figma Prototyping</p>
+            <p class="project-discipline">Interaction design for education</p>
             <h3 class="project-title"><a href="work/tai/">T.AI</a></h3>
             <p class="project-description">After interviewing teachers and students about how AI is used in classrooms, I conceived and designed a mobile assistant that helps teachers grade assignments, draft personalized feedback, and track student progress over time.</p>
             <div class="project-meta">
@@ -92,7 +103,7 @@
         <article class="project">
           <a class="project-image-wrap" href="work/harmonics/" aria-label="View Stanford Harmonics project" tabindex="-1"><img class="project-image" src="assets/web/harmonics-posters-1280.webp" alt="A selection of concert posters Violet designed for the Harmonics" loading="lazy" width="1280" height="720" decoding="async" srcset="assets/web/harmonics-posters-640.webp 640w, assets/web/harmonics-posters-1280.webp 1280w" sizes="(max-width: 720px) 92vw, (max-width: 1280px) 49vw, 640px"></a>
           <div class="project-copy">
-            <p class="project-discipline">Web Redesign · Visual Design · Operations &amp; Production</p>
+            <p class="project-discipline">Visual identity &amp; record production</p>
             <h3 class="project-title"><a href="work/harmonics/">Stanford Harmonics</a></h3>
             <p class="project-description">I rebuilt our a cappella group’s website around the things people came for: hearing our music and finding our shows. Monthly traffic grew by 75%, and we saw twice as many visits during September auditions. Across four years, I also served as Publicity Director, President, and Album Manager for our upcoming studio album, <em>Ashes to Ashes</em>.</p>
             <div class="project-meta">
@@ -103,7 +114,7 @@
         <article class="project">
           <a class="project-image-wrap" href="work/myodyssey/" aria-label="View Myodyssey" tabindex="-1"><img class="project-image" src="assets/web/myodyssey-1280.webp" alt="Myodyssey game title screen" loading="lazy" width="1280" height="720" decoding="async" srcset="assets/web/myodyssey-640.webp 640w, assets/web/myodyssey-1280.webp 1280w" sizes="(max-width: 720px) 92vw, (max-width: 1280px) 49vw, 640px"></a>
           <div class="project-copy">
-            <p class="project-discipline">Game Design · Frontend Integration · Original Soundtrack</p>
+            <p class="project-discipline">Game design &amp; composition</p>
             <h3 class="project-title"><a href="work/myodyssey/">Myodyssey</a></h3>
             <p class="project-description">Developed a browser-based adventure game about a wood lemming navigating habitat loss. On a 5-person team, I created the core mechanics, coded the opening chapter, integrated our levels, and composed the soundtrack.</p>
             <div class="project-meta">

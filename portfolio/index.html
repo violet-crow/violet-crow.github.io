@@ -6,8 +6,8 @@
   <meta name="description" content="Selected research, interactive media, design, and writing by Violet Crow.">
   <title>Portfolio | Violet Crow</title>
   <link rel="icon" href="../assets/web/butterfly.png">
-  <link rel="stylesheet" href="../styles.css">
-
+  <link rel="stylesheet" href="../assets/css/site.css">
+  <script defer src="../assets/js/site.js"></script>
 </head>
 <body class="portfolio-page">
   <a class="skip-link" href="#main">Skip to content</a>
@@ -15,7 +15,18 @@
     <div class="mast-inner">
       <a class="brand" href="../" aria-label="Violet Crow, home"><img src="../assets/web/butterfly.png" width="40" height="38" alt=""> Violet Crow</a>
       <nav class="primary" aria-label="Primary">
-        <a href="../#work">Work</a>
+        <details class="work-menu">
+          <summary>Work</summary>
+          <div class="work-links">
+            <a href="../#work">All work</a>
+            <a href="../work/thesis/">Honors Thesis</a>
+            <a href="../work/the-party/">The Party</a>
+            <a href="../work/volunteerverse/">VolunteerVerse</a>
+            <a href="../work/tai/">T.AI</a>
+            <a href="../work/harmonics/">Stanford Harmonics</a>
+            <a href="../work/myodyssey/">Myodyssey</a>
+          </div>
+        </details>
         <a href="../portfolio/" aria-current="page">Portfolio</a>
         <a href="../about/">About</a>
         <a href="../contact/">Contact</a>
@@ -27,12 +38,11 @@
       <div class="folio-intro">
         <h1>Portfolio</h1>
         <p class="case-subtitle">A selection of my research, interactive media projects, design work, and writing from my time at Stanford.</p>
-        <a class="pill-button" href="../assets/portfolio/portfolio.pdf">Portfolio (PDF)</a>
       </div>
       <div class="reading-guide">
         <h2>Where to start</h2>
-        <p><strong>Research and writing.</strong> My <a href="#thesis">honors thesis</a> is my largest research project. My <a href="#rocky-horror">Rocky Horror presentation</a> is a sample of my work in film studies.</p>
-        <p><strong>Technical and creative work.</strong> <a href="../work/the-party/">The Party</a> is a VR experience I developed independently. For my work on <a href="../work/myodyssey/">Myodyssey</a>, a narrative browser game, check out our <a href="../work/myodyssey/#playtest-video">playtest video</a> and the <a href="../work/myodyssey/#soundtrack">original soundtrack</a> I composed.</p>
+        <p><strong>Research and writing.</strong> For my <a href="#thesis">honors thesis</a>, I studied where people look when they talk to one another in VR. In <a href="#embodied-interface">The Embodied Interface</a>, Karan Soin and I asked what else a headset could pick up from the way we move.</p>
+        <p><strong>Technical and creative work.</strong> Step inside my a cappella group’s afterparty in <a href="../work/the-party/">The Party</a>, or <a href="https://venef.itch.io/myodyssey">play Myodyssey</a>, the browser game I scored. You can also hear two <a href="../work/harmonics/#recordings">work-in-progress mixes from <em>Ashes to Ashes</em></a>, our upcoming Harmonics album.</p>
       </div>
     </section>
     <nav class="contents" aria-label="Portfolio sections">
@@ -42,129 +52,143 @@
       <a href="#critical-scholarship">Critical &amp; interpretive scholarship</a>
     </nav>
     <section class="section folio-group" id="research">
-      <div class="subject-heading">
-        <h2>Research &amp; scholarship</h2>
-        <a class="subject-image" href="../work/thesis/"><img src="../assets/web/thesis-setup-640.webp" width="640" height="360" loading="lazy" decoding="async" alt="Participants wearing Vision Pro headsets during a study session"></a>
-      </div>
+      <h2>Research &amp; scholarship</h2>
       <div class="entries">
         <article id="thesis">
-          <p class="period">May 2025 – June 2026</p>
-          <h3>Honors Thesis</h3>
-          <p>For my honors thesis in Stanford’s Virtual Human Interaction Lab, I studied how the layout of immersive teleconferencing affects the way people attend to one another. Groups of two, three, or four spoke with one another through photorealistic avatars, arranged either in a grid or in three-dimensional space. We also varied whether participants shared a virtual environment or could see their physical surroundings.</p>
-          <p>I developed the study protocols, recruited 133 participants, trained five research assistants, and ran the sessions. My own statistical analysis focused on measures of visual attention during the conversations. Although spatial calls appeared to facilitate more natural interactions, I did not find evidence of a corresponding improvement in measures of attention.</p>
-          <div class="sample-links">
-            <a href="../work/thesis/">Explore project</a>
-            <a href="../assets/portfolio/thesis-paper.pdf">Full thesis (PDF)</a>
+          <div class="entry-copy">
+            <p class="period">May 2025 – June 2026</p>
+            <h3>Honors Thesis</h3>
+            <p>For my honors thesis in Stanford’s Virtual Human Interaction Lab, I studied how the layout of immersive teleconferencing affects the way people attend to one another. Groups of two, three, or four spoke with one another through photorealistic avatars, arranged either in a grid or in three-dimensional space. We also varied whether participants shared a virtual environment or could see their physical surroundings.</p>
+            <p>I developed the study protocols, recruited 143 participants, trained seven research assistants, and ran the sessions. My own statistical analysis focused on measures of visual attention during the conversations. Although spatial calls appeared to facilitate more natural interactions, I did not find evidence of a corresponding improvement in measures of attention.</p>
+            <div class="sample-links">
+              <a href="../work/thesis/">Explore project</a>
+              <a href="../assets/portfolio/thesis-paper.pdf">Full thesis (PDF)</a>
+            </div>
+            <p class="print-sample">See: thesis.pdf · thesis-paper.pdf · thesis-slides.pdf · thesis-presentation.mp4</p>
           </div>
-          <p class="print-sample">See: thesis.pdf · thesis-paper.pdf · thesis-slides.pdf · thesis-presentation.mp4</p>
+          <a class="entry-image" href="../work/thesis/" aria-label="Open Honors Thesis"><img src="../assets/web/thesis-setup-640.webp" width="640" height="360" loading="lazy" decoding="async" alt="Participants wearing headsets during a study session"></a>
         </article>
         <article id="embodied-interface">
-          <p class="period">Fall 2025</p>
-          <h3>The Embodied Interface</h3>
-          <p>In this paper, Karan Soin and I examined how XR interfaces could make use of a wider range of bodily input and sensory feedback. We surveyed existing technologies, from eye and hand tracking to biosignal sensing, and proposed both near-term improvements and more speculative systems.</p>
-          <p>My sections covered current XR technology, proposals for future interfaces, their technical requirements and limitations, and their broader implications. One possibility I explored was combining camera-based hand tracking with sensing muscle activity at the wrist, particularly in situations where a headset’s cameras cannot see the user’s hands.</p>
-          <div class="sample-links">
-            <a href="../assets/portfolio/embodied-interface.pdf">Full paper (PDF)</a>
+          <div class="entry-copy">
+            <p class="period">Fall 2025</p>
+            <h3>The Embodied Interface</h3>
+            <p>In this paper, Karan Soin and I examined how XR interfaces could make use of a wider range of bodily input and sensory feedback. We surveyed existing technologies, from eye and hand tracking to biosignal sensing, and proposed both near-term improvements and more speculative systems.</p>
+            <p>My sections covered current XR technology, proposals for future interfaces, their technical requirements and limitations, and their broader implications. One possibility I explored was combining camera-based hand tracking with sensing muscle activity at the wrist, particularly in situations where a headset’s cameras cannot see the user’s hands.</p>
+            <div class="sample-links">
+              <a href="../assets/portfolio/embodied-interface.pdf">Full paper (PDF)</a>
+            </div>
+            <p class="print-sample">See: embodied-interface.pdf</p>
           </div>
-          <p class="print-sample">See: embodied-interface.pdf</p>
         </article>
       </div>
     </section>
     <section class="section folio-group" id="interactive-media">
-      <div class="subject-heading">
-        <h2>Interactive &amp; computational media</h2>
-        <a class="subject-image" href="../work/the-party/"><img src="../assets/web/party-foreboding-640.webp" width="640" height="306" loading="lazy" decoding="async" alt="The afterparty room after the lights turn red"></a>
-      </div>
+      <h2>Interactive &amp; computational media</h2>
       <div class="entries">
         <article id="the-party">
-          <p class="period">Fall 2025</p>
-          <h3>The Party</h3>
-          <p>The Party is a narrative VR piece about the social and psychological consequences of alcohol abuse, set in a recreation of a typical party room at Stanford. The player can talk to friends and choose to drink, progressively altering their senses. When a friend becomes sick, what was previously a fun night takes on an oppressive atmosphere. The experience ends in my dorm room the next morning.</p>
-          <p>I developed the piece independently in Unity, building the environments, scripting interactions, designing lighting and spatial sound, creating shaders, and writing and recording dialogue. The narrative is based on three experiences from my life: worrying about a sick friend, feeling the mood of a party deteriorate, and reflecting the following morning.</p>
-          <div class="sample-links">
-            <a href="../work/the-party/">Explore project</a>
-            <a href="https://github.com/violet-crow/theparty">GitHub</a>
+          <div class="entry-copy">
+            <p class="period">Fall 2025</p>
+            <h3>The Party</h3>
+            <p>The Party is a narrative VR piece about the social and psychological consequences of alcohol abuse, set in a recreation of a typical party room at Stanford. The player can talk to friends and choose to drink, progressively altering their senses. When a friend becomes sick, what was previously a fun night takes on an oppressive atmosphere. The experience ends in my dorm room the next morning.</p>
+            <p>I developed the piece independently in Unity, building the environments, scripting interactions, designing lighting and spatial sound, creating shaders, and writing and recording dialogue. The narrative is based on three experiences from my life: worrying about a sick friend, feeling the mood of a party deteriorate, and reflecting the following morning.</p>
+            <div class="sample-links">
+              <a href="../work/the-party/">Explore project</a>
+              <a href="https://github.com/violet-crow/theparty">GitHub</a>
+            </div>
+            <p class="print-sample">See: the-party.pdf</p>
           </div>
-          <p class="print-sample">See: the-party.pdf</p>
+          <a class="entry-image" href="../work/the-party/" aria-label="Open The Party"><img src="../assets/web/party-interaction-640.webp" width="640" height="344" loading="lazy" decoding="async" alt="Talking with a guest in the virtual afterparty"></a>
         </article>
         <article id="myodyssey">
-          <p class="period">Spring 2026</p>
-          <h3>Myodyssey</h3>
-          <p>Myodyssey is a browser-based narrative game about deforestation and habitat loss, told from the perspective of a wood lemming. I came up with the concept for our five-person team’s project, which uses interactive text, illustrations, and music to follow the lemming’s journey to heal its partner.</p>
-          <p>I designed and programmed the opening level, including its inventory system and a puzzle in which the player makes vegetable stew. I also composed the game’s original soundtrack. Over nine playtests, we revised the way the game communicated new and important information.</p>
-          <div class="sample-links">
-            <a href="../work/myodyssey/">Explore project</a>
-            <a href="../work/myodyssey/#playtest-video">Playtest video</a>
+          <div class="entry-copy">
+            <p class="period">Spring 2026</p>
+            <h3>Myodyssey</h3>
+            <p>Myodyssey is a browser-based narrative game about deforestation and habitat loss, told from the perspective of a wood lemming. I came up with the concept for our five-person team’s project, which uses interactive text, illustrations, and music to follow the lemming’s journey to heal its partner.</p>
+            <p>I designed and programmed the opening level, including its inventory system and a puzzle in which the player makes vegetable stew. I also composed the game’s original soundtrack. Over nine playtests, we revised the way the game communicated new and important information.</p>
+            <div class="sample-links">
+              <a href="../work/myodyssey/">Explore project</a>
+              <a href="../work/myodyssey/#playtest-video">Playtest video</a>
+            </div>
+            <p class="print-sample">See: myodyssey.pdf · myodyssey-playtest.mp4 · home-sweet-home.mp3 · setting-off.mp3 · the-wild.mp3 · the-thrashing-hare.mp3 · the-golden-moss.mp3</p>
           </div>
-          <p class="print-sample">See: myodyssey.pdf · myodyssey-playtest.mp4 · home-sweet-home.mp3 · setting-off.mp3 · the-wild.mp3 · the-thrashing-hare.mp3 · the-golden-moss.mp3</p>
+          <a class="entry-image" href="../work/myodyssey/" aria-label="Open Myodyssey"><img src="../assets/web/myodyssey-iteration-640.webp" width="640" height="360" loading="lazy" decoding="async" alt="Game screens from successive versions of Myodyssey"></a>
         </article>
         <article id="tai">
-          <p class="period">Fall 2024</p>
-          <h3>T.AI</h3>
-          <p>For T.AI, our team explored how teachers might use generative AI to give students more timely and useful feedback. We interviewed four educators and two students before designing a mobile prototype in which teachers photograph a student’s work and review feedback generated using their own grading rubric.</p>
-          <p>I helped develop the concept and built low- and medium-fidelity prototypes, in addition to contributing to the final poster and report.</p>
-          <div class="sample-links">
-            <a href="../work/tai/">Explore project</a>
-            <a href="../assets/portfolio/tai-poster.pdf">Project poster (PDF)</a>
+          <div class="entry-copy">
+            <p class="period">Fall 2024</p>
+            <h3>T.AI</h3>
+            <p>For T.AI, our team explored how teachers might use generative AI to give students more timely and useful feedback. We interviewed four educators and two students before designing a mobile prototype in which teachers photograph a student’s work and review feedback generated using their own grading rubric.</p>
+            <p>I helped develop the concept and built low- and medium-fidelity prototypes, in addition to contributing to the final poster and report.</p>
+            <div class="sample-links">
+              <a href="../work/tai/">Explore project</a>
+              <a href="../assets/portfolio/tai-poster.pdf">Project poster (PDF)</a>
+            </div>
+            <p class="print-sample">See: tai.pdf · tai-poster.pdf · tai-demo.mp4 · tai-prototype-screens.pdf</p>
           </div>
-          <p class="print-sample">See: tai.pdf · tai-poster.pdf · tai-demo.mp4 · tai-prototype-screens.pdf</p>
+          <a class="entry-image" href="../work/tai/" aria-label="Open T.AI"><img src="../assets/web/tai-medfi-640.webp" width="640" height="360" loading="lazy" decoding="async" alt="T.AI screens for grading and student feedback"></a>
         </article>
         <article id="volunteerverse">
-          <p class="period">Fall 2025</p>
-          <h3>VolunteerVerse</h3>
-          <p>VolunteerVerse is a mobile app my team of three built in four weeks to help local organizations publicize volunteer opportunities and manage signups. It supports separate accounts for organizers and volunteers, with event creation, registration, and scheduling.</p>
-          <p>I helped determine the scope of the app, designed its initial screens, and integrated our React Native frontend with Supabase. I implemented account setup for both user types and real-time event registration.</p>
-          <div class="sample-links">
-            <a href="../work/volunteerverse/">Explore project</a>
+          <div class="entry-copy">
+            <p class="period">Fall 2025</p>
+            <h3>VolunteerVerse</h3>
+            <p>VolunteerVerse is a mobile app my team of three built in four weeks to help local organizations publicize volunteer opportunities and manage signups. It supports separate accounts for organizers and volunteers, with event creation, registration, and scheduling.</p>
+            <p>I helped determine the scope of the app, designed its initial screens, and integrated our React Native frontend with Supabase. I implemented account setup for both user types and real-time event registration.</p>
+            <div class="sample-links">
+              <a href="../work/volunteerverse/">Explore project</a>
+            </div>
+            <p class="print-sample">See: volunteerverse.pdf</p>
           </div>
-          <p class="print-sample">See: volunteerverse.pdf</p>
+          <a class="entry-image" href="../work/volunteerverse/" aria-label="Open VolunteerVerse"><img src="../assets/web/volunteerverse-volunteer-640.webp" width="640" height="360" loading="lazy" decoding="async" alt="Finding volunteer shifts in the mobile app"></a>
         </article>
       </div>
     </section>
     <section class="section folio-group" id="creative-practice">
-      <div class="subject-heading">
-        <h2>Creative practice</h2>
-        <a class="subject-image" href="../work/harmonics/#recordings"><img src="../assets/web/harmonics-album-640.webp" width="640" height="360" loading="lazy" decoding="async" alt="Recording vocals for Ashes to Ashes"></a>
-      </div>
+      <h2>Creative practice</h2>
       <div class="entries">
         <article id="harmonics">
-          <p class="period">2022–2026</p>
-          <h3>Stanford Harmonics</h3>
-          <p>Across four years, I was the Stanford Harmonics’ publicity director and business manager/president. I designed six concert posters and their accompanying programs, created audition publicity campaigns, and redesigned the group’s website, including a Music page that brought together our albums, videos, and streaming links.</p>
-          <p>I’m now managing our next album. I set the production schedule and recorded over half the tracks.</p>
-          <div class="sample-links">
-            <a href="../work/harmonics/">Explore project</a>
-            <a href="../work/harmonics/#recordings">Listen to work-in-progress recordings</a>
+          <div class="entry-copy">
+            <p class="period">2022–2026</p>
+            <h3>Stanford Harmonics</h3>
+            <p>Across four years, I was the Stanford Harmonics’ publicity director and business manager/president. I designed six concert posters and their accompanying programs, created audition publicity campaigns, and redesigned the group’s website, including a Music page that brought together our albums, videos, and streaming links.</p>
+            <p>I’m now managing our next album. I set the production schedule and recorded over half the tracks.</p>
+            <div class="sample-links">
+              <a href="../work/harmonics/">Explore project</a>
+              <a href="../work/harmonics/#recordings">Listen to work-in-progress recordings</a>
+            </div>
+            <p class="print-sample">See: harmonics.pdf · big-shot.mp3 · deep-blue.mp3</p>
           </div>
-          <p class="print-sample">See: harmonics.pdf · big-shot.mp3 · deep-blue.mp3</p>
+          <a class="entry-image" href="../work/harmonics/" aria-label="Open Stanford Harmonics"><img src="../assets/web/harmonics-album-640.webp" width="640" height="360" loading="lazy" decoding="async" alt="Recording vocals for Ashes to Ashes"></a>
         </article>
       </div>
     </section>
     <section class="section folio-group" id="critical-scholarship">
-      <div class="subject-heading">
-        <h2>Critical &amp; interpretive scholarship</h2>
-        <a class="subject-image" href="../assets/portfolio/delicate-or-daunting.pdf"><img src="../assets/web/david-detail.webp" width="680" height="513" loading="lazy" decoding="async" alt="My close-up photograph of Michelangelo’s David in Florence"></a>
-      </div>
+      <h2>Critical &amp; interpretive scholarship</h2>
       <div class="entries">
         <article id="delicate-or-daunting">
-          <p class="period">Spring 2025</p>
-          <h3>Delicate or Daunting?</h3>
-          <p>I wrote this paper while studying art history in Florence, after seeing the sculptures of David by Michelangelo, Donatello, and Verrocchio in person.</p>
-          <p>I argue that Michelangelo’s representation of David as a mature man changes the erotic relationship between the figure and his viewer. I develop the argument through close comparisons of the three sculptures’ forms, poses, materials, and scale, using my own photographs and scholarship on male sexuality in Renaissance Florence.</p>
-          <div class="sample-links">
-            <a href="../assets/portfolio/delicate-or-daunting.pdf">Full paper (PDF)</a>
+          <div class="entry-copy">
+            <p class="period">Spring 2025</p>
+            <h3>Delicate or Daunting?</h3>
+            <p>I wrote this paper while studying art history in Florence, after seeing the sculptures of David by Michelangelo, Donatello, and Verrocchio in person.</p>
+            <p>I argue that Michelangelo’s representation of David as a mature man changes the erotic relationship between the figure and his viewer. I develop the argument through close comparisons of the three sculptures’ forms, poses, materials, and scale, using my own photographs and scholarship on male sexuality in Renaissance Florence.</p>
+            <div class="sample-links">
+              <a href="../assets/portfolio/delicate-or-daunting.pdf">Full paper (PDF)</a>
+            </div>
+            <p class="print-sample">See: delicate-or-daunting.pdf</p>
           </div>
-          <p class="print-sample">See: delicate-or-daunting.pdf</p>
+          <a class="entry-image" href="../assets/portfolio/delicate-or-daunting.pdf" aria-label="Open Delicate or Daunting?"><img src="../assets/web/david-portrait.webp" width="660" height="442" loading="lazy" decoding="async" alt="Michelangelo’s David in Florence, looking past his raised hand"></a>
         </article>
         <article id="rocky-horror">
-          <p class="period">Spring 2025</p>
-          <h3>Understanding Rocky Horror</h3>
-          <p>In this presentation for a film studies course in Florence, I argued that The Rocky Horror Picture Show uses Brad and Janet as stand-ins for its original, predominantly straight moviegoing audience. The confusion the audience experiences alongside the characters is, in my reading, central to how the film introduces them to queer experience.</p>
-          <p>I examined the film’s use of point-of-view shots, mirrored scenes, and musical performances as Brad and Janet move from bewildered spectators to participants. I also considered the film’s later cult following, whose traditions of audience participation extend this dynamic beyond the screen. The documents include my slides and a transcript of my original speaker notes.</p>
-          <div class="sample-links">
-            <a href="../assets/portfolio/rocky-horror.pdf">Slides and transcript (PDF)</a>
+          <div class="entry-copy">
+            <p class="period">Spring 2025</p>
+            <h3>Understanding Rocky Horror</h3>
+            <p>In this presentation for a film studies course in Florence, I argued that The Rocky Horror Picture Show uses Brad and Janet as stand-ins for its original, predominantly straight moviegoing audience. The confusion the audience experiences alongside the characters is, in my reading, central to how the film introduces them to queer experience.</p>
+            <p>I examined the film’s use of point-of-view shots, mirrored scenes, and musical performances as Brad and Janet move from bewildered spectators to participants. I also considered the film’s later cult following, whose traditions of audience participation extend this dynamic beyond the screen. The documents include my slides and a transcript of my original speaker notes.</p>
+            <div class="sample-links">
+              <a href="../assets/portfolio/rocky-horror.pdf">Slides and transcript (PDF)</a>
+            </div>
+            <p class="print-sample">See: rocky-horror.pdf</p>
           </div>
-          <p class="print-sample">See: rocky-horror.pdf</p>
+          <a class="entry-image" href="../assets/portfolio/rocky-horror.pdf" aria-label="Open Understanding Rocky Horror"><img src="../assets/web/rocky-horror-slide.webp" width="660" height="372" loading="lazy" decoding="async" alt="Introductory slide from my Rocky Horror presentation"></a>
         </article>
       </div>
     </section>

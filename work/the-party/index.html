@@ -6,8 +6,8 @@
   <meta name="description" content="An independently built narrative VR artwork about alcohol, derealization, and the morning after a Stanford afterparty.">
   <title>The Party | Violet Crow</title>
   <link rel="icon" href="../../assets/web/butterfly.png">
-  <link rel="stylesheet" href="../../styles.css">
-
+  <link rel="stylesheet" href="../../assets/css/site.css">
+  <script defer src="../../assets/js/site.js"></script>
 </head>
 <body class="work-page the-party-study">
   <a class="skip-link" href="#main">Skip to content</a>
@@ -15,7 +15,18 @@
     <div class="mast-inner">
       <a class="brand" href="../../" aria-label="Violet Crow, home"><img src="../../assets/web/butterfly.png" width="40" height="38" alt=""> Violet Crow</a>
       <nav class="primary" aria-label="Primary">
-        <a href="../../#work" aria-current="location">Work</a>
+        <details class="work-menu">
+          <summary>Work</summary>
+          <div class="work-links">
+            <a href="../../#work">All work</a>
+            <a href="../../work/thesis/">Honors Thesis</a>
+            <a href="../../work/the-party/" aria-current="page">The Party</a>
+            <a href="../../work/volunteerverse/">VolunteerVerse</a>
+            <a href="../../work/tai/">T.AI</a>
+            <a href="../../work/harmonics/">Stanford Harmonics</a>
+            <a href="../../work/myodyssey/">Myodyssey</a>
+          </div>
+        </details>
         <a href="../../portfolio/">Portfolio</a>
         <a href="../../about/">About</a>
         <a href="../../contact/">Contact</a>
@@ -27,9 +38,9 @@
       <div class="case-lead">
         <a class="back-link" href="../../portfolio/#the-party">Back to Portfolio</a>
         <h1>The Party</h1>
-        <p class="case-subtitle">A narrative VR piece about the social and psychological consequences of alcohol abuse, set in the place my a cappella group held our afterparties at Stanford.</p>
+        <p class="case-subtitle">I rebuilt the room where my a cappella group held its afterparties at Stanford. In VR, you spend a night there, from the first drink to the moment you realize a friend needs help.</p>
         <div class="hero-actions">
-          <a class="pill-button" href="https://github.com/violet-crow/theparty">View Unity project on GitHub</a>
+          <a class="pill-button" href="https://github.com/violet-crow/theparty">View on GitHub</a>
           <a class="pill-button secondary" href="../../assets/portfolio/the-party.pdf">Case study (PDF)</a>
         </div>
       </div>
@@ -54,40 +65,40 @@
     <section class="section" id="sequence">
       <h2>Altered perception</h2>
       <div class="case-body">
-        <p>In The Party, you experience a college afterparty from the perspective of a group member. You arrive at a reconstruction of our usual party room; our playlist even blares from the TV as it always does. You can talk with the other members of the group, some of whom have clearly already been drinking. You can walk around, check the fridge, or even choose to drink yourself from the cup permanently attached to your right hand. With each drink, your vision and hearing will become more distorted. Be careful not to drink too much, though, or else you might black out.</p>
+        <p>When you walk in, our usual playlist is blaring from the TV. Some of the group are on the couches. You can stop and talk, check the fridge, or take a sip from the cup in your right hand. The cup stays there all night. Each drink blurs your vision and distorts what you hear. If you keep going, you can black out.</p>
         <figure class="case-photo">
           <img src="../../assets/web/party-participants-1500.webp" alt="Party guests standing and lounging around the couches in the virtual afterparty room" width="1712" height="886" loading="lazy" decoding="async" srcset="../../assets/web/party-participants-640.webp 640w, ../../assets/web/party-participants-1500.webp 1500w" sizes="(max-width: 800px) 92vw, 800px">
-          <figcaption class="photo-caption">Physically walk around the party to talk to your fellow group members</figcaption>
+          <figcaption class="photo-caption">The couches are a good place to find someone to talk to.</figcaption>
         </figure>
-        <p>The turning point of the evening is when your friend (voiced by me) approaches you and asks for a chaperone to the bathroom. You watch as they hit the floor, incredibly sick.</p>
+        <p>A friend asks you to walk them to the bathroom. That’s my voice you hear asking. Once you’re there, they collapse on the floor beside you.</p>
         <figure class="case-photo">
           <img src="../../assets/web/party-volta-1500.webp" alt="A friend lies on the virtual bathroom floor beside the toilet" width="1513" height="873" loading="lazy" decoding="async" srcset="../../assets/web/party-volta-640.webp 640w, ../../assets/web/party-volta-1500.webp 1500w" sizes="(max-width: 800px) 92vw, 800px">
-          <figcaption class="photo-caption">Dramatic moments can have a bigger impact when they feel like they're happening in front of you</figcaption>
+          <figcaption class="photo-caption">The bathroom scene, from the player’s point of view.</figcaption>
         </figure>
-        <p>When you leave the bathroom to get help, the room you just left is washed in red light. What was a jovial, familiar atmosphere just a moment ago is now undeniably hostile, oppressive. I wanted that return to capture the nausea of being at a party where the mood has shifted and the night has clearly gone on too long.</p>
+        <p>You go back for help. The couches and the TV are right where you left them, but now the whole room is red. I wanted that particular feeling of coming back to a party and realizing the night should have ended a while ago.</p>
         <figure class="case-photo">
           <img src="../../assets/web/party-foreboding-1235.webp" alt="The dim afterparty room with red light across the floor" width="1235" height="591" loading="lazy" decoding="async" srcset="../../assets/web/party-foreboding-640.webp 640w, ../../assets/web/party-foreboding-1235.webp 1235w" sizes="(max-width: 800px) 92vw, 800px">
-          <figcaption class="photo-caption">In VR, lighting and ominous spatial sound play a huge role in creating emotional atmosphere</figcaption>
+          <figcaption class="photo-caption">The same party room on the way back for help.</figcaption>
         </figure>
-        <p>A pillow glowing in the room will take you to my dorm the next morning, where you can find an empty bottle left over from the last night's events. After a moment of reflection, you can throw it away to end the experience.</p>
+        <p>A glowing pillow takes you to my dorm the next morning. There’s an empty bottle left over from the night before. The last thing you do is pick it up and throw it away.</p>
         <figure class="case-photo">
           <img src="../../assets/web/party-reflection-1019.webp" alt="The virtual dorm room the next morning, with a window overlooking Stanford and a wastebasket in the foreground" width="1019" height="660" loading="lazy" decoding="async" srcset="../../assets/web/party-reflection-640.webp 640w, ../../assets/web/party-reflection-1019.webp 1019w" sizes="(max-width: 800px) 92vw, 800px">
-          <figcaption class="photo-caption">A quiet scene allows for reflection on the experience</figcaption>
+          <figcaption class="photo-caption">My dorm room the next morning.</figcaption>
         </figure>
       </div>
     </section>
     <section class="section">
       <h2>Building a place from memory</h2>
       <div class="case-body">
-        <p>I designed the playable environments in Unity, basing the dorm on the room I lived in at the time. I modeled some props myself and used publicly available models for others. I scripted the interactions and character paths, made custom shaders, placed the spatial audio, and designed the lighting.</p>
-        <p>The drinking mechanic allowed me to give the player some amount of agency over how the night goes while still delivering a linear narrative experience. An advantage of Virtual Reality is that your actions can have consequences not only for your character but also for you; the blurry and nauseating vision your character experiences when drinking too much will impact your actual perception. The transition when stepping into and out of the bathroom allows you to feel how the mood can change even in one room.</p>
+        <p>I built both rooms in Unity. For the morning scene, I had my own dorm room to work from, right down to the view through the window. I modeled some props, used existing models for others, and scripted how the guests move and when they’ll talk to you.</p>
+        <p>The story needed to reach the bathroom whether you drank or stayed sober. What I could leave up to you was how clearly you saw and heard your friend by the time you got there. I wrote shaders for the changes in vision and used spatial audio to change how the room sounded around you.</p>
       </div>
     </section>
     <section class="section">
       <h2>Creative process</h2>
       <div class="case-body">
-        <p>At first my goal was simply to recreate the environment and atmosphere of a party I had been to often. The rounds of feedback from peers who playtested during the quarter pushed me to develop the experience further, and make it more meaningful. I based the experience in three real memories: worrying about a friend who was sick; feeling tensions rise as a night went on; and sitting quietly to reflect the next morning.</p>
-        <p>I view The Party as an early exploration into the use of narrative VR in psychological research. How does feeling physically present in a virtual scene change someone's understanding of an emotional experience, and how does that impact their behavior afterward?</p>
+        <p>At first I just wanted to see how closely I could recreate a room I knew so well. As classmates tried it over the quarter, I kept coming back to three memories: worrying about a sick friend, staying at a party as the mood turned, and having a quiet moment to myself the next morning. Those became the shape of the piece.</p>
+        <p>I’d like to come back to the bathroom scene in my research. Does standing next to someone who needs help feel different from watching the same thing happen on a screen? I’m curious whether that feeling stays with you the next time a friend asks you to walk with them.</p>
       </div>
     </section>
     <nav class="project-nav-footer" aria-label="More projects">
